@@ -12,6 +12,7 @@ class Exercise
 {
   //  var List<Gear> MyGear { get; set; } = new List<Gear>();
     
+    //MARK: Variables
     var Name: String?
     var Description: String?
     var Instructions: String?
@@ -22,20 +23,18 @@ class Exercise
     var SecondaryMuscleGroup: Tier2MuscleGroup?
     
     
-    //constructor
+    //MARK: constructor
     
     init( name: String, eParams: ExerciseParams){
         Name = name;
         PrimaryMuscleGroup = eParams.PrimaryMuscle;
         SecondaryMuscleGroup = eParams.SecondaryMuscle;
+        Description = eParams.Description;
+        Instructions = eParams.Instruction;
+        
     }
     
-    init( name: String, descript: String, t1muscle: Tier1MuscleGroup){
-        
-        self.Name = name;
-        self.Description = descript;
-        self.PrimaryMuscleGroup = t1muscle;
-    }
+
     /*
     public Exercise(MisIdiomas l, string name, string description, Tier1Muscle m1)
 {

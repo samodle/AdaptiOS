@@ -11,6 +11,7 @@
 		6E55888221A5FB11000C2FA4 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E55888121A5FB11000C2FA4 /* Enums.swift */; };
 		6E55888421A85FC9000C2FA4 /* ExerciseParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E55888321A85FC9000C2FA4 /* ExerciseParams.swift */; };
 		6E55888621A8A260000C2FA4 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E55888521A8A260000C2FA4 /* Workout.swift */; };
+		6ED9D5AD21C836F10045863F /* WorkoutStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED9D5AC21C836F10045863F /* WorkoutStructure.swift */; };
 		6EF5A98521A5ECA5006F053C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF5A98421A5ECA5006F053C /* AppDelegate.swift */; };
 		6EF5A98721A5ECA6006F053C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF5A98621A5ECA6006F053C /* ViewController.swift */; };
 		6EF5A98A21A5ECA6006F053C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EF5A98821A5ECA6006F053C /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 		6E55888121A5FB11000C2FA4 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		6E55888321A85FC9000C2FA4 /* ExerciseParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseParams.swift; sourceTree = "<group>"; };
 		6E55888521A8A260000C2FA4 /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
+		6ED9D5AC21C836F10045863F /* WorkoutStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutStructure.swift; sourceTree = "<group>"; };
 		6EF5A98121A5ECA5006F053C /* Adapt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Adapt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EF5A98421A5ECA5006F053C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6EF5A98621A5ECA6006F053C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +51,7 @@
 				6E55887F21A5F962000C2FA4 /* Exercise.swift */,
 				6E55888321A85FC9000C2FA4 /* ExerciseParams.swift */,
 				6E55888521A8A260000C2FA4 /* Workout.swift */,
+				6ED9D5AC21C836F10045863F /* WorkoutStructure.swift */,
 			);
 			path = AdaptLib;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 				6EF5A98721A5ECA6006F053C /* ViewController.swift in Sources */,
 				6E55888421A85FC9000C2FA4 /* ExerciseParams.swift in Sources */,
 				6EF5A98521A5ECA5006F053C /* AppDelegate.swift in Sources */,
+				6ED9D5AD21C836F10045863F /* WorkoutStructure.swift in Sources */,
 				6E55888221A5FB11000C2FA4 /* Enums.swift in Sources */,
 				6E55888021A5F962000C2FA4 /* Exercise.swift in Sources */,
 				6E55888621A8A260000C2FA4 /* Workout.swift in Sources */,
@@ -316,7 +320,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Fitness.Adapt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -334,7 +338,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Fitness.Adapt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
