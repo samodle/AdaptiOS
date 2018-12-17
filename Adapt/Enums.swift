@@ -22,3 +22,23 @@ enum Tier2MuscleGroup{
     case triceps
     case forearms
 }
+
+enum WorkoutEquipment {
+    case barbell
+    case  dumbell
+    case  speedladder
+    case  mat
+    case plyobox
+    case propbox
+    case chair
+    case footprop
+    case soupcans
+}
+
+enum WeightStatus {
+    case none
+    case optional
+    case preferred
+    case required
+    
+}

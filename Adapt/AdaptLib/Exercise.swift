@@ -23,6 +23,13 @@ class Exercise
     
     
     //constructor
+    
+    init( name: String, eParams: ExerciseParams){
+        Name = name;
+        PrimaryMuscleGroup = eParams.PrimaryMuscle;
+        SecondaryMuscleGroup = eParams.SecondaryMuscle;
+    }
+    
     init( name: String, descript: String, t1muscle: Tier1MuscleGroup){
         
         self.Name = name;
