@@ -31,10 +31,7 @@ class Exercise
         SecondaryMuscleGroup = eParams.SecondaryMuscle;
         Description = eParams.Description;
         Instructions = eParams.Instruction;
-        
     }
-    
-
     /*
     public Exercise(MisIdiomas l, string name, string description, Tier1Muscle m1)
 {
@@ -44,6 +41,4 @@ class Exercise
     }
  */
     
-
-
 }

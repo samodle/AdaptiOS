@@ -15,13 +15,13 @@ class WorkoutStructure
     //TODO: Fix this list
    // public List<List<Tuple<int, double, SetType>>> SetList { get; private set; } = new List<List<Tuple<int, double, SetType>>>();
     
-    var WorkoutType: WType = WorkoutType.superset;
+    var WType: WorkoutType = WorkoutType.superset;
     
     var DoIHaveTimes : Bool = false;
     var DoIHaveDistances : Bool = false;
     var DoIHaveReps: Bool = false;
     
-    public void addSets(List<int> sets, List<double> data, List<SetType> types, int n)
+    func addSets(sets: [Int](), List<double> data, List<SetType> types, n: Int)
 {
     List<Tuple<int, double, SetType>> x = new List<Tuple<int, double, SetType>>();
     for (int i = 0; i < sets.Count; i++)
@@ -34,7 +34,7 @@ class WorkoutStructure
     }
     }
     
-    public void addSetsAndReps(List<int> sets, List<double> reps, int n)
+    func addSetsAndReps(sets: [Int](), List<double> reps: [Double](, n: Int)
 {
     if (sets.Count != reps.Count)
     {

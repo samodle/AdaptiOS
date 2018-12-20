@@ -25,7 +25,4 @@ class ExerciseParams{
         Instruction = instruct;
         doIUseWeights = weightStat;
     }
-    
-    
-    
 }

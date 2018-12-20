@@ -10,45 +10,36 @@ import Foundation
 
 class Workout
 {
-
-    var static NetCount: Int = 1; //static int to track total number of these objects in order to generate IDs
-    var ID: Int  = -1;
+    var ID: Int  = 0
     var Name: String
     var Description: String
     var Instructions: String
     
-    var Target: Double = -1;
-    var TargetType: SetType  = SetType.NA;
-    
+    var Target: Double = -1
+    var TargetType: SetType = SetType.NA
     
     /*
      * 1. the order of this list is CRITICAL for the operation of the SetList set/superset functionality
      * 2. Exercizes and Equip/Gear lists need to be populated at the same time
      */
-    var List<int> Exercises { get; set; } = new List<int>();
+    var Exercises = [Int]()
     
     var Sets: WorkoutStructure
     
     /*
      *should be populated when the exercize list is populated as this is set from that list
      */
-    var List<int> Equip { get; private set; }
+    var Equip = [Int]()
 
-    
-    public override string ToString()
-{
-    return "ID: " + ID.ToString() + ", EquipList.Count = " + Equip.Count;
-    }
-    
-    public void setTargetAndType(double trgt, SetType stype)
+    func setTargetAndType(trgt: Double, stype: SetType)
 {
     Target = trgt;
     TargetType = stype;
     }
     
-    private void populateEquipmentList()
+    func populateEquipmentList()
 {
-    foreach (int e in Exercises)
+    for e in Exercises
     {
     /*   foreach (int g in e.MyGear)
      {
@@ -60,28 +51,26 @@ class Workout
     //MARK: Constructor
     init(nombre: String)
 {
-    ID = NetCount;
-    
-    Name.Add(name, lang);
-    
-    NetCount++;
+    ID += 1;
+    Name = nombre;
     }
     
-    public Workout(MisIdiomas lang, string name, string description): this(lang, name)
+    convenience init( name: String, description: String)
 {
-    this.Description.Add(description, lang);
+    self.init(nombre: name)
+    Description = description;
     }
     
-    public Workout(MisIdiomas lang, string name, string description, string instruct): this(lang, name, description)
+    convenience init(name: String, descript: String,  instruct: String)
 {
+    self.init(name: name, description: descript)
     if(instruct == "")
     {
-    Instructions.Add("Perform each exercise at high intensity for the prescribed sets and repetitions to complete one round.", MisIdiomas.EN);
+    Instructions = "Perform each exercise at high intensity for the prescribed sets and repetitions to complete one round.";
     }
     else
     {
-    Instructions.Add(instruct, lang);
+    Instructions = instruct;
     }
     }
-
 }

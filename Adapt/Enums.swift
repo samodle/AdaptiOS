@@ -8,6 +8,22 @@
 
 import Foundation
 
+enum SetType {
+    case rep
+    case Tsec
+    case Tmin
+    case distMi
+    case distKm
+    case distM
+    case NA }
+
+enum WorkoutType {
+    case superset
+    case fortime
+    case NA
+    
+}
+
 enum Tier1MuscleGroup{
     case arms
     case legs
