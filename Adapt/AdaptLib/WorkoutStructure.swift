@@ -21,7 +21,7 @@ class WorkoutStructure
     var DoIHaveDistances : Bool = false;
     var DoIHaveReps: Bool = false;
     
-    func addSets(sets: [Int](), List<double> data, List<SetType> types, n: Int)
+    func addSets(sets: [Int], data: [Double], types: [SetType], n: Int)
 {
     List<Tuple<int, double, SetType>> x = new List<Tuple<int, double, SetType>>();
     for (int i = 0; i < sets.Count; i++)
@@ -34,11 +34,11 @@ class WorkoutStructure
     }
     }
     
-    func addSetsAndReps(sets: [Int](), List<double> reps: [Double](, n: Int)
+    func addSetsAndReps(sets: [Int], reps: [Double], n: Int) throws
 {
-    if (sets.Count != reps.Count)
+    if (sets.count != reps.count)
     {
-    throw new Exception(TheSourceCode.RandoErrorMessageOpener() + " Set list and rep list have different counts!");
+        throw GenericError.countMismatch
     } //err
     
     List<Tuple<int, double, SetType>> x = new List<Tuple<int, double, SetType>>();
@@ -53,7 +53,7 @@ class WorkoutStructure
     DoIHaveReps = true;
     }
     
-    public void addSetsAndTimes(List<int> sets, List<double> times, int n, SetType st)
+    public void addSetsAndTimes(sets: [Int], times: [Double], n: Int, st: SetType)
 {
     if (sets.Count != times.Count) { throw new Exception("HOLY SMOKES! Time list and set list have different counts - this ain't gonna work!"); } //err
     List<Tuple<int, double, SetType>> x = new List<Tuple<int, double, SetType>>();
@@ -67,12 +67,12 @@ class WorkoutStructure
     }
     }
     
-    public void addSetsAndReps(List<int> sets, List<double> reps)
+    func addSetsAndReps(sets: [Int], reps: [Double])
 {
-    addSetsAndReps(sets, reps, n: 1);
+    addSetsAndReps(sets: sets, reps: reps, n: 1);
     }
     
-    public WorkoutStructure(bool anyTimes, bool anyDistances)
+    func WorkoutStructure(anyTimes: Bool, anyDistances: Bool)
 {
     if (anyTimes)
     {
