@@ -37,7 +37,7 @@ class Workout
     TargetType = stype;
     }
     
-    func populateEquipmentList()
+ /*   func populateEquipmentList()
 {
     for e in Exercises
     {
@@ -46,7 +46,7 @@ class Workout
      if (!Equip.Contains(g)) { Equip.Add(g); }
      }  */
     }
-    }
+    } */
     
     //MARK: Constructor
     init(nombre: String)

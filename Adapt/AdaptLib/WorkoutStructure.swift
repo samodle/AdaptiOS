@@ -13,7 +13,7 @@ class WorkoutStructure
     //defines the set and/or superset structure of the workout. ints are indexes of the workout in the exercise list
     //Tuple<workout index, amount, type>
     //TODO: Fix this list
-   // public List<List<Tuple<int, double, SetType>>> SetList { get; private set; } = new List<List<Tuple<int, double, SetType>>>();
+    public List<List<Tuple<int, double, SetType>>> SetList { get; private set; } = new List<List<Tuple<int, double, SetType>>>();
     
     var WType: WorkoutType = WorkoutType.superset;
     
