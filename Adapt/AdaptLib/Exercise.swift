@@ -17,21 +17,33 @@ class Exercise
     var Description: String?
     var Instructions: String?
     
-    var DoIHaveReps: Bool //is this a type of exercise that has a prescribed # of reps?
+    var DoIHaveReps: Bool = false //is this a type of exercise that has a prescribed # of reps?
     
     var PrimaryMuscleGroup: Tier1MuscleGroup?
     var SecondaryMuscleGroup: Tier2MuscleGroup?
     
+    var WeightInfo: WeightStatus
     
     //MARK: constructor
     
     init( name: String, eParams: ExerciseParams){
         Name = name;
         PrimaryMuscleGroup = eParams.PrimaryMuscle;
+        SecondaryMuscleGroup = eParams.SecondaryMuscle
+        Description = eParams.Description
+        Instructions = eParams.Instruction
+        WeightInfo = eParams.doIUseWeights
+       // DoIHaveReps = false
+    }
+    
+    init( eParams: ExerciseParams, name: String, instructions: String){
+        Name = name;
+        PrimaryMuscleGroup = eParams.PrimaryMuscle;
         SecondaryMuscleGroup = eParams.SecondaryMuscle;
         Description = eParams.Description;
         Instructions = eParams.Instruction;
     }
+    
     /*
     public Exercise(MisIdiomas l, string name, string description, Tier1Muscle m1)
 {

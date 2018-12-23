@@ -37,6 +37,7 @@ enum Tier2MuscleGroup{
     case biceps
     case triceps
     case forearms
+    case NA
 }
 
 enum WorkoutEquipment {

@@ -17,12 +17,20 @@ class ExerciseParams{
     var Instruction: String
     
     //MARK: Constructor
-    init(w: WeightStatus, m1: Tier1MuscleGroup, m2: Tier2MuscleGroup, desc: String, instruct: String, weightStat: WeightStatus) {
+    init(w: WeightStatus, m1: Tier1MuscleGroup, m2: Tier2MuscleGroup, desc: String, instruct: String) {
         doIUseWeights = w;
         PrimaryMuscle = m1;
         SecondaryMuscle = m2;
         Description = desc;
         Instruction = instruct;
-        doIUseWeights = weightStat;
+    }
+    
+    init(m1: Tier1MuscleGroup,w: WeightStatus )
+    {
+        doIUseWeights = w
+        PrimaryMuscle = m1
+        SecondaryMuscle = Tier2MuscleGroup.NA
+        Description = ""
+        Instruction = ""
     }
 }

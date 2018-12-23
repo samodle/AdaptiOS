@@ -54,13 +54,14 @@ class WorkoutStructure
    //     throw GenericError.countMismatch
    // } //err
     
-    List<Tuple<int, double, SetType>> x = new List<Tuple<int, double, SetType>>();
+   // List<Tuple<int, double, SetType>> x = new List<Tuple<int, double, SetType>>();
+    var x = [(workoutIndex: Int, amount: Double, type: SetType)]()
     
    // for (int i = 0; i < sets.Count; i++)
     var i = 0
         while i < sets.count
     {
-    x.Add(new Tuple<int, double, SetType>(sets[i], reps[i], SetType.rep));
+    x+=[(sets[i], reps[i], SetType.rep)]
    i += 1
     }
     
@@ -78,13 +79,13 @@ class WorkoutStructure
     func addSetsAndTimes(sets: [Int], times: [Double], n: Int, st: SetType)
 {
    // if (sets.Count != times.Count) { throw new Exception("HOLY SMOKES! Time list and set list have different counts - this ain't gonna work!"); } //err
-    List<Tuple<int, double, SetType>> x = new List<Tuple<int, double, SetType>>();
+    var x = [(workoutIndex: Int, amount: Double, type: SetType)]()
     
     var i = 0
    // for (int i = 0; i < sets.Count; i++)
     while i < sets.count
     {
-    x.Add(new Tuple<int, double, SetType>(sets[i], times[i], st));
+    x += [(sets[i], times[i], st)]
     i += 1
     }
     
@@ -93,7 +94,8 @@ class WorkoutStructure
     while i2 < n
    // for (int i = 0; i < n; i++)
     {
-    SetList.Add(x);
+    //SetList.Add(x);
+        x += SetList
         i2 += 1
     }
     }
