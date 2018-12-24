@@ -16,6 +16,8 @@ class Exercise
     var Name: String?
     var Description: String?
     var Instructions: String?
+    static var sharedID: Int = 0;
+    var ID: Int = 0;
     
     var DoIHaveReps: Bool = false //is this a type of exercise that has a prescribed # of reps?
     
@@ -34,6 +36,8 @@ class Exercise
         Instructions = eParams.Instruction
         WeightInfo = eParams.doIUseWeights
        // DoIHaveReps = false
+        ID = Exercise.sharedID
+        Exercise.sharedID += 1
     }
     
     init( eParams: ExerciseParams, name: String, instructions: String){
@@ -42,6 +46,9 @@ class Exercise
         SecondaryMuscleGroup = eParams.SecondaryMuscle;
         Description = eParams.Description;
         Instructions = eParams.Instruction;
+        WeightInfo = eParams.doIUseWeights
+        ID = Exercise.sharedID
+        Exercise.sharedID += 1
     }
     
     /*

@@ -10,10 +10,11 @@ import Foundation
 
 class Workout
 {
+    static var sharedID: Int = 0
     var ID: Int  = 0
     var Name: String
-    var Description: String
-    var Instructions: String
+    var Description: String = ""
+    var Instructions: String = ""
     
     var Target: Double = -1
     var TargetType: SetType = SetType.NA
@@ -24,7 +25,7 @@ class Workout
      */
     var Exercises = [Int]()
     
-    var Sets: WorkoutStructure
+    var Sets: WorkoutStructure?
     
     /*
      *should be populated when the exercize list is populated as this is set from that list
@@ -51,7 +52,8 @@ class Workout
     //MARK: Constructor
     init(nombre: String)
 {
-    ID += 1;
+    ID = Exercise.sharedID
+    Exercise.sharedID += 1
     Name = nombre;
     }
     

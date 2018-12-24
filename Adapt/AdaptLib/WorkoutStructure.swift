@@ -116,4 +116,13 @@ class WorkoutStructure
     DoIHaveDistances = true;
     }
     }
+    
+    //MARK: Constructor
+    init(anyTimes: Bool, anyDistances: Bool){
+        self.DoIHaveTimes = anyTimes
+        self.DoIHaveDistances = anyDistances
+    }
+    
+    
+    
 }
