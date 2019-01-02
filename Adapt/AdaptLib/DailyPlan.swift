@@ -24,6 +24,11 @@ class DailyPlan
     }  */
     
     
+    init(){
+        isOff = true
+    }
+    
+    
     init(work: [Workout])
 {
     isOff = false;

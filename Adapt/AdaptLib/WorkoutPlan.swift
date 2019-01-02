@@ -18,5 +18,12 @@ class WorkoutPlan
 {
     Name = name
     }
+    
+    
+   // func addPlan(workoutList: [])
+   // {
+        
+   // }
+    
 }
 

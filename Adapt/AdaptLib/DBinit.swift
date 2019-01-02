@@ -101,116 +101,116 @@ func setMasterLists()
 //    #region MMA Exercises
     ps =  ExerciseParams(m1: Tier1MuscleGroup.arms,w: WeightStatus.required )
     
-    var m1 = Exercise(eParams: ps,  name: "1: Lead Jab", instructions: "point with thumb and aim with front two knuckles. move body w/ arm")
-    var m2 =  Exercise(eParams: ps,  name: "2: Back Straight Punch", instructions: "point with thumb and aim with front two knuckles, twist and use your body while making a straight, quick motion with your back arm");
-    var m3 =  Exercise(eParams: ps,  name: "3: Lead Hook", instructions: "Imagine a string running from your wrist through your elbow and knee so the whole body punches together, not just the arm");
-    var m4 =  Exercise(eParams: ps,  name: "4: Back Hook", instructions: "big power, think haymaker");
-    var mu =  Exercise(eParams: ps,  name: "Uppercut", instructions: "bend at the knees putting weight in butt and punch up with the following hand (opposite hand of whatever punched last)");
-    var mkn =  Exercise(eParams: ps,  name: "Knee Strike", instructions: "Knee straight up, toes pointed down. Bring arms up then down as if grabbing an opponent. ");
-    var mfk =  Exercise(eParams: ps,  name: "Front Kick", instructions: "push kick, ball of foot up");
-    var mj =  Exercise(eParams: ps,  name: "Jump Rope", instructions: "");
-    var mdu =  Exercise(eParams: ps,  name: "Duck", instructions: "quickly squat down, putting weight in butt, before returning to starting position");
-    var m10 =  Exercise(eParams: ps,  name: "Punch It Out", instructions: "Constant 12 punches for time");
-    var mdl =  Exercise(eParams: ps,  name: "Double Lunge", instructions: "alternate starting leg, lunch forward then quickly follow through into second sprinting lunge step");
-    var mds =  Exercise(eParams: ps,  name: "Dodge Squat", instructions: "hands up, move torso repeatedly side to side while slowly lowering body into and out of a squat");
-    var msp =  Exercise(eParams: ps,  name: "Sprawl", instructions: "similar to modified squat thrust or up-downs");
-    var mupa =  Exercise(eParams: ps,  name: "Double Upa Sit Up", instructions: "situp then one upa to each side");
+    let m1 = Exercise(eParams: ps,  name: "1: Lead Jab", instructions: "point with thumb and aim with front two knuckles. move body w/ arm")
+    let m2 =  Exercise(eParams: ps,  name: "2: Back Straight Punch", instructions: "point with thumb and aim with front two knuckles, twist and use your body while making a straight, quick motion with your back arm");
+    let m3 =  Exercise(eParams: ps,  name: "3: Lead Hook", instructions: "Imagine a string running from your wrist through your elbow and knee so the whole body punches together, not just the arm");
+    let m4 =  Exercise(eParams: ps,  name: "4: Back Hook", instructions: "big power, think haymaker");
+    let mu =  Exercise(eParams: ps,  name: "Uppercut", instructions: "bend at the knees putting weight in butt and punch up with the following hand (opposite hand of whatever punched last)");
+    let mkn =  Exercise(eParams: ps,  name: "Knee Strike", instructions: "Knee straight up, toes pointed down. Bring arms up then down as if grabbing an opponent. ");
+    let mfk =  Exercise(eParams: ps,  name: "Front Kick", instructions: "push kick, ball of foot up");
+    let mj =  Exercise(eParams: ps,  name: "Jump Rope", instructions: "");
+    let mdu =  Exercise(eParams: ps,  name: "Duck", instructions: "quickly squat down, putting weight in butt, before returning to starting position");
+    let m10 =  Exercise(eParams: ps,  name: "Punch It Out", instructions: "Constant 12 punches for time");
+    let mdl =  Exercise(eParams: ps,  name: "Double Lunge", instructions: "alternate starting leg, lunch forward then quickly follow through into second sprinting lunge step");
+    let mds =  Exercise(eParams: ps,  name: "Dodge Squat", instructions: "hands up, move torso repeatedly side to side while slowly lowering body into and out of a squat");
+    let msp =  Exercise(eParams: ps,  name: "Sprawl", instructions: "similar to modified squat thrust or up-downs");
+    let mupa =  Exercise(eParams: ps,  name: "Double Upa Sit Up", instructions: "situp then one upa to each side");
 
     
     //MARK: Core Exercises
     ps = ExerciseParams(m1: Tier1MuscleGroup.core, w: WeightStatus.none)
     ps2 = ExerciseParams(m1: Tier1MuscleGroup.core, w: WeightStatus.optional)
     
-    var a0 =  Exercise(eParams: ps,  name: "Star Crunch", instructions: "Start on your back with arms and legs splayed straight out and 6in off the ground like a starfish. While lifting your knees to your chest, pull your arms as far down past your butt as you can, then return to the starting position.");
+    let a0 =  Exercise(eParams: ps,  name: "Star Crunch", instructions: "Start on your back with arms and legs splayed straight out and 6in off the ground like a starfish. While lifting your knees to your chest, pull your arms as far down past your butt as you can, then return to the starting position.");
     
-    var a1 =  Exercise(eParams: ps,  name: "Elbow Plank", instructions: "Hold your body straight, parallel to the ground resting on your feet and elbows.");
+    let a1 =  Exercise(eParams: ps,  name: "Elbow Plank", instructions: "Hold your body straight, parallel to the ground resting on your feet and elbows.");
    // a1.Aliases.Add( AdaptText("low plank", MisIdiomas.EN));
     
-    var a2 =  Exercise(eParams: ps,  name: "Raised Feet Elbow Plank", instructions: "Hold your body straight, parallel to the ground resting on your feet on a chair or raised surface and your elbows on the ground.");
+    let a2 =  Exercise(eParams: ps,  name: "Raised Feet Elbow Plank", instructions: "Hold your body straight, parallel to the ground resting on your feet on a chair or raised surface and your elbows on the ground.");
     
-    var a3 =  Exercise(eParams: ps,  name: "Windshield Wiper", instructions: "Start on your back with your legs at a 90 degree angle to your torso.  Feet make a V motion coming up on alternating sides of your hands.");
+    let a3 =  Exercise(eParams: ps,  name: "Windshield Wiper", instructions: "Start on your back with your legs at a 90 degree angle to your torso.  Feet make a V motion coming up on alternating sides of your hands.");
     a3.WeightInfo = WeightStatus.preferred;
     
-    var a4 =  Exercise(eParams: ps2,  name: "Hip-Up + Reach Crunch", instructions: "Start lying on your back with legs straight up. Alternate between hip up and reach crunch."); //up with legs then arms
+    let a4 =  Exercise(eParams: ps2,  name: "Hip-Up + Reach Crunch", instructions: "Start lying on your back with legs straight up. Alternate between hip up and reach crunch."); //up with legs then arms
     
-    var a5 =  Exercise(eParams: ps,  name: "Hip-Ups", instructions: "While lying on your back push your legs as high as you can, lifting your hips off the ground");
+    let a5 =  Exercise(eParams: ps,  name: "Hip-Ups", instructions: "While lying on your back push your legs as high as you can, lifting your hips off the ground");
     
-    var a6 =  Exercise(eParams: ps,  name: "Double Crunch w/ Leg Spread", instructions: "Hands on head crunch your upper half while bending knees to crunch lower half.");
+    let a6 =  Exercise(eParams: ps,  name: "Double Crunch w/ Leg Spread", instructions: "Hands on head crunch your upper half while bending knees to crunch lower half.");
     
-    var a7 =  Exercise(eParams: ps,  name: "Standing Straight Crunch", instructions: "Stand straight with arms extended straight above head. One leg at a time, kick straight out as high as possible while reaching as low as you can with both arms.");
+    let a7 =  Exercise(eParams: ps,  name: "Standing Straight Crunch", instructions: "Stand straight with arms extended straight above head. One leg at a time, kick straight out as high as possible while reaching as low as you can with both arms.");
     
-    var a8 =  Exercise(eParams: ps,  name: "Standing Twist Crunch", instructions: "With your hands on your head, alternate touching opposite knee to elbow.");
+    let a8 =  Exercise(eParams: ps,  name: "Standing Twist Crunch", instructions: "With your hands on your head, alternate touching opposite knee to elbow.");
     
-    var a9 =  Exercise(eParams: ps,  name: "Side/Oblique Crunches",instructions: "Standing hands on head, as leg kicks out to side torso bends in that direction");
+    let a9 =  Exercise(eParams: ps,  name: "Side/Oblique Crunches",instructions: "Standing hands on head, as leg kicks out to side torso bends in that direction");
     
-    var a10 =  Exercise(eParams: ps2,  name: "Standing Twists", instructions: "Knees Bent + Weight In Butt, twist torso back and forth focusing on tight quick turns.");
+    let a10 =  Exercise(eParams: ps2,  name: "Standing Twists", instructions: "Knees Bent + Weight In Butt, twist torso back and forth focusing on tight quick turns.");
     
-    var a11 =  Exercise(eParams: ps2,  name: "Standing Chop", instructions: "One Leg At A Time Knee Thrusts Up While Arm Thrusts Down");
+    let a11 =  Exercise(eParams: ps2,  name: "Standing Chop", instructions: "One Leg At A Time Knee Thrusts Up While Arm Thrusts Down");
     
-    var a12 =  Exercise(eParams: ps,  name: "High Plank Knee to Elbows", instructions: "From high plank position one at a time bring each leg outward one at a time, trying to get your knee as close to your shoulder as possible w/o comprops, Mising the plank position.");
+    let a12 =  Exercise(eParams: ps,  name: "High Plank Knee to Elbows", instructions: "From high plank position one at a time bring each leg outward one at a time, trying to get your knee as close to your shoulder as possible w/o comprops, Mising the plank position.");
     
     //can be done w med ball
-    var a13 =  Exercise(eParams: ps2,  name: "Lying Leg Raise + Crunch", instructions: "Start laying flat with arms and legs fully extended. Bring your straight arms and legs up to try and form a 90 degree angle from your original torso position from each.");
-    var b44 =  Exercise(eParams: ps,  name: "Lying Knee Raise + Crunch", instructions: "Start laying flat with arms and legs fully extended. Bring your straight arms and knees up (bent 90 degrees, or as comfortable) to try and form a 90 degree angle from your original torso position to your knees.");
-    var a14 =  Exercise(eParams: ps,  name: "High Plank: Shoulder Touches", instructions: "From high plank position, alternate touching your left palm to your right shoulder then right palm to left shoulder.");
+    let a13 =  Exercise(eParams: ps2,  name: "Lying Leg Raise + Crunch", instructions: "Start laying flat with arms and legs fully extended. Bring your straight arms and legs up to try and form a 90 degree angle from your original torso position from each.");
+    let b44 =  Exercise(eParams: ps,  name: "Lying Knee Raise + Crunch", instructions: "Start laying flat with arms and legs fully extended. Bring your straight arms and knees up (bent 90 degrees, or as comfortable) to try and form a 90 degree angle from your original torso position to your knees.");
+    let a14 =  Exercise(eParams: ps,  name: "High Plank: Shoulder Touches", instructions: "From high plank position, alternate touching your left palm to your right shoulder then right palm to left shoulder.");
     
-    var a15 =  Exercise(eParams: ps,  name: "Lying Leg Twist", instructions: "Starting on your back with legs straight up, rotate your waste to form an arc with your feet");
+    let a15 =  Exercise(eParams: ps,  name: "Lying Leg Twist", instructions: "Starting on your back with legs straight up, rotate your waste to form an arc with your feet");
     
-    var a16 =  Exercise(eParams: ps,  name: "Lying Knee Twist", instructions: "Perform a lying leg twist with your legs bent at the knee as much as needed.");
+    let a16 =  Exercise(eParams: ps,  name: "Lying Knee Twist", instructions: "Perform a lying leg twist with your legs bent at the knee as much as needed.");
     
-    var a17 =  Exercise(eParams: ps2,  name: "Russian Twists", instructions: "While sitting lean torso back to achieve 90 degree angle w knees w feet resting on ground. Rotate upper body.");
+    let a17 =  Exercise(eParams: ps2,  name: "Russian Twists", instructions: "While sitting lean torso back to achieve 90 degree angle w knees w feet resting on ground. Rotate upper body.");
     
-    var a18 =  Exercise(eParams: ps,  name: "Standing Side Crunches", instructions: "Place hands on head, bent knees to put weight in butt.  Bend side to side trying to touch your elbow to your knee.");
+    let a18 =  Exercise(eParams: ps,  name: "Standing Side Crunches", instructions: "Place hands on head, bent knees to put weight in butt.  Bend side to side trying to touch your elbow to your knee.");
     
-    var a19 =  Exercise(eParams: ps2,  name: "Standing Reach", instructions: "While standing, reach as high as possible with one arm and thrust the knee on that side of your body into your chest at the same time.");
+    let a19 =  Exercise(eParams: ps2,  name: "Standing Reach", instructions: "While standing, reach as high as possible with one arm and thrust the knee on that side of your body into your chest at the same time.");
     
-    var a21 =  Exercise(eParams: ps,  name: "Twist Crunch", instructions: "sitting cruch w twist knee to elbow, alterating sides. optional legs up on chair");
+    let a21 =  Exercise(eParams: ps,  name: "Twist Crunch", instructions: "sitting cruch w twist knee to elbow, alterating sides. optional legs up on chair");
     
-    var a22 =  Exercise(eParams: ps,  name: "Upward Hip Thrusters", instructions: "sitting cruch position hip thrusters, optional legs on chair");
+    let a22 =  Exercise(eParams: ps,  name: "Upward Hip Thrusters", instructions: "sitting cruch position hip thrusters, optional legs on chair");
     
-    var a23 =  Exercise(eParams: ps,  name: "Leg Raise + Split", instructions: "Lying down, perform a 0-90 leg raise. When you return to the bottom position, bring both legs out then back in.");
+    let a23 =  Exercise(eParams: ps,  name: "Leg Raise + Split", instructions: "Lying down, perform a 0-90 leg raise. When you return to the bottom position, bring both legs out then back in.");
     
-    var a24 =  Exercise(eParams: ps2,  name: "Inverted Toe Touches", instructions: "While laying down with legs straight up, reach up for the sky! (Shoulder blades off ground)");
+    let a24 =  Exercise(eParams: ps2,  name: "Inverted Toe Touches", instructions: "While laying down with legs straight up, reach up for the sky! (Shoulder blades off ground)");
     //a24.Aliases.Add( AdaptText("Legs Up Toe Touches", MisIdiomas.EN));
     
-    var a25 =  Exercise(eParams: ps2,  name: "Full Body Iso Hold", instructions: "lying flat on back, legs head and arms held still ~6in off the ground");
+    let a25 =  Exercise(eParams: ps2,  name: "Full Body Iso Hold", instructions: "lying flat on back, legs head and arms held still ~6in off the ground");
     
-    var a26 =  Exercise(eParams: ps,  name: "Downward Hip Thrusters", instructions: "From the low plank position, thrust your hips up and down essentially in a humping motion. It looks funny but you won't be laughing for long.");
+    let a26 =  Exercise(eParams: ps,  name: "Downward Hip Thrusters", instructions: "From the low plank position, thrust your hips up and down essentially in a humping motion. It looks funny but you won't be laughing for long.");
     
-    var a27 =  Exercise(eParams: ps,  name: "Crunch", instructions: "Laying on back with knees up, hold weight on chest and lift both shoulder blades off the ground.");
+    let a27 =  Exercise(eParams: ps,  name: "Crunch", instructions: "Laying on back with knees up, hold weight on chest and lift both shoulder blades off the ground.");
    // a27.WeightsNeeded = WeightStatus.preferred;
     a27.WeightInfo = WeightStatus.preferred
     
-    var a40 =  Exercise(eParams: ps,  name: "Reach Crunch", instructions: "Laying on back with knees up and feed on ground,  lift both shoulder blades off the ground reaching as straight up as possible.");
+    let a40 =  Exercise(eParams: ps,  name: "Reach Crunch", instructions: "Laying on back with knees up and feed on ground,  lift both shoulder blades off the ground reaching as straight up as possible.");
     a40.WeightInfo = WeightStatus.optional;
     
-    var a28 =  Exercise(eParams: ps2,  name: "Sprinter", instructions: "sitting, opposite elbow to knee. Lean torso back to achieve 90 degree angle w knees w feet resting on ground.");
+    let a28 =  Exercise(eParams: ps2,  name: "Sprinter", instructions: "sitting, opposite elbow to knee. Lean torso back to achieve 90 degree angle w knees w feet resting on ground.");
     
-    var a29 =  Exercise(eParams: ps,  name: "High Plank: Knee To Chest", instructions: "From high plank position alternate bringing one knee to your chest and then rotate it in and back out");
+    let a29 =  Exercise(eParams: ps,  name: "High Plank: Knee To Chest", instructions: "From high plank position alternate bringing one knee to your chest and then rotate it in and back out");
     
-    var a30 =  Exercise(eParams: ps,  name: "6 Inches: Legs", instructions: "laying on back legs six inches off the ground");
+    let a30 =  Exercise(eParams: ps,  name: "6 Inches: Legs", instructions: "laying on back legs six inches off the ground");
     
-    var a31 =  Exercise(eParams: ps,  name: "0-45 Leg Raise", instructions: "While on your back move your straight legs from just above the ground (0 position) to where they make a 45 degree angle with your torso");
+    let a31 =  Exercise(eParams: ps,  name: "0-45 Leg Raise", instructions: "While on your back move your straight legs from just above the ground (0 position) to where they make a 45 degree angle with your torso");
     
-    var a32 =  Exercise(eParams: ps,  name: "45-90 Leg Raise", instructions: "While on your back move your straight legs from where they make a 45 degree angle with your torso to where they make a 90 degree angle with your torso");
+    let a32 =  Exercise(eParams: ps,  name: "45-90 Leg Raise", instructions: "While on your back move your straight legs from where they make a 45 degree angle with your torso to where they make a 90 degree angle with your torso");
     
-    var a33 =  Exercise(eParams: ps,  name: "0-90 Leg Raise", instructions: "While on your back move your straight legs from just above the ground (0 position) to where they make a 90 degree angle with your torso");
+    let a33 =  Exercise(eParams: ps,  name: "0-90 Leg Raise", instructions: "While on your back move your straight legs from just above the ground (0 position) to where they make a 90 degree angle with your torso");
     
-    var a34 =  Exercise(eParams: ps,  name: "0-90 Knee Raise", instructions: "While on your back move your knees from just above the ground (0 position) to where they make a 90 degree angle with your torso. Keep legs bent as much as needed to complete the exercise.");
+    let a34 =  Exercise(eParams: ps,  name: "0-90 Knee Raise", instructions: "While on your back move your knees from just above the ground (0 position) to where they make a 90 degree angle with your torso. Keep legs bent as much as needed to complete the exercise.");
     
-    var a35 =  Exercise(eParams: ps,  name: "The Clam", instructions: "Place hands to the side of your head and the souls of your feet together.  Crunch your legs upward and lift your shoulder blades off the ground.");
+    let a35 =  Exercise(eParams: ps,  name: "The Clam", instructions: "Place hands to the side of your head and the souls of your feet together.  Crunch your legs upward and lift your shoulder blades off the ground.");
     
-    var a36 =  Exercise(eParams: ps,  name: "Scissor Kicks", instructions: "Laying flat on back simultaneuosly kick legs laterally in opposite directions working the lower abdominal muscles");
+    let a36 =  Exercise(eParams: ps,  name: "Scissor Kicks", instructions: "Laying flat on back simultaneuosly kick legs laterally in opposite directions working the lower abdominal muscles");
   //  a36.Aliases.Add( AdaptText("leg crossovers", MisIdiomas.EN));
   //  a36.Aliases.Add( AdaptText("side to side kicks", MisIdiomas.EN));
     
-    var a20 =  Exercise(eParams: ps,  name: "Elbow Side Plank w/ Dips", instructions: "Resting on your side on one elbow and your feet, repeatedly dip your hips down and up.");
+    let a20 =  Exercise(eParams: ps,  name: "Elbow Side Plank w/ Dips", instructions: "Resting on your side on one elbow and your feet, repeatedly dip your hips down and up.");
     
-    var a37 =  Exercise(eParams: ps,  name: "Elbow Side Knee Plank w/ Dips", instructions: "Resting on your side on one elbow and your feet");
+    let a37 =  Exercise(eParams: ps,  name: "Elbow Side Knee Plank w/ Dips", instructions: "Resting on your side on one elbow and your feet");
     
-    var a38 =  Exercise(eParams: ps,  name: "Elbow Side Plank", instructions: "Resting on your side on one elbow and your feet");
+    let a38 =  Exercise(eParams: ps,  name: "Elbow Side Plank", instructions: "Resting on your side on one elbow and your feet");
     
-    var a39 =  Exercise(eParams: ps,  name: "Elbow Side Knee Plank", instructions: "Resting on your side on one elbow and your knees");
+    let a39 =  Exercise(eParams: ps,  name: "Elbow Side Knee Plank", instructions: "Resting on your side on one elbow and your knees");
     
     //nordic track, plank reach twists, situp twist down
 
@@ -218,167 +218,167 @@ func setMasterLists()
 //    #region Gym Exercises
     ps =  ExerciseParams(m1: Tier1MuscleGroup.arms, w: WeightStatus.required);
     ps2 =  ExerciseParams(m1: Tier1MuscleGroup.arms, w: WeightStatus.optional);
-    var ps3 =  ExerciseParams(m1: Tier1MuscleGroup.back, w: WeightStatus.required);
+    let ps3 =  ExerciseParams(m1: Tier1MuscleGroup.back, w: WeightStatus.required);
     
     //To Do - add property for does it 50-50 or 7-7-7 (partial partial whole) etc - or 3-3-3 (up hold down)
     
     //cardio
-    var c0 =  Exercise(eParams: ps,  name: "Jog",instructions: "");
-    var c1 =  Exercise(eParams: ps,  name: "Walk",instructions: "");
-    var c2 =  Exercise(eParams: ps,  name: "Sprint", instructions: "Run as fast as you can!");
+    let c0 =  Exercise(eParams: ps,  name: "Jog",instructions: "");
+    let c1 =  Exercise(eParams: ps,  name: "Walk",instructions: "");
+    let c2 =  Exercise(eParams: ps,  name: "Sprint", instructions: "Run as fast as you can!");
     
-    var c4 =  Exercise(eParams: ps,  name: "Jog Stairs - Every Step",instructions: "");
-    var c5 =  Exercise(eParams: ps,  name: "Sprint Stairs - Every Step",instructions: "");
-    var c6 =  Exercise(eParams: ps,  name: "Jog Stairs - Every Other Step",instructions: "");
-    var c7 =  Exercise(eParams: ps,  name: "Sprint Stairs - Every Other Step",instructions: "");
-    var c8 =  Exercise(eParams: ps,  name: "Stretch Stairs - Every Third Step",instructions: "");
+    let c4 =  Exercise(eParams: ps,  name: "Jog Stairs - Every Step",instructions: "");
+    let c5 =  Exercise(eParams: ps,  name: "Sprint Stairs - Every Step",instructions: "");
+    let c6 =  Exercise(eParams: ps,  name: "Jog Stairs - Every Other Step",instructions: "");
+    let c7 =  Exercise(eParams: ps,  name: "Sprint Stairs - Every Other Step",instructions: "");
+    let c8 =  Exercise(eParams: ps,  name: "Stretch Stairs - Every Third Step",instructions: "");
     
-    var a99 =  Exercise(eParams: ps,  name: "Split Jumps", instructions: "");
+    let a99 =  Exercise(eParams: ps,  name: "Split Jumps", instructions: "");
    // a99.Aliases.Add( AdaptText("Scissor Jumps", MisIdiomas.EN));
-    var b3 =  Exercise(eParams: ps,  name: "Forward/ Back Hops", instructions: "");
-    var b4 =  Exercise(eParams: ps,  name: "Lateral Hops", instructions: "");
-    var c3 =  Exercise(eParams: ps,  name: "Rest",instructions: "");
-    var b27 =  Exercise(eParams: ps,  name: "Broad Jump + Knee Tuck", instructions: "");
-    var b46 =  Exercise(eParams: ps,  name: "Hurdle Broad Jumps", instructions: ""); //requires a hurdle...
+    let b3 =  Exercise(eParams: ps,  name: "Forward/ Back Hops", instructions: "");
+    let b4 =  Exercise(eParams: ps,  name: "Lateral Hops", instructions: "");
+    let c3 =  Exercise(eParams: ps,  name: "Rest",instructions: "");
+    let b27 =  Exercise(eParams: ps,  name: "Broad Jump + Knee Tuck", instructions: "");
+    let b46 =  Exercise(eParams: ps,  name: "Hurdle Broad Jumps", instructions: ""); //requires a hurdle...
     
     //upper body
-    var a41 =  Exercise(eParams: ps,  name: "Incline Chest Press", instructions: "");
-    var a42 =  Exercise(eParams: ps,  name: "Incline Dumbbell Supported Row", instructions: "");
-    var b14 =  Exercise(eParams: ps,  name: "Supinated Grip Barbell Bent-over Row", instructions: "");
-    var a44 =  Exercise(eParams: ps,  name: "Dumbbell Upright Row", instructions: "");
-    var a43 =  Exercise(eParams: ps,  name: "Dumbbell Arnold Press", instructions: "");
-    var a45 =  Exercise(eParams: ps,  name: "Cable Crossovers", instructions: "");
-    var a46 =  Exercise(eParams: ps,  name: "Low Rope Face Pulls", instructions: "");
-    var a53 =  Exercise(eParams: ps,  name: "Curl", instructions: "");
-    var a54 =  Exercise(eParams: ps,  name: "Reverse EZ Bar Curl", instructions: "");
-    var a55 =  Exercise(eParams: ps,  name: "Low Rope Hammer Curl", instructions: "");
-    var a57 =  Exercise(eParams: ps,  name: "Incline DB Skullcrusher", instructions: "");
-    var a58 =  Exercise(eParams: ps,  name: "Close Grip Bench Press", instructions: "");
-    var a63 =  Exercise(eParams: ps,  name: "50-50 Curls", instructions: "4 x 20 (10 lower half + 10 upper half)");
-    var a64 =  Exercise(eParams: ps,  name: "DB California Skullcrusher", instructions: "");
-    var a67 =  Exercise(eParams: ps,  name: "7-7-7 Dips", instructions: "");
-    var a89 =  Exercise(eParams: ps,  name: "Dips", instructions: "");
-    var a56 =  Exercise(eParams: ps,  name: "Bench Dips", instructions: "");
-    var a65 =  Exercise(eParams: ps,  name: "7-7-7 Pull-ups", instructions: "");
-    var b33 =  Exercise(eParams: ps,  name: "Negative Pull-ups", instructions: "");
-    var b39 =  Exercise(eParams: ps,  name: "Jumping Pull-ups", instructions: "");
-    var a92 =  Exercise(eParams: ps,  name: "Supinated Grip Pull-Ups", instructions: "");
-    var b2 =  Exercise(eParams: ps,  name: "TRX or Barbell Inverted Pull-ups", instructions: "");
-    var a83 =  Exercise(eParams: ps,  name: "Pike Push-up", instructions: "");
-    var b23 =  Exercise(eParams: ps,  name: "Push-up On Bar", instructions: "");
-    var a84 =  Exercise(eParams: ps,  name: "Elevated Wide Push-up", instructions: "");
-    var b7 =  Exercise(eParams: ps,  name: "Push-up", instructions: "");
-    var b8 =  Exercise(eParams: ps,  name: "Elevated Push-up", instructions: "");
-    var b25 =  Exercise(eParams: ps,  name: "Superman Push-ups", instructions: "");
-    var b34 =  Exercise(eParams: ps,  name: "Total Body Ballistic Push-Up", instructions: "");
-    var b42 =  Exercise(eParams: ps,  name: "Fallout Push-ups", instructions: "");
-    var a69 =  Exercise(eParams: ps,  name: "Wide Pronate Lat Pulldowns", instructions: "pronate - palms facing away");
-    var a70 =  Exercise(eParams: ps,  name: "Incline Dumbell Curl", instructions: "");
-    var a71 =  Exercise(eParams: ps,  name: "Reverse Grip Straight Bar Pullbacks", instructions: "");
-    var b13 =  Exercise(eParams: ps,  name: "Standing Wide Face Pullbacks", instructions: "");
-    var a72 =  Exercise(eParams: ps,  name: "Hammer Curl", instructions: "");
-    var b10 =  Exercise(eParams: ps,  name: "Bench Curls", instructions: "");
-    var b11 =  Exercise(eParams: ps,  name: "Reverse Cable Curl", instructions: "");
-    var b52 =  Exercise(eParams: ps,  name: "Incline DB Reverse Hammer Curls", instructions: ""); //3-3-3 tempo, 3 up 3 hold 3 down
-    var b53 =  Exercise(eParams: ps,  name: "Incline Low Cable Curls", instructions: "");
-    var b54 =  Exercise(eParams: ps,  name: "Standing High Cable Double Bicep Curls", instructions: "");
-    var a87 =  Exercise(eParams: ps,  name: "Low Cable Flys", instructions: "");
-    var a88 =  Exercise(eParams: ps,  name: "Reverse Cable Pulldowns", instructions: "");
+    let a41 =  Exercise(eParams: ps,  name: "Incline Chest Press", instructions: "");
+    let a42 =  Exercise(eParams: ps,  name: "Incline Dumbbell Supported Row", instructions: "");
+    let b14 =  Exercise(eParams: ps,  name: "Supinated Grip Barbell Bent-over Row", instructions: "");
+    let a44 =  Exercise(eParams: ps,  name: "Dumbbell Upright Row", instructions: "");
+    let a43 =  Exercise(eParams: ps,  name: "Dumbbell Arnold Press", instructions: "");
+    let a45 =  Exercise(eParams: ps,  name: "Cable Crossovers", instructions: "");
+    let a46 =  Exercise(eParams: ps,  name: "Low Rope Face Pulls", instructions: "");
+    let a53 =  Exercise(eParams: ps,  name: "Curl", instructions: "");
+    let a54 =  Exercise(eParams: ps,  name: "Reverse EZ Bar Curl", instructions: "");
+    let a55 =  Exercise(eParams: ps,  name: "Low Rope Hammer Curl", instructions: "");
+    let a57 =  Exercise(eParams: ps,  name: "Incline DB Skullcrusher", instructions: "");
+    let a58 =  Exercise(eParams: ps,  name: "Close Grip Bench Press", instructions: "");
+    let a63 =  Exercise(eParams: ps,  name: "50-50 Curls", instructions: "4 x 20 (10 lower half + 10 upper half)");
+    let a64 =  Exercise(eParams: ps,  name: "DB California Skullcrusher", instructions: "");
+    let a67 =  Exercise(eParams: ps,  name: "7-7-7 Dips", instructions: "");
+    let a89 =  Exercise(eParams: ps,  name: "Dips", instructions: "");
+    let a56 =  Exercise(eParams: ps,  name: "Bench Dips", instructions: "");
+    let a65 =  Exercise(eParams: ps,  name: "7-7-7 Pull-ups", instructions: "");
+    let b33 =  Exercise(eParams: ps,  name: "Negative Pull-ups", instructions: "");
+    let b39 =  Exercise(eParams: ps,  name: "Jumping Pull-ups", instructions: "");
+    let a92 =  Exercise(eParams: ps,  name: "Supinated Grip Pull-Ups", instructions: "");
+    let b2 =  Exercise(eParams: ps,  name: "TRX or Barbell Inverted Pull-ups", instructions: "");
+    let a83 =  Exercise(eParams: ps,  name: "Pike Push-up", instructions: "");
+    let b23 =  Exercise(eParams: ps,  name: "Push-up On Bar", instructions: "");
+    let a84 =  Exercise(eParams: ps,  name: "Elevated Wide Push-up", instructions: "");
+    let b7 =  Exercise(eParams: ps,  name: "Push-up", instructions: "");
+    let b8 =  Exercise(eParams: ps,  name: "Elevated Push-up", instructions: "");
+    let b25 =  Exercise(eParams: ps,  name: "Superman Push-ups", instructions: "");
+    let b34 =  Exercise(eParams: ps,  name: "Total Body Ballistic Push-Up", instructions: "");
+    let b42 =  Exercise(eParams: ps,  name: "Fallout Push-ups", instructions: "");
+    let a69 =  Exercise(eParams: ps,  name: "Wide Pronate Lat Pulldowns", instructions: "pronate - palms facing away");
+    let a70 =  Exercise(eParams: ps,  name: "Incline Dumbell Curl", instructions: "");
+    let a71 =  Exercise(eParams: ps,  name: "Reverse Grip Straight Bar Pullbacks", instructions: "");
+    let b13 =  Exercise(eParams: ps,  name: "Standing Wide Face Pullbacks", instructions: "");
+    let a72 =  Exercise(eParams: ps,  name: "Hammer Curl", instructions: "");
+    let b10 =  Exercise(eParams: ps,  name: "Bench Curls", instructions: "");
+    let b11 =  Exercise(eParams: ps,  name: "Reverse Cable Curl", instructions: "");
+    let b52 =  Exercise(eParams: ps,  name: "Incline DB Reverse Hammer Curls", instructions: ""); //3-3-3 tempo, 3 up 3 hold 3 down
+    let b53 =  Exercise(eParams: ps,  name: "Incline Low Cable Curls", instructions: "");
+    let b54 =  Exercise(eParams: ps,  name: "Standing High Cable Double Bicep Curls", instructions: "");
+    let a87 =  Exercise(eParams: ps,  name: "Low Cable Flys", instructions: "");
+    let a88 =  Exercise(eParams: ps,  name: "Reverse Cable Pulldowns", instructions: "");
    // a88.Aliases.Add( AdaptText("Reverse Tricep Pulldowns", MisIdiomas.EN));
-    var a91 =  Exercise(eParams: ps,  name: "Manual Tricep Extensions", instructions: "");
-    var a96 =  Exercise(eParams: ps,  name: "Incline Dumbell Negative Fly To Chest Press Concentric", instructions: "");
-    var b5 =  Exercise(eParams: ps,  name: "California Skullcrusher", instructions: "");
-    var b6 =  Exercise(eParams: ps,  name: "Incline DB Fly", instructions: "");
-    var b49 =  Exercise(eParams: ps,  name: "Incline Lat Pulldowns", instructions: "");
-    var b50 =  Exercise(eParams: ps,  name: "Reverse DB Fly", instructions: "");
-    var b51 =  Exercise(eParams: ps,  name: "Upright Row + Bent Over Row", instructions: "");
+    let a91 =  Exercise(eParams: ps,  name: "Manual Tricep Extensions", instructions: "");
+    let a96 =  Exercise(eParams: ps,  name: "Incline Dumbell Negative Fly To Chest Press Concentric", instructions: "");
+    let b5 =  Exercise(eParams: ps,  name: "California Skullcrusher", instructions: "");
+    let b6 =  Exercise(eParams: ps,  name: "Incline DB Fly", instructions: "");
+    let b49 =  Exercise(eParams: ps,  name: "Incline Lat Pulldowns", instructions: "");
+    let b50 =  Exercise(eParams: ps,  name: "Reverse DB Fly", instructions: "");
+    let b51 =  Exercise(eParams: ps,  name: "Upright Row + Bent Over Row", instructions: "");
     
     
     //lower body
-    var a48 =  Exercise(eParams: ps,  name: "RDL", instructions: "The stance is going to be narrower than a squat, about hip width apart, with the toes pointed straight ahead. Some lifters like to flare the feet a bit but this should be minimal – no more than 15 degrees of foot flare. At the start, the bar should be resting against the thighs, and for the descent you want to sit the hips back allowing the torso to drop down. The knees will bend slightly but the shins remain vertical throughout – the bar should continue to drag along the thighs the entire time. During the negative, you want to maintain a slight arch and tension in your low back. This tilts the pelvis anteriorly and puts a greater stretch on the hamstrings. However, the lumbar extension and anterior pelvic tilt should be slight and not excessive. Moreover, do not allow the lumbar spine to round or the shoulders to be protracted during the RDL. Keep the chest up and the shoulders back.");
-    var a48b =  Exercise(eParams: ps,  name: "Stiff Leg Deadlift", instructions: "The stiff legged deadlift is simply a deadlift performed with high hips while trying to target the hamstrings. Ideally you will perform this lift out of a rack and you will use a lighter load compared to your regular deadlift. Simply back out of the rack using a double overhand grip and bend over while trying to keep tension on the hamstrings. The knees will bend, the shins will stay vertical, your hips will sit back, and you will try to keep the hamstrings as stiff as possible throughout the movement. With this variation, you can descend all the way to the floor or stop just short of the floor. Both ways have their benefits. You can also start from the floor if you’d like rather than taking the bar out of the rack, however, most lifters use better form when starting with a negative action first.");
-    var a50 =  Exercise(eParams: ps,  name: "Donkey Calf Raise", instructions: "");
-    var a51 =  Exercise(eParams: ps,  name: "Leg Extension", instructions: "");
-    var a52 =  Exercise(eParams: ps,  name: "Hamstring Curls", instructions: "");
-    var a60 =  Exercise(eParams: ps,  name: "Conventional Deadlift", instructions: "");
-    var b19 =  Exercise(eParams: ps,  name: "Sumo Deadlifts", instructions: "");
-    var a79 =  Exercise(eParams: ps,  name: "Barbell Step-Ups", instructions: "1 rep is 1 rep for each leg");
-    var a47 =  Exercise(eParams: ps,  name: "Squat w/ Elevated Heels", instructions: "");
-    var a49 =  Exercise(eParams: ps,  name: "One Leg Squat", instructions: "");
+    let a48 =  Exercise(eParams: ps,  name: "RDL", instructions: "The stance is going to be narrower than a squat, about hip width apart, with the toes pointed straight ahead. Some lifters like to flare the feet a bit but this should be minimal – no more than 15 degrees of foot flare. At the start, the bar should be resting against the thighs, and for the descent you want to sit the hips back allowing the torso to drop down. The knees will bend slightly but the shins remain vertical throughout – the bar should continue to drag along the thighs the entire time. During the negative, you want to maintain a slight arch and tension in your low back. This tilts the pelvis anteriorly and puts a greater stretch on the hamstrings. However, the lumbar extension and anterior pelvic tilt should be slight and not excessive. Moreover, do not allow the lumbar spine to round or the shoulders to be protracted during the RDL. Keep the chest up and the shoulders back.");
+    let a48b =  Exercise(eParams: ps,  name: "Stiff Leg Deadlift", instructions: "The stiff legged deadlift is simply a deadlift performed with high hips while trying to target the hamstrings. Ideally you will perform this lift out of a rack and you will use a lighter load compared to your regular deadlift. Simply back out of the rack using a double overhand grip and bend over while trying to keep tension on the hamstrings. The knees will bend, the shins will stay vertical, your hips will sit back, and you will try to keep the hamstrings as stiff as possible throughout the movement. With this letiation, you can descend all the way to the floor or stop just short of the floor. Both ways have their benefits. You can also start from the floor if you’d like rather than taking the bar out of the rack, however, most lifters use better form when starting with a negative action first.");
+    let a50 =  Exercise(eParams: ps,  name: "Donkey Calf Raise", instructions: "");
+    let a51 =  Exercise(eParams: ps,  name: "Leg Extension", instructions: "");
+    let a52 =  Exercise(eParams: ps,  name: "Hamstring Curls", instructions: "");
+    let a60 =  Exercise(eParams: ps,  name: "Conventional Deadlift", instructions: "");
+    let b19 =  Exercise(eParams: ps,  name: "Sumo Deadlifts", instructions: "");
+    let a79 =  Exercise(eParams: ps,  name: "Barbell Step-Ups", instructions: "1 rep is 1 rep for each leg");
+    let a47 =  Exercise(eParams: ps,  name: "Squat w/ Elevated Heels", instructions: "");
+    let a49 =  Exercise(eParams: ps,  name: "One Leg Squat", instructions: "");
     //a49.Aliases.Add( AdaptText("Pistol Squat", MisIdiomas.EN));
-    var a66 =  Exercise(eParams: ps,  name: "7-7-7 Squat", instructions: "");
-    var a74 =  Exercise(eParams: ps,  name: "Jump Squat", instructions: "Perform normal unweighted squat, however on the way up jump as high as you can.");
-    var a85 =  Exercise(eParams: ps,  name: "Split Squat To Knee Raise", instructions: "");
-    var a86 =  Exercise(eParams: ps,  name: "Squat", instructions: "");
-    var b21 =  Exercise(eParams: ps,  name: "Front Squat", instructions: "");
-    var a90 =  Exercise(eParams: ps,  name: "Front Squat Elevated Heels", instructions: "");
-    var a95 =  Exercise(eParams: ps,  name: "1 and 1/4 Squats", instructions: "");
-    var b9 =  Exercise(eParams: ps,  name: "1 and 1/4 Squat + Calf Raise", instructions: "");
-    var b15 =  Exercise(eParams: ps,  name: "Stationary Lunges", instructions: "1 rep = once each leg");
-    var b16 =  Exercise(eParams: ps,  name: "Block Calf Raises - Toes In", instructions: "");
-    var b17 =  Exercise(eParams: ps,  name: "Block Calf Raises - Toes Out", instructions: "");
-    var b18 =  Exercise(eParams: ps,  name: "Block Calf Raises - Toes Forward", instructions: "");
-    var b28 =  Exercise(eParams: ps,  name: "Squat Box Jump", instructions: "");
-    var b32 =  Exercise(eParams: ps,  name: "Negative Manual GHR's", instructions: "glute hamstring raise");
+    let a66 =  Exercise(eParams: ps,  name: "7-7-7 Squat", instructions: "");
+    let a74 =  Exercise(eParams: ps,  name: "Jump Squat", instructions: "Perform normal unweighted squat, however on the way up jump as high as you can.");
+    let a85 =  Exercise(eParams: ps,  name: "Split Squat To Knee Raise", instructions: "");
+    let a86 =  Exercise(eParams: ps,  name: "Squat", instructions: "");
+    let b21 =  Exercise(eParams: ps,  name: "Front Squat", instructions: "");
+    let a90 =  Exercise(eParams: ps,  name: "Front Squat Elevated Heels", instructions: "");
+    let a95 =  Exercise(eParams: ps,  name: "1 and 1/4 Squats", instructions: "");
+    let b9 =  Exercise(eParams: ps,  name: "1 and 1/4 Squat + Calf Raise", instructions: "");
+    let b15 =  Exercise(eParams: ps,  name: "Stationary Lunges", instructions: "1 rep = once each leg");
+    let b16 =  Exercise(eParams: ps,  name: "Block Calf Raises - Toes In", instructions: "");
+    let b17 =  Exercise(eParams: ps,  name: "Block Calf Raises - Toes Out", instructions: "");
+    let b18 =  Exercise(eParams: ps,  name: "Block Calf Raises - Toes Forward", instructions: "");
+    let b28 =  Exercise(eParams: ps,  name: "Squat Box Jump", instructions: "");
+    let b32 =  Exercise(eParams: ps,  name: "Negative Manual GHR's", instructions: "glute hamstring raise");
     
     //core
-    var a62 =  Exercise(eParams: ps,  name: "Figure 8’s from bench", instructions: "4 x 10 revolutions (5 each way)");
-    var a68 =  Exercise(eParams: ps,  name: "7-7-7 Med Ball Sit-ups", instructions: "");
-    var a75 =  Exercise(eParams: ps,  name: "Mountain Climber", instructions: "From high plank position, jump so that one knee is up in your chest while one is still behind you. Jump again and switch leg positions.");
-    var a81 =  Exercise(eParams: ps,  name: "Hanging Knee Twist", instructions: "");
-    var a82 =  Exercise(eParams: ps,  name: "Plank Knee to Elbows", instructions: "1 rep is 1 rep for each elbow");
-    var b29 =  Exercise(eParams: ps,  name: "Hanging Leg Raise", instructions: "");
-    var b36 =  Exercise(eParams: ps,  name: "Barbell Fallout", instructions: "");
+    let a62 =  Exercise(eParams: ps,  name: "Figure 8’s from bench", instructions: "4 x 10 revolutions (5 each way)");
+    let a68 =  Exercise(eParams: ps,  name: "7-7-7 Med Ball Sit-ups", instructions: "");
+    let a75 =  Exercise(eParams: ps,  name: "Mountain Climber", instructions: "From high plank position, jump so that one knee is up in your chest while one is still behind you. Jump again and switch leg positions.");
+    let a81 =  Exercise(eParams: ps,  name: "Hanging Knee Twist", instructions: "");
+    let a82 =  Exercise(eParams: ps,  name: "Plank Knee to Elbows", instructions: "1 rep is 1 rep for each elbow");
+    let b29 =  Exercise(eParams: ps,  name: "Hanging Leg Raise", instructions: "");
+    let b36 =  Exercise(eParams: ps,  name: "Barbell Fallout", instructions: "");
     
     //total body (not core specific)
-    var a59 =  Exercise(eParams: ps,  name: "Ballistic Push-up + Plank Knee Tuck", instructions: "");
-    var a61 =  Exercise(eParams: ps,  name: "Lunge Knee Ups with Overhead Plate", instructions: "4 x 8 (each leg)");
-    var a73 =  Exercise(eParams: ps,  name: "Alternating Arm Squat Press", instructions: "Weights resting on shoulder, perform squat. After coming up all the way, lift one arm all the way overhead. (This is a press, not a jerk)");
-    var a76 =  Exercise(eParams: ps,  name: "Jump Hang", instructions: "With");
-    var a77 =  Exercise(eParams: ps,  name: "Standing Weight Swing", instructions: "");
-    var a78 =  Exercise(eParams: ps,  name: "RDL + Bent-over Row + Snatch Power Pull", instructions: "");
-    var a80 =  Exercise(eParams: ps,  name: "Barbell Push Jerk", instructions: "");
-    var a93 =  Exercise(eParams: ps,  name: "RDL + Row + Shrug, Push Jerk", instructions: ""); //easiest DB for all, then DB for first and BB for push jerk, hardest bb for all
-    var a94 =  Exercise(eParams: ps,  name: "Dumbell Upright Row + Clean + Press", instructions: "");
-    var a97 =  Exercise(eParams: ps,  name: "Dumbell Curl + Lunge", instructions: "");
-    var a98 =  Exercise(eParams: ps,  name: "Close Grip Push-ups + Knee Raise", instructions: "");
-    var b0 =  Exercise(eParams: ps,  name: "Push-up + Alternating Arm & Leg Raise", instructions: "");
-    var b1 =  Exercise(eParams: ps,  name: "Sumo Deadlift + Shoulder Press", instructions: "");
-    var b12 =  Exercise(eParams: ps,  name: "DB Snatch", instructions: "1 rep = 1 each arm");
-    var b20 =  Exercise(eParams: ps,  name: "Hang Clean", instructions: "");
-    var b22 =  Exercise(eParams: ps,  name: "Push Jerk", instructions: "");
-    var b24 =  Exercise(eParams: ps,  name: "Barbell Thrusters", instructions: "");
-    var b26 =  Exercise(eParams: ps,  name: "High Snatch Pull From Hang", instructions: "");
-    var b30 =  Exercise(eParams: ps,  name: "Hang Clean + Front Squat", instructions: "");
-    var b31 =  Exercise(eParams: ps,  name: "Downward Dog + Chaturanga Push-Up + High Plank", instructions: "");
-    var b35 =  Exercise(eParams: ps,  name: "Sott Press", instructions: "");
-    var b37 =  Exercise(eParams: ps,  name: "Burpee + Box Jump", instructions: "");
-    var b38 =  Exercise(eParams: ps,  name: "Sliding Mountain Climber + Push-up", instructions: "");
-    var b40 =  Exercise(eParams: ps,  name: "Sliding Knee Tuck + Push-up", instructions: "");
-    var b41 =  Exercise(eParams: ps,  name: "Med Ball Sit-ups w/ Bench", instructions: "");
-    var b43 =  Exercise(eParams: ps,  name: "Burpees", instructions: "");
-    var b45 =  Exercise(eParams: ps,  name: "Partner Fireman Pick-ups", instructions: ""); //in immortals workout challenge 5 pickups can replace 8/each leg pistol squats
-    var b47 =  Exercise(eParams: ps,  name: "Toes To Bar", instructions: "");
-    var b48 =  Exercise(eParams: ps,  name: "DB Push-up + Row Crawl", instructions: "");
+    let a59 =  Exercise(eParams: ps,  name: "Ballistic Push-up + Plank Knee Tuck", instructions: "");
+    let a61 =  Exercise(eParams: ps,  name: "Lunge Knee Ups with Overhead Plate", instructions: "4 x 8 (each leg)");
+    let a73 =  Exercise(eParams: ps,  name: "Alternating Arm Squat Press", instructions: "Weights resting on shoulder, perform squat. After coming up all the way, lift one arm all the way overhead. (This is a press, not a jerk)");
+    let a76 =  Exercise(eParams: ps,  name: "Jump Hang", instructions: "With");
+    let a77 =  Exercise(eParams: ps,  name: "Standing Weight Swing", instructions: "");
+    let a78 =  Exercise(eParams: ps,  name: "RDL + Bent-over Row + Snatch Power Pull", instructions: "");
+    let a80 =  Exercise(eParams: ps,  name: "Barbell Push Jerk", instructions: "");
+    let a93 =  Exercise(eParams: ps,  name: "RDL + Row + Shrug, Push Jerk", instructions: ""); //easiest DB for all, then DB for first and BB for push jerk, hardest bb for all
+    let a94 =  Exercise(eParams: ps,  name: "Dumbell Upright Row + Clean + Press", instructions: "");
+    let a97 =  Exercise(eParams: ps,  name: "Dumbell Curl + Lunge", instructions: "");
+    let a98 =  Exercise(eParams: ps,  name: "Close Grip Push-ups + Knee Raise", instructions: "");
+    let b0 =  Exercise(eParams: ps,  name: "Push-up + Alternating Arm & Leg Raise", instructions: "");
+    let b1 =  Exercise(eParams: ps,  name: "Sumo Deadlift + Shoulder Press", instructions: "");
+    let b12 =  Exercise(eParams: ps,  name: "DB Snatch", instructions: "1 rep = 1 each arm");
+    let b20 =  Exercise(eParams: ps,  name: "Hang Clean", instructions: "");
+    let b22 =  Exercise(eParams: ps,  name: "Push Jerk", instructions: "");
+    let b24 =  Exercise(eParams: ps,  name: "Barbell Thrusters", instructions: "");
+    let b26 =  Exercise(eParams: ps,  name: "High Snatch Pull From Hang", instructions: "");
+    let b30 =  Exercise(eParams: ps,  name: "Hang Clean + Front Squat", instructions: "");
+    let b31 =  Exercise(eParams: ps,  name: "Downward Dog + Chaturanga Push-Up + High Plank", instructions: "");
+    let b35 =  Exercise(eParams: ps,  name: "Sott Press", instructions: "");
+    let b37 =  Exercise(eParams: ps,  name: "Burpee + Box Jump", instructions: "");
+    let b38 =  Exercise(eParams: ps,  name: "Sliding Mountain Climber + Push-up", instructions: "");
+    let b40 =  Exercise(eParams: ps,  name: "Sliding Knee Tuck + Push-up", instructions: "");
+    let b41 =  Exercise(eParams: ps,  name: "Med Ball Sit-ups w/ Bench", instructions: "");
+    let b43 =  Exercise(eParams: ps,  name: "Burpees", instructions: "");
+    let b45 =  Exercise(eParams: ps,  name: "Partner Fireman Pick-ups", instructions: ""); //in immortals workout challenge 5 pickups can replace 8/each leg pistol squats
+    let b47 =  Exercise(eParams: ps,  name: "Toes To Bar", instructions: "");
+    let b48 =  Exercise(eParams: ps,  name: "DB Push-up + Row Crawl", instructions: "");
     
     
     
     
     
-    var b55 =  Exercise(eParams: ps,  name: "Medicine Ball Overhead Squat", instructions: "");
-    var b56 =  Exercise(eParams: ps,  name: "Stability Ball Push-up", instructions: "");
-    var b57 =  Exercise(eParams: ps,  name: "Stability Ball Lat Pullback", instructions: "");
-    var b58 =  Exercise(eParams: ps,  name: "Hanging Oblique Toes To Bar", instructions: "");
-    var b59 =  Exercise(eParams: ps,  name: "Fast Feet (Timed) To Reach Jump", instructions: ""); //TO DO!!!
+    let b55 =  Exercise(eParams: ps,  name: "Medicine Ball Overhead Squat", instructions: "");
+    let b56 =  Exercise(eParams: ps,  name: "Stability Ball Push-up", instructions: "");
+    let b57 =  Exercise(eParams: ps,  name: "Stability Ball Lat Pullback", instructions: "");
+    let b58 =  Exercise(eParams: ps,  name: "Hanging Oblique Toes To Bar", instructions: "");
+    let b59 =  Exercise(eParams: ps,  name: "Fast Feet (Timed) To Reach Jump", instructions: ""); //TO DO!!!
     
-    var b60 =  Exercise(eParams: ps,  name: "Clean from Hang to Drop Front Squat", instructions: "");
-    var b61 =  Exercise(eParams: ps,  name: "Pull-up to Toes to Bar", instructions: "");
-    var b62 =  Exercise(eParams: ps,  name: "Jumping Pull-up to Knee Raise", instructions: "");
-    var b63 =  Exercise(eParams: ps,  name: "Jump Squat w/ Timed Iso Hold", instructions: "");
-    var b64 =  Exercise(eParams: ps,  name: "Lunge Start Jump", instructions: "");
-    var b65 =  Exercise(eParams: ps,  name: "Ballistic Pike Push-up", instructions: "");
-    var b66 =  Exercise(eParams: ps,  name: "Overhead Lunge", instructions: "");
-    var b67 =  Exercise(eParams: ps,  name: "Plank Knee Tuck", instructions: "");
+    let b60 =  Exercise(eParams: ps,  name: "Clean from Hang to Drop Front Squat", instructions: "");
+    let b61 =  Exercise(eParams: ps,  name: "Pull-up to Toes to Bar", instructions: "");
+    let b62 =  Exercise(eParams: ps,  name: "Jumping Pull-up to Knee Raise", instructions: "");
+    let b63 =  Exercise(eParams: ps,  name: "Jump Squat w/ Timed Iso Hold", instructions: "");
+    let b64 =  Exercise(eParams: ps,  name: "Lunge Start Jump", instructions: "");
+    let b65 =  Exercise(eParams: ps,  name: "Ballistic Pike Push-up", instructions: "");
+    let b66 =  Exercise(eParams: ps,  name: "Overhead Lunge", instructions: "");
+    let b67 =  Exercise(eParams: ps,  name: "Plank Knee Tuck", instructions: "");
   /*  var b68 =  Exercise(ps,  "", "");
     var b69 =  Exercise(ps,  "", "");
     
@@ -937,374 +937,375 @@ func setMasterLists()
     MMA_Kozak_01 = Workout( name: "UFC Training at Home – 15 Min MMA Workout Exercises at Home – MMA Training at Home", description: "This ufc workout at home requires no equipment and can be done at home using grappling, jui-jitsu, and cardio kickboxing techniques in one mma workout routine.")
     
     //MARK: Finite Plans
-    var Muscle_90_HASFit_00 = WorkoutPlan( "90 Days To Build Muscle")
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Upper_HASFit_00 })); //week 1 - hypertrophy
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Lower_HASFit_00 }));
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Upper_HASFit_02 }));
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan()); //Off Day
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Upper_HASFit_00 }));
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Lower_HASFit_00 }));
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Upper_HASFit_02 }));
+    let Muscle_90_HASFit_00 = WorkoutPlan( name: "90 Days To Build Muscle")
+    //Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Upper_HASFit_00 })); //week 1 - hypertrophy
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Upper_HASFit_00])]
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Lower_HASFit_00])]
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Upper_HASFit_02])]
+    Muscle_90_HASFit_00.Days += [DailyPlan()] //Off Day
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Upper_HASFit_00])]
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Lower_HASFit_00])]
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Upper_HASFit_02])]
     
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Total_HASFit_00 })); //week 2 - strength
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Total_HASFit_02, Abs_5_HASFit }));
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Total_HASFit_01 }));
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan()); //Off Day
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Total_HASFit_03 }));
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Total_HASFit_04 }));
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan()); //Off Day
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Total_HASFit_00])] //week 2 - strength
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Total_HASFit_02, Abs_5_HASFit])]
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Total_HASFit_01])]
+    Muscle_90_HASFit_00.Days += [DailyPlan()] //Off Day
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Total_HASFit_03])]
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Total_HASFit_04])]
+    Muscle_90_HASFit_00.Days += [DailyPlan()] //Off Day
     
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Upper_HASFit_04 })); //week 3 - hypertrophy
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Lower_HASFit_02 }));
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Cardio_IntervalRun_06, Abs_3_HASFit }));
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan()); //Off Day
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Upper_HASFit_05 }));
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Cardio_IntervalRun_07, Abs_6_HASFit }));
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan()); //Off Day
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Upper_HASFit_04])] //week 3 - hypertrophy
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Lower_HASFit_02])]
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Cardio_IntervalRun_06, Abs_3_HASFit])]
+    Muscle_90_HASFit_00.Days += [DailyPlan()] //Off Day
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Upper_HASFit_05])]
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Cardio_IntervalRun_07, Abs_6_HASFit])]
+    Muscle_90_HASFit_00.Days += [DailyPlan()] //Off Day
     
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Total_HASFit_05 })); //week 4 - strength
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Total_HASFit_06 }));
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Cardio_IntervalRun_07, Abs_8B_HASFit }));
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan()); //Off Day
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Total_HASFit_07 }));
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Total_HASFit_08 }));
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan()); //Off Day
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Total_HASFit_05])] //week 4 - strength
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Total_HASFit_06])]
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Cardio_IntervalRun_07, Abs_8B_HASFit])]
+    Muscle_90_HASFit_00.Days += [DailyPlan()] //Off Day
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Total_HASFit_07])]
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Total_HASFit_08])]
+    Muscle_90_HASFit_00.Days += [DailyPlan()] //Off Day
     
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Upper_HASFit_06 })); //week 5 - hypertrophy
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Lower_HASFit_03 }));
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Upper_HASFit_07 }));
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan()); //Off Day
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Upper_HASFit_06 }));
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Lower_HASFit_04 }));
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Upper_HASFit_07 }));
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Upper_HASFit_06])] //week 5 - hypertrophy
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Lower_HASFit_03])]
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Upper_HASFit_07])]
+    Muscle_90_HASFit_00.Days += [DailyPlan()] //Off Day
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Upper_HASFit_06])]
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Lower_HASFit_04])]
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Upper_HASFit_07])]
     
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Total_HASFit_09 })); //week 6 - high intensity interval training
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Total_HASFit_10 }));
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Total_HASFit_11 }));
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan()); //Off Day
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Total_HASFit_12 }));
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Total_HASFit_13 }));
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan()); //Off Day
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Total_HASFit_09])] //week 6 - high intensity interval training
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Total_HASFit_10])]
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Total_HASFit_11])]
+    Muscle_90_HASFit_00.Days += [DailyPlan()] //Off Day
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Total_HASFit_12])]
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Total_HASFit_13])]
+    Muscle_90_HASFit_00.Days += [DailyPlan()] //Off Day
     
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Total_HASFit_14 }));//week 7 - high intensity interval training
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Total_HASFit_15 }));
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Total_HASFit_16 }));
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan()); //Off Day
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Total_HASFit_17 }));
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Cardio_StairRun_01 }));
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan()); //Off Day
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Total_HASFit_14])]//week 7 - high intensity interval training
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Total_HASFit_15])]
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Total_HASFit_16])]
+    Muscle_90_HASFit_00.Days += [DailyPlan()] //Off Day
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Total_HASFit_17])]
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Cardio_StairRun_01])]
+    Muscle_90_HASFit_00.Days += [DailyPlan()] //Off Day
     
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Upper_HASFit_08 }));//week 8 - hypertrohpy
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Lower_HASFit_03 }));
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Upper_HASFit_06 }));
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan()); //Off Day
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Upper_HASFit_08 }));
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Lower_HASFit_04 }));
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Upper_HASFit_06 }));
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Upper_HASFit_08])]//week 8 - hypertrohpy
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Lower_HASFit_03])]
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Upper_HASFit_06])]
+    Muscle_90_HASFit_00.Days += [DailyPlan()] //Off Day
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Upper_HASFit_08])]
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Lower_HASFit_04])]
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Upper_HASFit_06])]
     
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Upper_HASFit_00 })); //week 9 - strength/hypertrophy
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Lower_HASFit_00 }));
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Upper_HASFit_02 }));
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan()); //Off Day
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Upper_HASFit_00 }));
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Lower_HASFit_00 }));
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Upper_HASFit_02 }));
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Upper_HASFit_00])] //week 9 - strength/hypertrophy
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Lower_HASFit_00])]
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Upper_HASFit_02])]
+    Muscle_90_HASFit_00.Days += [DailyPlan()] //Off Day
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Upper_HASFit_00])]
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Lower_HASFit_00])]
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Upper_HASFit_02])]
     
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Upper_HASFit_04 })); //week 10 - hypertrophy
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Lower_HASFit_02 }));
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Cardio_IntervalRun_06, Abs_8B_HASFit }));
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan()); //Off Day
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Upper_HASFit_05 }));
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Cardio_IntervalRun_07, Abs_6_HASFit }));
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan()); //Off Day
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Upper_HASFit_04])] //week 10 - hypertrophy
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Lower_HASFit_02])]
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Cardio_IntervalRun_06, Abs_8B_HASFit])]
+    Muscle_90_HASFit_00.Days += [DailyPlan()] //Off Day
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Upper_HASFit_05])]
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Cardio_IntervalRun_07, Abs_6_HASFit])]
+    Muscle_90_HASFit_00.Days += [DailyPlan()] //Off Day
     
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Total_HASFit_00 }));//week 11 - strength
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { MMA_Kozak_00 }));
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Total_HASFit_01 }));
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan()); //Off Day
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Total_HASFit_03 }));
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Total_HASFit_04 }));
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan()); //Off Day
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Total_HASFit_00])]//week 11 - strength
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [MMA_Kozak_00])]
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Total_HASFit_01])]
+    Muscle_90_HASFit_00.Days += [DailyPlan()] //Off Day
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Total_HASFit_03])]
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Total_HASFit_04])]
+    Muscle_90_HASFit_00.Days += [DailyPlan()] //Off Day
     
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { MMA_Kozak_01 }));//week 12 - high intensity interval training
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Total_HASFit_18 }));
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Total_HASFit_19 }));
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan()); //Off Day
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Total_HASFit_12 }));
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Total_HASFit_20, Gym_Upper_RunTheRack_00 }));
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan()); //Off Day
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [MMA_Kozak_01])]//week 12 - high intensity interval training
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Total_HASFit_18])]
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Total_HASFit_19])]
+    Muscle_90_HASFit_00.Days += [DailyPlan()] //Off Day
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Total_HASFit_12])]
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Total_HASFit_20, Gym_Upper_RunTheRack_00])]
+    Muscle_90_HASFit_00.Days += [DailyPlan()] //Off Day
     
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Upper_HASFit_06 })); //week 13 - hypertrophy
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Lower_HASFit_03 }));
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Upper_HASFit_07 }));
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan()); //Off Day
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Upper_HASFit_06 }));
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Lower_HASFit_04 }));
-    Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Upper_HASFit_07 }));
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Upper_HASFit_06])] //week 13 - hypertrophy
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Lower_HASFit_03])]
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Upper_HASFit_07])]
+    Muscle_90_HASFit_00.Days += [DailyPlan()] //Off Day
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Upper_HASFit_06])]
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Lower_HASFit_04])]
+    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Upper_HASFit_07])]
     
     //MARK: Abs
-    WorkoutPlan Abs_30_HASFit_00 = new WorkoutPlan( "Six Pack Abs In 30 Days");
-    Abs_30_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Abs_3_HASFit }));
-    Abs_30_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Abs_5_HASFit }));
-    Abs_30_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Abs_5Standing_HASFit }));
-    Abs_30_HASFit_00.Days.Add(new DailyPlan());
-    Abs_30_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Abs_6_HASFit }));
-    Abs_30_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Abs_5_HASFit }));
-    Abs_30_HASFit_00.Days.Add(new DailyPlan());
+    let Abs_30_HASFit_00 = WorkoutPlan( name: "Six Pack Abs In 30 Days")
+    Abs_30_HASFit_00.Days += [DailyPlan(work: [Abs_3_HASFit])]
+    Abs_30_HASFit_00.Days += [DailyPlan(work: [Abs_5_HASFit])]
+    Abs_30_HASFit_00.Days += [DailyPlan(work: [Abs_5Standing_HASFit])]
+    Abs_30_HASFit_00.Days += [DailyPlan()]
+    Abs_30_HASFit_00.Days += [DailyPlan(work: [Abs_6_HASFit])]
+    Abs_30_HASFit_00.Days += [DailyPlan(work: [Abs_5_HASFit])]
+    Abs_30_HASFit_00.Days += [DailyPlan()]
     
-    Abs_30_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Abs_8Lower_HASFit }));
-    Abs_30_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Abs_8B_HASFit })); //'Shredding 8 Minute Abs'
-    Abs_30_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Abs_5_HASFit }));
-    Abs_30_HASFit_00.Days.Add(new DailyPlan());
-    Abs_30_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Abs_8B_HASFit, Abs_3_HASFit }));
-    Abs_30_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Abs_6_HASFit }));
-    Abs_30_HASFit_00.Days.Add(new DailyPlan());
+    Abs_30_HASFit_00.Days += [DailyPlan(work: [Abs_8Lower_HASFit])]
+    Abs_30_HASFit_00.Days += [DailyPlan(work: [Abs_8B_HASFit])] //'Shredding 8 Minute Abs'
+    Abs_30_HASFit_00.Days += [DailyPlan(work: [Abs_5_HASFit])]
+    Abs_30_HASFit_00.Days += [DailyPlan()]
+    Abs_30_HASFit_00.Days += [DailyPlan(work: [Abs_8B_HASFit, Abs_3_HASFit])]
+    Abs_30_HASFit_00.Days += [DailyPlan(work: [Abs_6_HASFit])]
+    Abs_30_HASFit_00.Days += [DailyPlan()]
     
-    Abs_30_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Abs_8A_HASFit }));
-    Abs_30_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Abs_5_HASFit, Abs_6Oblique_HASFit }));
-    Abs_30_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Abs_8A_HASFit }));
-    Abs_30_HASFit_00.Days.Add(new DailyPlan());
-    Abs_30_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Abs_8B_HASFit }));
-    Abs_30_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Abs_6Oblique_HASFit, Abs_6_HASFit }));
-    Abs_30_HASFit_00.Days.Add(new DailyPlan());
+    Abs_30_HASFit_00.Days += [DailyPlan(work: [Abs_8A_HASFit])]
+    Abs_30_HASFit_00.Days += [DailyPlan(work: [Abs_5_HASFit, Abs_6Oblique_HASFit])]
+    Abs_30_HASFit_00.Days += [DailyPlan(work: [Abs_8A_HASFit])]
+    Abs_30_HASFit_00.Days += [DailyPlan()]
+    Abs_30_HASFit_00.Days += [DailyPlan(work: [Abs_8B_HASFit])]
+    Abs_30_HASFit_00.Days += [DailyPlan(work: [Abs_6Oblique_HASFit, Abs_6_HASFit])]
+    Abs_30_HASFit_00.Days += [DailyPlan()]
     
-    Abs_30_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Abs_5Standing_HASFit, Abs_5_HASFit }));
-    Abs_30_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Abs_3_HASFit, Abs_8A_HASFit }));
-    Abs_30_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Abs_8Lower_HASFit }));
-    Abs_30_HASFit_00.Days.Add(new DailyPlan());
-    Abs_30_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Abs_6Oblique_HASFit, Abs_6_HASFit }));
-    Abs_30_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Abs_8B_HASFit, Abs_5_HASFit }));
-    Abs_30_HASFit_00.Days.Add(new DailyPlan());
+    Abs_30_HASFit_00.Days += [DailyPlan(work: [Abs_5Standing_HASFit, Abs_5_HASFit])]
+    Abs_30_HASFit_00.Days += [DailyPlan(work: [Abs_3_HASFit, Abs_8A_HASFit])]
+    Abs_30_HASFit_00.Days += [DailyPlan(work: [Abs_8Lower_HASFit])]
+    Abs_30_HASFit_00.Days += [DailyPlan()]
+    Abs_30_HASFit_00.Days += [DailyPlan(work: [Abs_6Oblique_HASFit, Abs_6_HASFit])]
+    Abs_30_HASFit_00.Days += [DailyPlan(work: [Abs_8B_HASFit, Abs_5_HASFit])]
+    Abs_30_HASFit_00.Days += [DailyPlan()]
     
-    Abs_30_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Abs_8Lower_HASFit, Abs_8A_HASFit }));
-    Abs_30_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Abs_8A_HASFit, Abs_8B_HASFit }));
+    Abs_30_HASFit_00.Days += [DailyPlan(work: [Abs_8Lower_HASFit, Abs_8A_HASFit])]
+    Abs_30_HASFit_00.Days += [DailyPlan(work: [Abs_8A_HASFit, Abs_8B_HASFit])]
  
     
     
-    /*
+    
      
     
-    #region Wrap It 'Fo You Build It
-    eList.Add(c0);
-    eList.Add(c1);
-    eList.Add(c2);
-    eList.Add(c3);
-    eList.Add(c4);
-    eList.Add(c5);
-    eList.Add(c6);
-    eList.Add(c7);
-    eList.Add(c8);
-    //  eList.Add(c9);
-    //  eList.Add(c10);
+    //#region Wrap It 'Fo You Build It
+    eList += [c0]
+    eList += [c1]
+    eList += [c2]
+    eList += [c3]
+    eList += [c4]
+    eList += [c5]
+    eList += [c6]
+    eList += [c7]
+    eList += [c8]
+    //  eList += [c9]
+    //  eList += [c10]
     
-    eList.Add(a0);
-    eList.Add(a1);
-    eList.Add(a2);
-    eList.Add(a3);
-    eList.Add(a4);
-    eList.Add(a5);
-    eList.Add(a6);
-    eList.Add(a7);
-    eList.Add(a8);
-    eList.Add(a9);
-    eList.Add(a10);
-    eList.Add(a11);
-    eList.Add(a12);
-    eList.Add(a13);
-    eList.Add(a14);
-    eList.Add(a15);
-    eList.Add(a16);
-    eList.Add(a17);
-    eList.Add(a18);
-    eList.Add(a19);
-    eList.Add(a20);
-    eList.Add(a21);
-    eList.Add(a22);
-    eList.Add(a23);
-    eList.Add(a24);
-    eList.Add(a25);
-    eList.Add(a26);
-    eList.Add(a27);
-    eList.Add(a28);
-    eList.Add(a29);
-    eList.Add(a30);
-    eList.Add(a31);
-    eList.Add(a32);
-    eList.Add(a33);
-    eList.Add(a34);
-    eList.Add(a35);
-    eList.Add(a36);
-    eList.Add(a37);
-    eList.Add(a38);
-    eList.Add(a39);
-    eList.Add(a40);
-    eList.Add(a41);
-    eList.Add(a42);
-    eList.Add(a43);
-    eList.Add(a44);
-    eList.Add(a45);
-    eList.Add(a46);
-    eList.Add(a47);
-    eList.Add(a48);
-    eList.Add(a49);
-    eList.Add(a50);
-    eList.Add(a51);
-    eList.Add(a52);
-    eList.Add(a53);
-    eList.Add(a54);
-    eList.Add(a55);
-    eList.Add(a56);
-    eList.Add(a57);
-    eList.Add(a58);
-    eList.Add(a59);
-    eList.Add(a60);
-    eList.Add(a61);
-    eList.Add(a62);
-    eList.Add(a63);
-    eList.Add(a64);
-    eList.Add(a65);
-    eList.Add(a66);
-    eList.Add(a61);
-    eList.Add(a62);
-    eList.Add(a63);
-    eList.Add(a64);
-    eList.Add(a65);
-    eList.Add(a66);
-    eList.Add(a67);
-    eList.Add(a68);
-    eList.Add(a69);
-    eList.Add(a70);
-    eList.Add(a71);
-    eList.Add(a72);
-    eList.Add(a73);
-    eList.Add(a74);
-    eList.Add(a75);
-    eList.Add(a76);
-    eList.Add(a77);
-    eList.Add(a78);
-    eList.Add(a79);
-    eList.Add(a80);
-    eList.Add(a81);
-    eList.Add(a82);
-    eList.Add(a83);
-    eList.Add(a84);
-    eList.Add(a85);
-    eList.Add(a86);
-    eList.Add(a87);
-    eList.Add(a88);
-    eList.Add(a89);
-    eList.Add(a90);
-    eList.Add(a91);
-    eList.Add(a92);
-    eList.Add(a93);
-    eList.Add(a94);
-    eList.Add(a95);
-    eList.Add(a96);
-    eList.Add(a97);
-    eList.Add(a98);
-    eList.Add(a99);
+    eList += [a0]
+    eList += [a1]
+    eList += [a2]
+    eList += [a3]
+    eList += [a4]
+    eList += [a5]
+    eList += [a6]
+    eList += [a7]
+    eList += [a8]
+    eList += [a9]
+    eList += [a10]
+    eList += [a11]
+    eList += [a12]
+    eList += [a13]
+    eList += [a14]
+    eList += [a15]
+    eList += [a16]
+    eList += [a17]
+    eList += [a18]
+    eList += [a19]
+    eList += [a20]
+    eList += [a21]
+    eList += [a22]
+    eList += [a23]
+    eList += [a24]
+    eList += [a25]
+    eList += [a26]
+    eList += [a27]
+    eList += [a28]
+    eList += [a29]
+    eList += [a30]
+    eList += [a31]
+    eList += [a32]
+    eList += [a33]
+    eList += [a34]
+    eList += [a35]
+    eList += [a36]
+    eList += [a37]
+    eList += [a38]
+    eList += [a39]
+    eList += [a40]
+    eList += [a41]
+    eList += [a42]
+    eList += [a43]
+    eList += [a44]
+    eList += [a45]
+    eList += [a46]
+    eList += [a47]
+    eList += [a48]
+    eList += [a49]
+    eList += [a50]
+    eList += [a51]
+    eList += [a52]
+    eList += [a53]
+    eList += [a54]
+    eList += [a55]
+    eList += [a56]
+    eList += [a57]
+    eList += [a58]
+    eList += [a59]
+    eList += [a60]
+    eList += [a61]
+    eList += [a62]
+    eList += [a63]
+    eList += [a64]
+    eList += [a65]
+    eList += [a66]
+    eList += [a61]
+    eList += [a62]
+    eList += [a63]
+    eList += [a64]
+    eList += [a65]
+    eList += [a66]
+    eList += [a67]
+    eList += [a68]
+    eList += [a69]
+    eList += [a70]
+    eList += [a71]
+    eList += [a72]
+    eList += [a73]
+    eList += [a74]
+    eList += [a75]
+    eList += [a76]
+    eList += [a77]
+    eList += [a78]
+    eList += [a79]
+    eList += [a80]
+    eList += [a81]
+    eList += [a82]
+    eList += [a83]
+    eList += [a84]
+    eList += [a85]
+    eList += [a86]
+    eList += [a87]
+    eList += [a88]
+    eList += [a89]
+    eList += [a90]
+    eList += [a91]
+    eList += [a92]
+    eList += [a93]
+    eList += [a94]
+    eList += [a95]
+    eList += [a96]
+    eList += [a97]
+    eList += [a98]
+    eList += [a99]
     
-    eList.Add(b0);
-    eList.Add(b1);
-    eList.Add(b2);
-    eList.Add(b3);
-    eList.Add(b4);
-    eList.Add(b5);
-    eList.Add(b6);
-    eList.Add(b7);
-    eList.Add(b8);
-    eList.Add(b9);
-    eList.Add(b10);
-    eList.Add(b11);
-    eList.Add(b12);
-    eList.Add(b13);
-    eList.Add(b14);
-    eList.Add(b15);
-    eList.Add(b16);
-    eList.Add(b17);
-    eList.Add(b18);
-    eList.Add(b19);
-    eList.Add(b20);
-    eList.Add(b21);
-    eList.Add(b22);
-    eList.Add(b23);
-    eList.Add(b24);
-    eList.Add(b25);
-    eList.Add(b26);
-    eList.Add(b27);
-    eList.Add(b28);
-    eList.Add(b29);
-    eList.Add(b30);
-    eList.Add(b31);
-    eList.Add(b32);
-    eList.Add(b33);
-    eList.Add(b34);
-    eList.Add(b35);
-    eList.Add(b36);
-    eList.Add(b37);
-    eList.Add(b38);
-    eList.Add(b39);
-    eList.Add(b40);
-    eList.Add(b41);
-    eList.Add(b42);
-    eList.Add(b43);
-    eList.Add(b44);
-    eList.Add(b45);
-    eList.Add(b46);
-    eList.Add(b47);
-    eList.Add(b48);
-    eList.Add(b49);
-    eList.Add(b50);
-    eList.Add(b51);
-    eList.Add(b52);
-    eList.Add(b53);
-    eList.Add(b54);
-    eList.Add(b55);
-    eList.Add(b56);
-    eList.Add(b57);
-    eList.Add(b58);
-    eList.Add(b59);
-    eList.Add(b60);
-    eList.Add(b61);
-    eList.Add(b62);
-    eList.Add(b63);
-    eList.Add(b64);
-    eList.Add(b65);
-    eList.Add(b66);
-    eList.Add(b67);
-    eList.Add(b68);
-    eList.Add(b69);
-    eList.Add(b70);
-    eList.Add(b71);
-    eList.Add(b72);
-    eList.Add(b73);
-    eList.Add(b74);
-    eList.Add(b75);
-    eList.Add(b76);
-    eList.Add(b77);
-    eList.Add(b78);
-    eList.Add(b79);
-    eList.Add(b80);
-    eList.Add(b81);
-    eList.Add(b82);
-    eList.Add(b83);
-    eList.Add(b84);
-    eList.Add(b85);
-    eList.Add(b86);
-    eList.Add(b87);
-    eList.Add(b88);
-    eList.Add(b89);
-    eList.Add(b90);
-    eList.Add(b91);
-    eList.Add(b92);
-    eList.Add(b93);
-    eList.Add(b94);
-    eList.Add(b95);
-    eList.Add(b96);
-    eList.Add(b97);
-    eList.Add(b98);
-    eList.Add(b99);
-    */
+    eList += [b0]
+    eList += [b1]
+    eList += [b2]
+    eList += [b3]
+    eList += [b4]
+    eList += [b5]
+    eList += [b6]
+    eList += [b7]
+    eList += [b8]
+    eList += [b9]
+    eList += [b10]
+    eList += [b11]
+    eList += [b12]
+    eList += [b13]
+    eList += [b14]
+    eList += [b15]
+    eList += [b16]
+    eList += [b17]
+    eList += [b18]
+    eList += [b19]
+    eList += [b20]
+    eList += [b21]
+    eList += [b22]
+    eList += [b23]
+    eList += [b24]
+    eList += [b25]
+    eList += [b26]
+    eList += [b27]
+    eList += [b28]
+    eList += [b29]
+    eList += [b30]
+    eList += [b31]
+    eList += [b32]
+    eList += [b33]
+    eList += [b34]
+    eList += [b35]
+    eList += [b36]
+    eList += [b37]
+    eList += [b38]
+    eList += [b39]
+    eList += [b40]
+    eList += [b41]
+    eList += [b42]
+    eList += [b43]
+    eList += [b44]
+    eList += [b45]
+    eList += [b46]
+    eList += [b47]
+    eList += [b48]
+    eList += [b49]
+    eList += [b50]
+    eList += [b51]
+    eList += [b52]
+    eList += [b53]
+    eList += [b54]
+    eList += [b55]
+    eList += [b56]
+    eList += [b57]
+    eList += [b58]
+    eList += [b59]
+    eList += [b60]
+    eList += [b61]
+    eList += [b62]
+    eList += [b63]
+    eList += [b64]
+    eList += [b65]
+    eList += [b66]
+    eList += [b67]
+   /* eList += [b68]
+    eList += [b69]
+    eList += [b70]
+    eList += [b71]
+    eList += [b72]
+    eList += [b73]
+    eList += [b74]
+    eList += [b75]
+    eList += [b76]
+    eList += [b77]
+    eList += [b78]
+    eList += [b79]
+    eList += [b80]
+    eList += [b81]
+    eList += [b82]
+    eList += [b83]
+    eList += [b84]
+    eList += [b85]
+    eList += [b86]
+    eList += [b87]
+    eList += [b88]
+    eList += [b89]
+    eList += [b90]
+    eList += [b91]
+    eList += [b92]
+    eList += [b93]
+    eList += [b94]
+    eList += [b95]
+    eList += [b96]
+    eList += [b97]
+    eList += [b98]
+    eList += [b99]*/
+    
     MasterExerciseList = eList;
 
 }
