@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     var bCounter: Int = 0
     
     @IBOutlet weak var FirstLabel: UILabel!
+    @IBOutlet weak var SecondLabel: UILabel!
     
     
     @IBAction func buttonPressOne(_ sender: Any)
