@@ -45,7 +45,7 @@ class Exercise
         PrimaryMuscleGroup = eParams.PrimaryMuscle;
         SecondaryMuscleGroup = eParams.SecondaryMuscle;
         Description = eParams.Description;
-        Instructions = eParams.Instruction;
+        Instructions = instructions //eParams.Instruction;
         WeightInfo = eParams.doIUseWeights
         ID = Exercise.sharedID
         Exercise.sharedID += 1

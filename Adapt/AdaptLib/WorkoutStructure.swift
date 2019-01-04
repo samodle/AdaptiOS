@@ -23,6 +23,9 @@ class WorkoutStructure
     var DoIHaveDistances : Bool = false;
     var DoIHaveReps: Bool = false;
     
+    
+    
+    
     func addSets(sets: [Int], data: [Double], types: [SetType], n: Int)
 {
    // List<Tuple<int, double, SetType>> x = new List<Tuple<int, double, SetType>>();
@@ -47,13 +50,9 @@ class WorkoutStructure
     }
     }
     
-    func addSetsAndReps(sets: [Int], reps: [Double], n: Int) //throws
+    func addSetsAndReps(sets: [Int], reps: [Double], n: Int) 
 {
-   // if (sets.count != reps.count)
-   // {
-   //     throw GenericError.countMismatch
-   // } //err
-    
+
    // List<Tuple<int, double, SetType>> x = new List<Tuple<int, double, SetType>>();
     var x = [(workoutIndex: Int, amount: Double, type: SetType)]()
     
@@ -95,7 +94,7 @@ class WorkoutStructure
    // for (int i = 0; i < n; i++)
     {
     //SetList.Add(x);
-        x += SetList
+        SetList += x
         i2 += 1
     }
     }
@@ -105,6 +104,7 @@ class WorkoutStructure
     addSetsAndReps(sets: sets, reps: reps, n: 1);
     }
     
+    /*
     func WorkoutStructure(anyTimes: Bool, anyDistances: Bool)
 {
     if (anyTimes)
@@ -116,6 +116,7 @@ class WorkoutStructure
     DoIHaveDistances = true;
     }
     }
+    */
     
     //MARK: Constructor
     init(anyTimes: Bool, anyDistances: Bool){

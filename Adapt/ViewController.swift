@@ -18,9 +18,17 @@ class ViewController: UIViewController {
     
     @IBAction func buttonPressOne(_ sender: Any)
     {
-        FirstLabel.text = MasterExerciseList[bCounter].Name
+         bCounter += 1
         
-        bCounter += 1
+        FirstLabel.text = MasterExerciseList[bCounter].Name
+        SecondLabel.text = MasterExerciseList[bCounter].Instructions
+        
+    }
+    @IBAction func buttonPressTwo(_ sender: Any) {
+        bCounter -= 1
+        
+        FirstLabel.text = MasterExerciseList[bCounter].Name
+        SecondLabel.text = MasterExerciseList[bCounter].Instructions
     }
     
     

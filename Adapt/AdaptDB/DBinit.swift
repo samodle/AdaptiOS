@@ -9,7 +9,9 @@
 import Foundation
 
 //var MasterGearList = [Gear]() // = new List<Gear>();
-var MasterExerciseList = [Exercise]()// new List<Exercise>();
+var MasterExerciseList = [Exercise]()
+ let Abs_30_ADAPTFit_00 = WorkoutPlan( name: "Six Pack Abs In 30 Days")
+    let Muscle_90_ADAPTFit_00 = WorkoutPlan( name: "90 Days To Build Muscle")
 
 func setMasterLists()
 {
@@ -36,69 +38,71 @@ func setMasterLists()
     var Cardio_StairRun_01: Workout
     
     //Core
-    var Abs_3_HASFit: Workout
-    var Abs_5_HASFit: Workout
-    var Abs_5Standing_HASFit: Workout
-    var Abs_6_HASFit: Workout
-    var Abs_6Oblique_HASFit: Workout
-    var Abs_8A_HASFit: Workout
-    var Abs_8Lower_HASFit: Workout
-    var Abs_8B_HASFit: Workout
+    var Abs_3_ADAPTFit: Workout
+    var Abs_5_ADAPTFit: Workout
+    var Abs_5Standing_ADAPTFit: Workout
+    var Abs_6_ADAPTFit: Workout
+    var Abs_6Oblique_ADAPTFit: Workout
+    var Abs_8A_ADAPTFit: Workout
+    var Abs_8Lower_ADAPTFit: Workout
+    var Abs_8B_ADAPTFit: Workout
     
     //Upper
-    var Gym_Upper_HASFit_00: Workout
-    var Gym_Upper_HASFit_01: Workout
-    var Gym_Upper_HASFit_02: Workout
-    var Gym_Upper_HASFit_03: Workout
-    var Gym_Upper_HASFit_04: Workout
-    var Gym_Upper_HASFit_05: Workout
-    var Gym_Upper_HASFit_06: Workout
-    var Gym_Upper_HASFit_07: Workout
-    var Gym_Upper_HASFit_08: Workout
+    var Gym_Upper_ADAPTFit_00: Workout
+    var Gym_Upper_ADAPTFit_01: Workout
+    var Gym_Upper_ADAPTFit_02: Workout
+    var Gym_Upper_ADAPTFit_03: Workout
+    var Gym_Upper_ADAPTFit_04: Workout
+    var Gym_Upper_ADAPTFit_05: Workout
+    var Gym_Upper_ADAPTFit_06: Workout
+    var Gym_Upper_ADAPTFit_07: Workout
+    var Gym_Upper_ADAPTFit_08: Workout
     var Gym_Upper_RunTheRack_00: Workout
     
     //Total Body
-    var Gym_Total_HASFit_00: Workout
-    var Gym_Total_HASFit_01: Workout
-    var Gym_Total_HASFit_02: Workout
-    var Gym_Total_HASFit_03: Workout
-    var Gym_Total_HASFit_04: Workout
-    var Gym_Total_HASFit_05: Workout
-    var Gym_Total_HASFit_06: Workout
-    var Gym_Total_HASFit_07: Workout
-    var Gym_Total_HASFit_08: Workout
-    var Gym_Total_HASFit_09: Workout
-    var Gym_Total_HASFit_10: Workout
-    var Gym_Total_HASFit_11: Workout
-    var Gym_Total_HASFit_12: Workout
-    var Gym_Total_HASFit_13: Workout
-    var Gym_Total_HASFit_14: Workout
-    var Gym_Total_HASFit_15: Workout
-    var Gym_Total_HASFit_16: Workout
-    var Gym_Total_HASFit_17: Workout
-    var Gym_Total_HASFit_18: Workout
-    var Gym_Total_HASFit_19: Workout
-    var Gym_Total_HASFit_20: Workout
+    var Gym_Total_ADAPTFit_00: Workout
+    var Gym_Total_ADAPTFit_01: Workout
+    var Gym_Total_ADAPTFit_02: Workout
+    var Gym_Total_ADAPTFit_03: Workout
+    var Gym_Total_ADAPTFit_04: Workout
+    var Gym_Total_ADAPTFit_05: Workout
+    var Gym_Total_ADAPTFit_06: Workout
+    var Gym_Total_ADAPTFit_07: Workout
+    var Gym_Total_ADAPTFit_08: Workout
+    var Gym_Total_ADAPTFit_09: Workout
+    var Gym_Total_ADAPTFit_10: Workout
+    var Gym_Total_ADAPTFit_11: Workout
+    var Gym_Total_ADAPTFit_12: Workout
+    var Gym_Total_ADAPTFit_13: Workout
+    var Gym_Total_ADAPTFit_14: Workout
+    var Gym_Total_ADAPTFit_15: Workout
+    var Gym_Total_ADAPTFit_16: Workout
+    var Gym_Total_ADAPTFit_17: Workout
+    var Gym_Total_ADAPTFit_18: Workout
+    var Gym_Total_ADAPTFit_19: Workout
+    var Gym_Total_ADAPTFit_20: Workout
     
     //Lower
-    var Gym_Lower_HASFit_00: Workout
-    var Gym_Lower_HASFit_01: Workout
-    var Gym_Lower_HASFit_02: Workout
-    var Gym_Lower_HASFit_03: Workout
-    var Gym_Lower_HASFit_04: Workout
-    
-    var ps: ExerciseParams
-    var ps2: ExerciseParams
+    var Gym_Lower_ADAPTFit_00: Workout
+    var Gym_Lower_ADAPTFit_01: Workout
+    var Gym_Lower_ADAPTFit_02: Workout
+    var Gym_Lower_ADAPTFit_03: Workout
+    var Gym_Lower_ADAPTFit_04: Workout
+ 
     
     var setL = [Int]()
     var timeL = [Double]()
     var repL = [Double]()
     var typeL = [SetType]()
     
-    var eList = [Exercise]() //new List<Exercise>();
- 
     
-//    #region MMA Exercises
+   // initializeExerciseList()
+    var eList = [Exercise]()
+    
+    var ps: ExerciseParams
+    var ps2: ExerciseParams
+    
+    //    #region MMA Exercises
     ps =  ExerciseParams(m1: Tier1MuscleGroup.arms,w: WeightStatus.required )
     
     let m1 = Exercise(eParams: ps,  name: "1: Lead Jab", instructions: "point with thumb and aim with front two knuckles. move body w/ arm")
@@ -115,7 +119,7 @@ func setMasterLists()
     let mds =  Exercise(eParams: ps,  name: "Dodge Squat", instructions: "hands up, move torso repeatedly side to side while slowly lowering body into and out of a squat");
     let msp =  Exercise(eParams: ps,  name: "Sprawl", instructions: "similar to modified squat thrust or up-downs");
     let mupa =  Exercise(eParams: ps,  name: "Double Upa Sit Up", instructions: "situp then one upa to each side");
-
+    
     
     //MARK: Core Exercises
     ps = ExerciseParams(m1: Tier1MuscleGroup.core, w: WeightStatus.none)
@@ -124,7 +128,7 @@ func setMasterLists()
     let a0 =  Exercise(eParams: ps,  name: "Star Crunch", instructions: "Start on your back with arms and legs splayed straight out and 6in off the ground like a starfish. While lifting your knees to your chest, pull your arms as far down past your butt as you can, then return to the starting position.");
     
     let a1 =  Exercise(eParams: ps,  name: "Elbow Plank", instructions: "Hold your body straight, parallel to the ground resting on your feet and elbows.");
-   // a1.Aliases.Add( AdaptText("low plank", MisIdiomas.EN));
+    // a1.Aliases.Add( AdaptText("low plank", MisIdiomas.EN));
     
     let a2 =  Exercise(eParams: ps,  name: "Raised Feet Elbow Plank", instructions: "Hold your body straight, parallel to the ground resting on your feet on a chair or raised surface and your elbows on the ground.");
     
@@ -178,7 +182,7 @@ func setMasterLists()
     let a26 =  Exercise(eParams: ps,  name: "Downward Hip Thrusters", instructions: "From the low plank position, thrust your hips up and down essentially in a humping motion. It looks funny but you won't be laughing for long.");
     
     let a27 =  Exercise(eParams: ps,  name: "Crunch", instructions: "Laying on back with knees up, hold weight on chest and lift both shoulder blades off the ground.");
-   // a27.WeightsNeeded = WeightStatus.preferred;
+    // a27.WeightsNeeded = WeightStatus.preferred;
     a27.WeightInfo = WeightStatus.preferred
     
     let a40 =  Exercise(eParams: ps,  name: "Reach Crunch", instructions: "Laying on back with knees up and feed on ground,  lift both shoulder blades off the ground reaching as straight up as possible.");
@@ -201,8 +205,8 @@ func setMasterLists()
     let a35 =  Exercise(eParams: ps,  name: "The Clam", instructions: "Place hands to the side of your head and the souls of your feet together.  Crunch your legs upward and lift your shoulder blades off the ground.");
     
     let a36 =  Exercise(eParams: ps,  name: "Scissor Kicks", instructions: "Laying flat on back simultaneuosly kick legs laterally in opposite directions working the lower abdominal muscles");
-  //  a36.Aliases.Add( AdaptText("leg crossovers", MisIdiomas.EN));
-  //  a36.Aliases.Add( AdaptText("side to side kicks", MisIdiomas.EN));
+    //  a36.Aliases.Add( AdaptText("leg crossovers", MisIdiomas.EN));
+    //  a36.Aliases.Add( AdaptText("side to side kicks", MisIdiomas.EN));
     
     let a20 =  Exercise(eParams: ps,  name: "Elbow Side Plank w/ Dips", instructions: "Resting on your side on one elbow and your feet, repeatedly dip your hips down and up.");
     
@@ -213,18 +217,18 @@ func setMasterLists()
     let a39 =  Exercise(eParams: ps,  name: "Elbow Side Knee Plank", instructions: "Resting on your side on one elbow and your knees");
     
     //nordic track, plank reach twists, situp twist down
-
- 
-//    #region Gym Exercises
+    
+    
+    //    #region Gym Exercises
     ps =  ExerciseParams(m1: Tier1MuscleGroup.arms, w: WeightStatus.required);
     ps2 =  ExerciseParams(m1: Tier1MuscleGroup.arms, w: WeightStatus.optional);
-    let ps3 =  ExerciseParams(m1: Tier1MuscleGroup.back, w: WeightStatus.required);
+  //  let ps3 =  ExerciseParams(m1: Tier1MuscleGroup.back, w: WeightStatus.required);
     
     //To Do - add property for does it 50-50 or 7-7-7 (partial partial whole) etc - or 3-3-3 (up hold down)
     
     //cardio
-    let c0 =  Exercise(eParams: ps,  name: "Jog",instructions: "");
-    let c1 =  Exercise(eParams: ps,  name: "Walk",instructions: "");
+    let c0 =  Exercise(eParams: ps,  name: "Jog",instructions: "Run at a pace you could maintain for half an hour");
+    let c1 =  Exercise(eParams: ps,  name: "Walk",instructions: "Brisk walk");
     let c2 =  Exercise(eParams: ps,  name: "Sprint", instructions: "Run as fast as you can!");
     
     let c4 =  Exercise(eParams: ps,  name: "Jog Stairs - Every Step",instructions: "");
@@ -234,7 +238,7 @@ func setMasterLists()
     let c8 =  Exercise(eParams: ps,  name: "Stretch Stairs - Every Third Step",instructions: "");
     
     let a99 =  Exercise(eParams: ps,  name: "Split Jumps", instructions: "");
-   // a99.Aliases.Add( AdaptText("Scissor Jumps", MisIdiomas.EN));
+    // a99.Aliases.Add( AdaptText("Scissor Jumps", MisIdiomas.EN));
     let b3 =  Exercise(eParams: ps,  name: "Forward/ Back Hops", instructions: "");
     let b4 =  Exercise(eParams: ps,  name: "Lateral Hops", instructions: "");
     let c3 =  Exercise(eParams: ps,  name: "Rest",instructions: "");
@@ -284,7 +288,7 @@ func setMasterLists()
     let b54 =  Exercise(eParams: ps,  name: "Standing High Cable Double Bicep Curls", instructions: "");
     let a87 =  Exercise(eParams: ps,  name: "Low Cable Flys", instructions: "");
     let a88 =  Exercise(eParams: ps,  name: "Reverse Cable Pulldowns", instructions: "");
-   // a88.Aliases.Add( AdaptText("Reverse Tricep Pulldowns", MisIdiomas.EN));
+    // a88.Aliases.Add( AdaptText("Reverse Tricep Pulldowns", MisIdiomas.EN));
     let a91 =  Exercise(eParams: ps,  name: "Manual Tricep Extensions", instructions: "");
     let a96 =  Exercise(eParams: ps,  name: "Incline Dumbell Negative Fly To Chest Press Concentric", instructions: "");
     let b5 =  Exercise(eParams: ps,  name: "California Skullcrusher", instructions: "");
@@ -379,41 +383,42 @@ func setMasterLists()
     let b65 =  Exercise(eParams: ps,  name: "Ballistic Pike Push-up", instructions: "");
     let b66 =  Exercise(eParams: ps,  name: "Overhead Lunge", instructions: "");
     let b67 =  Exercise(eParams: ps,  name: "Plank Knee Tuck", instructions: "");
-  /*  var b68 =  Exercise(ps,  "", "");
-    var b69 =  Exercise(ps,  "", "");
-    
-    var b70 =  Exercise(ps,  "", "");
-    var b71 =  Exercise(ps,  "", "");
-    var b72 =  Exercise(ps,  "", "");
-    var b73 =  Exercise(ps,  "", "");
-    var b74 =  Exercise(ps,  "", "");
-    var b75 =  Exercise(ps,  "", "");
-    var b76 =  Exercise(ps,  "", "");
-    var b77 =  Exercise(ps,  "", "");
-    var b78 =  Exercise(ps,  "", "");
-    var b79 =  Exercise(ps,  "", "");
-    
-    var b80 =  Exercise(ps,  "", "");
-    var b81 =  Exercise(ps,  "", "");
-    var b82 =  Exercise(ps,  "", "");
-    var b83 =  Exercise(ps,  "", "");
-    var b84 =  Exercise(ps,  "", "");
-    var b85 =  Exercise(ps,  "", "");
-    var b86 =  Exercise(ps,  "", "");
-    var b87 =  Exercise(ps,  "", "");
-    var b88 =  Exercise(ps,  "", "");
-    var b89 =  Exercise(ps,  "", "");
-    var b90 =  Exercise(ps,  "", "");
-    var b91 =  Exercise(ps,  "", "");
-    var b92 =  Exercise(ps,  "", "");
-    var b93 =  Exercise(ps,  "", "");
-    var b94 =  Exercise(ps,  "", "");
-    var b95 =  Exercise(ps,  "", "");
-    var b96 =  Exercise(ps,  "", "");
-    var b97 =  Exercise(ps,  "", "");
-    var b98 =  Exercise(ps,  "", "");
-    var b99 =  Exercise(ps,  "", ""); */
+    /*  var b68 =  Exercise(ps,  "", "");
+     var b69 =  Exercise(ps,  "", "");
+     
+     var b70 =  Exercise(ps,  "", "");
+     var b71 =  Exercise(ps,  "", "");
+     var b72 =  Exercise(ps,  "", "");
+     var b73 =  Exercise(ps,  "", "");
+     var b74 =  Exercise(ps,  "", "");
+     var b75 =  Exercise(ps,  "", "");
+     var b76 =  Exercise(ps,  "", "");
+     var b77 =  Exercise(ps,  "", "");
+     var b78 =  Exercise(ps,  "", "");
+     var b79 =  Exercise(ps,  "", "");
+     
+     var b80 =  Exercise(ps,  "", "");
+     var b81 =  Exercise(ps,  "", "");
+     var b82 =  Exercise(ps,  "", "");
+     var b83 =  Exercise(ps,  "", "");
+     var b84 =  Exercise(ps,  "", "");
+     var b85 =  Exercise(ps,  "", "");
+     var b86 =  Exercise(ps,  "", "");
+     var b87 =  Exercise(ps,  "", "");
+     var b88 =  Exercise(ps,  "", "");
+     var b89 =  Exercise(ps,  "", "");
+     var b90 =  Exercise(ps,  "", "");
+     var b91 =  Exercise(ps,  "", "");
+     var b92 =  Exercise(ps,  "", "");
+     var b93 =  Exercise(ps,  "", "");
+     var b94 =  Exercise(ps,  "", "");
+     var b95 =  Exercise(ps,  "", "");
+     var b96 =  Exercise(ps,  "", "");
+     var b97 =  Exercise(ps,  "", "");
+     var b98 =  Exercise(ps,  "", "");
+     var b99 =  Exercise(ps,  "", ""); */
     //Exercise c =  Exercise(ps,  "", "");
+  
    
      //MARK: Road Workouts
     x =  WorkoutStructure(anyTimes: false, anyDistances: false);
@@ -511,34 +516,34 @@ func setMasterLists()
     x.addSetsAndReps(sets: [ 0, 1, 0, 1, 0, 1, 0, 1 ], reps: repL);
     x.addSetsAndReps(sets: [ 2, 3, 2, 3, 2, 3, 2, 3 ], reps: repL);
     x.addSetsAndReps(sets: [ 4, 5, 4, 5, 4, 5, 4, 5 ], reps: repL);
-    Gym_Upper_HASFit_00 = Workout( name: "Strength Emphasis: Muscle Building Upper Body Workout", descript: "Drop Set Superset Chest and Back Exercises. Mix up your routine with the muscle building upper body workout. The bodybuilding drop set superset will work chest and back. Drop Set Supersets – This is a great plateau killing workout.We’ve provide both a Mass Building Emphasis version and a Strength Emphasis version of this technique.", instruct: "Start with appropriate weight for the first set and then drop 10% off the weight every set. Alternate between A1 and A2 with no rest until all sets are completed. Rest for 2 minutes before moving on to B1 and B2. Repeat for C.");
-    Gym_Upper_HASFit_00.Exercises = [ a41.ID, a42.ID, a43.ID, a44.ID, a45.ID, a46.ID ] //
-    Gym_Upper_HASFit_00.Sets = x;
+    Gym_Upper_ADAPTFit_00 = Workout( name: "Strength Emphasis: Muscle Building Upper Body Workout", descript: "Drop Set Superset Chest and Back Exercises. Mix up your routine with the muscle building upper body workout. The bodybuilding drop set superset will work chest and back. Drop Set Supersets – This is a great plateau killing workout.We’ve provide both a Mass Building Emphasis version and a Strength Emphasis version of this technique.", instruct: "Start with appropriate weight for the first set and then drop 10% off the weight every set. Alternate between A1 and A2 with no rest until all sets are completed. Rest for 2 minutes before moving on to B1 and B2. Repeat for C.");
+    Gym_Upper_ADAPTFit_00.Exercises = [ a41.ID, a42.ID, a43.ID, a44.ID, a45.ID, a46.ID ] //
+    Gym_Upper_ADAPTFit_00.Sets = x;
     
     x = WorkoutStructure(anyTimes: false, anyDistances: false);
     repL = [ 8, 8, 10, 10, 12, 12, 15, 15 ]
     x.addSetsAndReps(sets: [ 0, 1, 0, 1, 0, 1, 0, 1 ], reps: repL);
     x.addSetsAndReps(sets: [ 2, 3, 2, 3, 2, 3, 2, 3 ], reps: repL);
     x.addSetsAndReps(sets: [ 4, 5, 4, 5, 4, 5, 4, 5 ], reps: repL);
-    Gym_Upper_HASFit_01 = Workout( name: "Mass Emphasis: Muscle Building Upper Body Workout", descript: "Drop Set Superset Chest and Back Exercises. Mix up your routine with the muscle building upper body workout. The bodybuilding drop set superset will work chest and back. Drop Set Supersets – This is a great plateau killing workout.", instruct: "Start with appropriate weight for the first set and then drop 10% off the weight every set. Alternate between A1 and A2 with no rest until all sets are completed. Rest for 2 minutes before moving on to B1 and B2. Repeat for C.");
-    Gym_Upper_HASFit_01.Exercises = [ a41.ID, a42.ID, a43.ID, a44.ID, a45.ID, a46.ID ] //
-    Gym_Upper_HASFit_01.Sets = x;
+    Gym_Upper_ADAPTFit_01 = Workout( name: "Mass Emphasis: Muscle Building Upper Body Workout", descript: "Drop Set Superset Chest and Back Exercises. Mix up your routine with the muscle building upper body workout. The bodybuilding drop set superset will work chest and back. Drop Set Supersets – This is a great plateau killing workout.", instruct: "Start with appropriate weight for the first set and then drop 10% off the weight every set. Alternate between A1 and A2 with no rest until all sets are completed. Rest for 2 minutes before moving on to B1 and B2. Repeat for C.");
+    Gym_Upper_ADAPTFit_01.Exercises = [ a41.ID, a42.ID, a43.ID, a44.ID, a45.ID, a46.ID ] //
+    Gym_Upper_ADAPTFit_01.Sets = x;
     
     x = WorkoutStructure(anyTimes: false, anyDistances: false);
     x.addSetsAndReps(sets: [ 0, 1, 0, 1, 0, 1, 0, 1 ], reps: [ 6, 6, 8, 8, 10, 10, 12, 12 ]);
     x.addSetsAndReps(sets: [ 2, 3, 2, 3, 2, 3, 2, 3 ], reps: [ 6, 50, 8, 40, 10, 30, 12, 20 ]);
     x.addSetsAndReps(sets: [ 4, 5, 4, 5, 4, 5, 4, 5 ], reps: [ 6, 4, 8, 6, 10, 8, 12, 10 ]);
-    Gym_Upper_HASFit_02 = Workout( name: "Strength Emphasis: Muscle Building Arm Workout – Drop Set Superset Biceps and Triceps Exercises", descript: "Experience explosive arm growth with HASfit’s muscle building biceps and triceps workout. The drop set superset technique arm workout and arm exercises is just what you need to mix up your routine. Drop Set Supersets – This is a great plateau killing workout. ", instruct: "Start with appropriate weight for the first set and then drop 10% off the weight every set. Alternate between A1.ID, a2.ID, a3.ID, a1.ID, a2.ID, a3… with no rest until all sets are completed. Rest for 2 minutes before moving on to B1, B2, B3.");
-    Gym_Upper_HASFit_02.Exercises = [ a53.ID, a54.ID, a55.ID, a56.ID, a57.ID, a58.ID ] //
-    Gym_Upper_HASFit_02.Sets = x;
+    Gym_Upper_ADAPTFit_02 = Workout( name: "Strength Emphasis: Muscle Building Arm Workout – Drop Set Superset Biceps and Triceps Exercises", descript: "Experience explosive arm growth with ADAPTFit’s muscle building biceps and triceps workout. The drop set superset technique arm workout and arm exercises is just what you need to mix up your routine. Drop Set Supersets – This is a great plateau killing workout. ", instruct: "Start with appropriate weight for the first set and then drop 10% off the weight every set. Alternate between A1.ID, a2.ID, a3.ID, a1.ID, a2.ID, a3… with no rest until all sets are completed. Rest for 2 minutes before moving on to B1, B2, B3.");
+    Gym_Upper_ADAPTFit_02.Exercises = [ a53.ID, a54.ID, a55.ID, a56.ID, a57.ID, a58.ID ] //
+    Gym_Upper_ADAPTFit_02.Sets = x;
     
     x = WorkoutStructure(anyTimes: false, anyDistances: false);
     x.addSetsAndReps(sets: [ 0, 1, 0, 1, 0, 1, 0, 1 ], reps: [ 8, 8, 10, 10, 12, 12, 15, 15 ]);
     x.addSetsAndReps(sets: [ 2, 3, 2, 3, 2, 3, 2, 3 ], reps: [ 8, 50, 10, 40, 12, 30, 15, 20]);
     x.addSetsAndReps(sets: [ 4, 5, 4, 5, 4, 5, 4, 5 ], reps: [ 8, 6, 10, 8, 12, 10, 15, 12 ]);
-    Gym_Upper_HASFit_03 = Workout( name: "Mass Emphasis: Muscle Building Arm Workout – Drop Set Superset Biceps and Triceps Exercises", descript: "Experience explosive arm growth with HASfit’s muscle building biceps and triceps workout. The drop set superset technique arm workout and arm exercises is just what you need to mix up your routine. Drop Set Supersets – This is a great plateau killing workout. ", instruct: "Start with appropriate weight for the first set and then drop 10% off the weight every set. Alternate between A1.ID, a2.ID, a3.ID, a1.ID, a2.ID, a3… with no rest until all sets are completed. Rest for 2 minutes before moving on to B1, B2, B3.");
-    Gym_Upper_HASFit_03.Exercises = [ a53.ID, a54.ID, a55.ID, a56.ID, a57.ID, a58.ID ] //
-    Gym_Upper_HASFit_03.Sets = x;
+    Gym_Upper_ADAPTFit_03 = Workout( name: "Mass Emphasis: Muscle Building Arm Workout – Drop Set Superset Biceps and Triceps Exercises", descript: "Experience explosive arm growth with ADAPTFit’s muscle building biceps and triceps workout. The drop set superset technique arm workout and arm exercises is just what you need to mix up your routine. Drop Set Supersets – This is a great plateau killing workout. ", instruct: "Start with appropriate weight for the first set and then drop 10% off the weight every set. Alternate between A1.ID, a2.ID, a3.ID, a1.ID, a2.ID, a3… with no rest until all sets are completed. Rest for 2 minutes before moving on to B1, B2, B3.");
+    Gym_Upper_ADAPTFit_03.Exercises = [ a53.ID, a54.ID, a55.ID, a56.ID, a57.ID, a58.ID ] //
+    Gym_Upper_ADAPTFit_03.Sets = x;
     
     x = WorkoutStructure(anyTimes: false, anyDistances: false);
     setL = [ 0, 1 ]
@@ -547,9 +552,9 @@ func setMasterLists()
     setL = [ 2, 3 ]
     repL = [ 15, 15 ]
     x.addSetsAndReps(sets: setL, reps: repL, n: 3);
-    Gym_Upper_HASFit_04 = Workout( name: "Bodybuilding Back and Biceps Workout – Back Bicep Exercises to Add Mass", descript: "bodybuilding back and biceps workout high volume workout. These hypertrophy back bicep exercises to add mass are sure to spark new growth!", instruct: "start with a weight you could do 20 times to failure, usually 60% of 1 rep max. Use a 4-0-2 tempo. It should feel easy for the first 6 or 7 sets. Alternate between A1 and A2 with 30-45 seconds rest, repeat for B1 and B2.");
-    Gym_Upper_HASFit_04.Exercises = [ a69.ID, a70.ID, a71.ID, a72.ID ] //
-    Gym_Upper_HASFit_04.Sets = x;
+    Gym_Upper_ADAPTFit_04 = Workout( name: "Bodybuilding Back and Biceps Workout – Back Bicep Exercises to Add Mass", descript: "bodybuilding back and biceps workout high volume workout. These hypertrophy back bicep exercises to add mass are sure to spark new growth!", instruct: "start with a weight you could do 20 times to failure, usually 60% of 1 rep max. Use a 4-0-2 tempo. It should feel easy for the first 6 or 7 sets. Alternate between A1 and A2 with 30-45 seconds rest, repeat for B1 and B2.");
+    Gym_Upper_ADAPTFit_04.Exercises = [ a69.ID, a70.ID, a71.ID, a72.ID ] //
+    Gym_Upper_ADAPTFit_04.Sets = x;
     
     x = WorkoutStructure(anyTimes: false, anyDistances: false);
     setL = [ 0, 1 ]
@@ -558,25 +563,25 @@ func setMasterLists()
     setL = [ 2, 3 ]
     repL = [ 15, 15 ]
     x.addSetsAndReps(sets: setL, reps: repL, n: 3);
-    Gym_Upper_HASFit_05 = Workout( name: "Bodybuilding Chest and Triceps Workout Routine – High Volume Training – Mass Exercises", descript: "high volume chest and triceps workout to add mass! The high volume chest and triceps exercise bodybuilding technique is great for hypertrophy", instruct: "High Volume Training – start with a weight you could do 20 times to failure, usually 60% of 1 rep max. Use a 4-0-2 tempo. It should feel easy for the first 6 or 7 sets. Alternate between A1 and A2 with 30-45 seconds rest, repeat for B1 and B2.");
-    Gym_Upper_HASFit_05.Exercises = [ a41.ID, a57.ID, a87.ID, a88.ID ] //
-    Gym_Upper_HASFit_05.Sets = x;
+    Gym_Upper_ADAPTFit_05 = Workout( name: "Bodybuilding Chest and Triceps Workout Routine – High Volume Training – Mass Exercises", descript: "high volume chest and triceps workout to add mass! The high volume chest and triceps exercise bodybuilding technique is great for hypertrophy", instruct: "High Volume Training – start with a weight you could do 20 times to failure, usually 60% of 1 rep max. Use a 4-0-2 tempo. It should feel easy for the first 6 or 7 sets. Alternate between A1 and A2 with 30-45 seconds rest, repeat for B1 and B2.");
+    Gym_Upper_ADAPTFit_05.Exercises = [ a41.ID, a57.ID, a87.ID, a88.ID ] //
+    Gym_Upper_ADAPTFit_05.Sets = x;
     
     x = WorkoutStructure(anyTimes: false, anyDistances: false);
     setL = [ 0, 1, 2, 3, 4 ]
     repL = [ 12, 8, 12, 12, 8 ]
     x.addSetsAndReps(sets: setL, reps: repL, n: 4);
-    Gym_Upper_HASFit_06 = Workout( name: "Best Chest and Triceps Workout for Muscle Building – Chest Tricep Exercise Routine", descript: "", instruct: "Perform each exercise at high intensity for the prescribed repetitions to complete one set.");
-    Gym_Upper_HASFit_06.Exercises = [ a41.ID, b5.ID, b6.ID, b8.ID, a88.ID ] //
-    Gym_Upper_HASFit_06.Sets = x;
+    Gym_Upper_ADAPTFit_06 = Workout( name: "Best Chest and Triceps Workout for Muscle Building – Chest Tricep Exercise Routine", descript: "", instruct: "Perform each exercise at high intensity for the prescribed repetitions to complete one set.");
+    Gym_Upper_ADAPTFit_06.Exercises = [ a41.ID, b5.ID, b6.ID, b8.ID, a88.ID ] //
+    Gym_Upper_ADAPTFit_06.Sets = x;
     
     x = WorkoutStructure(anyTimes: false, anyDistances: false);
     setL = [ 0, 1, 2, 3, 4 ]
     repL = [ 12, 12, 8, 12, 8 ]
     x.addSetsAndReps(sets: setL, reps: repL, n: 4);
-    Gym_Upper_HASFit_07 = Workout( name: "Best Back and Biceps Workout to Add Mass and Gain Muscle – Back Bicep Exercise Routine", descript: "This muscle building back and biceps exercise routine is sure to help you add mass.", instruct: "");
-    Gym_Upper_HASFit_07.Exercises = [ b13.ID, b10.ID, b12.ID, b11.ID, b14.ID ] //
-    Gym_Upper_HASFit_07.Sets = x;
+    Gym_Upper_ADAPTFit_07 = Workout( name: "Best Back and Biceps Workout to Add Mass and Gain Muscle – Back Bicep Exercise Routine", descript: "This muscle building back and biceps exercise routine is sure to help you add mass.", instruct: "");
+    Gym_Upper_ADAPTFit_07.Exercises = [ b13.ID, b10.ID, b12.ID, b11.ID, b14.ID ] //
+    Gym_Upper_ADAPTFit_07.Sets = x;
     
     x = WorkoutStructure(anyTimes: false, anyDistances: false); //originally this existed as one workout made of doing two separate back to back, however the single workouts were never used in the plan as singles
     setL = [ 0, 1, 2 ]
@@ -585,9 +590,9 @@ func setMasterLists()
     setL = [ 3, 4, 5 ]
     repL = [ 12, 12, 15 ]
     x.addSetsAndReps(sets: setL, reps: repL, n: 5);
-    Gym_Upper_HASFit_08 = Workout( name: "MASSIVE Back Workout – Bodybuilding Back Exercises To Add Size and Build Muscle   ///  How To Get Big Biceps Workout – Biceps Exercises For Mass – Bicep Work out", descript: "Looking for a bodybuilding back workout ? Check out this bodybuilding back exercise routine to gain mass and get a bigger massive back.  Follow this quick biceps workout to get big biceps in no time! Adding new bicep exercises to your routine is the best way to shock them into growth.", instruct: "");
-    Gym_Upper_HASFit_08.Exercises = [ b49.ID, b50.ID, b51.ID, b52.ID, b53.ID, b54.ID ] //
-    Gym_Upper_HASFit_08.Sets = x;
+    Gym_Upper_ADAPTFit_08 = Workout( name: "MASSIVE Back Workout – Bodybuilding Back Exercises To Add Size and Build Muscle   ///  How To Get Big Biceps Workout – Biceps Exercises For Mass – Bicep Work out", descript: "Looking for a bodybuilding back workout ? Check out this bodybuilding back exercise routine to gain mass and get a bigger massive back.  Follow this quick biceps workout to get big biceps in no time! Adding new bicep exercises to your routine is the best way to shock them into growth.", instruct: "");
+    Gym_Upper_ADAPTFit_08.Exercises = [ b49.ID, b50.ID, b51.ID, b52.ID, b53.ID, b54.ID ] //
+    Gym_Upper_ADAPTFit_08.Sets = x;
 
     
     //MARK: Lower Body Workouts
@@ -596,17 +601,17 @@ func setMasterLists()
     x.addSetsAndReps(sets: [ 0, 1, 0, 1, 0, 1, 0, 1 ], reps: [ 4, 4, 6, 6, 8, 8, 10, 10 ]);
     x.addSetsAndReps(sets: [ 2, 3, 2, 3, 2, 3, 2, 3 ], reps: [ 6, 50, 8, 40, 10, 30, 12, 20]);
     x.addSetsAndReps(sets: [ 4, 5, 4, 5, 4, 5, 4, 5 ], reps: [ 6, 6, 8, 8, 10, 10, 12, 12 ]);
-    Gym_Lower_HASFit_00 = Workout( name: "Strength Emphasis: Muscle Building Lower Body Workout", descript: "Spark new leg growth with HASfit’s muscle building lower body workout. The drop sets superset leg exercises will add variety to your routine. This legs workout is great for intermediate to advanced trainees. Drop Set Supersets – This is a great plateau killing workout.", instruct: "Start with appropriate weight for the first set and then drop 10% off the weight every set. Alternate between A1 and A2 with no rest until all sets are completed. Rest for 2 minutes before moving on to B1 and B2. Repeat for C.");
-    Gym_Lower_HASFit_00.Exercises = [ a47.ID, a48.ID, a49.ID, a50.ID, a51.ID, a52.ID ] //
-    Gym_Lower_HASFit_00.Sets = x;
+    Gym_Lower_ADAPTFit_00 = Workout( name: "Strength Emphasis: Muscle Building Lower Body Workout", descript: "Spark new leg growth with ADAPTFit’s muscle building lower body workout. The drop sets superset leg exercises will add variety to your routine. This legs workout is great for intermediate to advanced trainees. Drop Set Supersets – This is a great plateau killing workout.", instruct: "Start with appropriate weight for the first set and then drop 10% off the weight every set. Alternate between A1 and A2 with no rest until all sets are completed. Rest for 2 minutes before moving on to B1 and B2. Repeat for C.");
+    Gym_Lower_ADAPTFit_00.Exercises = [ a47.ID, a48.ID, a49.ID, a50.ID, a51.ID, a52.ID ] //
+    Gym_Lower_ADAPTFit_00.Sets = x;
     
     x = WorkoutStructure(anyTimes: false, anyDistances: false);
     x.addSetsAndReps(sets: [ 0, 1, 0, 1, 0, 1, 0, 1 ], reps: [ 8, 6, 10, 8, 12, 10, 15, 12 ]);
     x.addSetsAndReps(sets: [ 2, 3, 2, 3, 2, 3, 2, 3 ], reps: [ 8, 50, 10, 40, 12, 30, 15, 20 ]);
     x.addSetsAndReps(sets: [ 4, 5, 4, 5, 4, 5, 4, 5 ], reps: [ 10, 8, 12, 10, 15, 12, 25, 15 ]);
-    Gym_Lower_HASFit_01 = Workout( name: "Mass Emphasis: Muscle Building Lower Body Workout", descript: "Spark new leg growth with HASfit’s muscle building lower body workout. The drop sets superset leg exercises will add variety to your routine. This legs workout is great for intermediate to advanced trainees. Drop Set Supersets – This is a great plateau killing workout.", instruct: "Start with appropriate weight for the first set and then drop 10% off the weight every set. Alternate between A1 and A2 with no rest until all sets are completed. Rest for 2 minutes before moving on to B1 and B2. Repeat for C.");
-    Gym_Lower_HASFit_01.Exercises = [ a47.ID, a48.ID, a49.ID, a50.ID, a51.ID, a52.ID ] //
-    Gym_Lower_HASFit_01.Sets = x;
+    Gym_Lower_ADAPTFit_01 = Workout( name: "Mass Emphasis: Muscle Building Lower Body Workout", descript: "Spark new leg growth with ADAPTFit’s muscle building lower body workout. The drop sets superset leg exercises will add variety to your routine. This legs workout is great for intermediate to advanced trainees. Drop Set Supersets – This is a great plateau killing workout.", instruct: "Start with appropriate weight for the first set and then drop 10% off the weight every set. Alternate between A1 and A2 with no rest until all sets are completed. Rest for 2 minutes before moving on to B1 and B2. Repeat for C.");
+    Gym_Lower_ADAPTFit_01.Exercises = [ a47.ID, a48.ID, a49.ID, a50.ID, a51.ID, a52.ID ] //
+    Gym_Lower_ADAPTFit_01.Sets = x;
     
     x = WorkoutStructure(anyTimes: false, anyDistances: false);
     setL = [ 0, 1 ]
@@ -615,25 +620,25 @@ func setMasterLists()
     setL = [ 2, 3 ]
     repL = [ 15, 15 ]
     x.addSetsAndReps(sets: setL, reps: repL, n: 3);
-    Gym_Lower_HASFit_02 = Workout( name: "High Volume Training – Massive Leg Workout Routine – Bodybuilding Leg Exercises", descript: " high volume leg workout to build your lower body. The hypertrophy bodybuilding leg exercises will shock your legs into growth. This legs workout is great for intermediate through advanced trainees.", instruct: "start with a weight you could do 20 times to failure, usually 60% of 1 rep max. Use a 4-0-2 tempo. It should feel easy for the first 6 or 7 sets. Alternate between A1 and A2 with 30-45 seconds rest, repeat for B1 and B2.");
-    Gym_Lower_HASFit_02.Exercises = [ a86.ID, a13.ID, a48b.ID, a50.ID ] //
-    Gym_Lower_HASFit_02.Sets = x;
+    Gym_Lower_ADAPTFit_02 = Workout( name: "High Volume Training – Massive Leg Workout Routine – Bodybuilding Leg Exercises", descript: " high volume leg workout to build your lower body. The hypertrophy bodybuilding leg exercises will shock your legs into growth. This legs workout is great for intermediate through advanced trainees.", instruct: "start with a weight you could do 20 times to failure, usually 60% of 1 rep max. Use a 4-0-2 tempo. It should feel easy for the first 6 or 7 sets. Alternate between A1 and A2 with 30-45 seconds rest, repeat for B1 and B2.");
+    Gym_Lower_ADAPTFit_02.Exercises = [ a86.ID, a13.ID, a48b.ID, a50.ID ] //
+    Gym_Lower_ADAPTFit_02.Sets = x;
     
     x = WorkoutStructure(anyTimes: false, anyDistances: false);
     setL = [ 0, 1, 2 ]
     repL = [ 12, 8, 12 ]
     x.addSetsAndReps(sets: setL, reps: repL, n: 5);
-    Gym_Lower_HASFit_03 = Workout( name: "3 Leg Exercises You Need In Your Leg Workout Routine – Lower Body Routine", descript: "Add these 3 leg exercises to your leg workout routine today and notice a difference tomorrow! This lower body routine is great for intermediate through advanced trainees.", instruct: "");
-    Gym_Lower_HASFit_03.Exercises = [ a86.ID, a13.ID, a48b.ID, a50.ID ] //
-    Gym_Lower_HASFit_03.Sets = x;
+    Gym_Lower_ADAPTFit_03 = Workout( name: "3 Leg Exercises You Need In Your Leg Workout Routine – Lower Body Routine", descript: "Add these 3 leg exercises to your leg workout routine today and notice a difference tomorrow! This lower body routine is great for intermediate through advanced trainees.", instruct: "");
+    Gym_Lower_ADAPTFit_03.Exercises = [ a86.ID, a13.ID, a48b.ID, a50.ID ] //
+    Gym_Lower_ADAPTFit_03.Sets = x;
     
     x = WorkoutStructure(anyTimes: false, anyDistances: false);
     setL = [ 0, 1, 2, 3, 4, 5 ]
     repL = [ 5, 30, 10, 10, 10, 5 ]
     x.addSetsAndReps(sets: setL, reps: repL, n: 5);
-    Gym_Lower_HASFit_04 = Workout( name: "Muscle Building Legs Workout – Bodybuilding Leg Exercises to Add Mass – Legs Work Out", descript: "Need a new muscle building legs workout ? Try our bodybuilding leg exercises to add mass and learn how to get big legs. This legs work out is great for intermediate through advanced trainees.", instruct: "");
-    Gym_Lower_HASFit_04.Exercises = [ a49.ID, b15.ID, b16.ID, b17.ID, b18.ID, b19.ID ] //
-    Gym_Lower_HASFit_04.Sets = x;
+    Gym_Lower_ADAPTFit_04 = Workout( name: "Muscle Building Legs Workout – Bodybuilding Leg Exercises to Add Mass – Legs Work Out", descript: "Need a new muscle building legs workout ? Try our bodybuilding leg exercises to add mass and learn how to get big legs. This legs work out is great for intermediate through advanced trainees.", instruct: "");
+    Gym_Lower_ADAPTFit_04.Exercises = [ a49.ID, b15.ID, b16.ID, b17.ID, b18.ID, b19.ID ] //
+    Gym_Lower_ADAPTFit_04.Sets = x;
     
     //MARK: Total Body Workouts
     //Total Body Workouts
@@ -641,62 +646,62 @@ func setMasterLists()
     x.addSetsAndReps(sets: [ 0, 1, 0, 1, 0, 1, 0, 1 ], reps: [ 5, 5, 5, 5, 5, 5, 5, 5 ]);
     x.addSetsAndReps(sets: [ 2, 3, 2, 3, 2, 3, 2, 3 ], reps: [ 8, 10, 8, 10, 8, 10, 8, 10 ]);
     x.addSetsAndReps(sets: [ 4, 5, 4, 5, 4, 5, 4, 5 ], reps: [ 20, 8, 20, 8, 20, 8, 20, 8 ]);
-    Gym_Total_HASFit_00 = Workout( name: "The Vin Diesel Workout – Vin Diesel Exercises for Strength and Size Training", descript: "The Vin Diesel workout program is a total body workout for men that consists of 3 rounds: 1. explosive power, 2. get lean & ripped, 3. arm building. The Vin Diesel exercises for strength and size training are for intermediate through advanced trainees.", instruct: "Complete this workout with the three supersets A, B, and C. Perform each exercise in a superset without breaking before moving to the next.Break for 2 minutes between supersets.Example: A1, A2, A1, A2, A1, A2, A1, A2, and then break for 2 minutes before beginning superset B.");
-    Gym_Total_HASFit_00.Exercises = [ a59.ID, a60.ID, a61.ID, a62.ID, a63.ID, a64.ID ] //
-    Gym_Total_HASFit_00.Sets = x;
+    Gym_Total_ADAPTFit_00 = Workout( name: "The Vin Diesel Workout – Vin Diesel Exercises for Strength and Size Training", descript: "The Vin Diesel workout program is a total body workout for men that consists of 3 rounds: 1. explosive power, 2. get lean & ripped, 3. arm building. The Vin Diesel exercises for strength and size training are for intermediate through advanced trainees.", instruct: "Complete this workout with the three supersets A, B, and C. Perform each exercise in a superset without breaking before moving to the next.Break for 2 minutes between supersets.Example: A1, A2, A1, A2, A1, A2, A1, A2, and then break for 2 minutes before beginning superset B.");
+    Gym_Total_ADAPTFit_00.Exercises = [ a59.ID, a60.ID, a61.ID, a62.ID, a63.ID, a64.ID ] //
+    Gym_Total_ADAPTFit_00.Sets = x;
     
     x = WorkoutStructure(anyTimes: false, anyDistances: false);
     repL = [ 5, 5, 5, 5 ]
     x.addSetsAndReps(sets: [ 0, 1, 2, 3 ], reps: repL, n: 5);
-    Gym_Total_HASFit_01 = Workout( name: "21 Workout To Build Muscle – Partial Reps Exercises For Muscle Growth", descript: "Mix up your routine with the 21 workout to build muscle. The partial reps exercises are for muscle growth and great for gaining strength.", instruct: "Perform each exercise at high intensity for the prescribed sets and repetitions.");
-    Gym_Total_HASFit_01.Exercises = [ a65.ID, a66.ID, a67.ID, a68.ID ] //
-    Gym_Total_HASFit_01.Sets = x;
+    Gym_Total_ADAPTFit_01 = Workout( name: "21 Workout To Build Muscle – Partial Reps Exercises For Muscle Growth", descript: "Mix up your routine with the 21 workout to build muscle. The partial reps exercises are for muscle growth and great for gaining strength.", instruct: "Perform each exercise at high intensity for the prescribed sets and repetitions.");
+    Gym_Total_ADAPTFit_01.Exercises = [ a65.ID, a66.ID, a67.ID, a68.ID ] //
+    Gym_Total_ADAPTFit_01.Sets = x;
     
     x = WorkoutStructure(anyTimes: true, anyDistances: false);
     setL = [ 0, 1, 2, 3, 4 ]
     timeL = [ 0.5, 0.5, 0.5, 0.5, 0.5 ]
     x.addSetsAndTimes(sets: setL, times: timeL, n: 2, st: SetType.Tmin);
-    Gym_Total_HASFit_02 = Workout( name: "Blitzkrieg 5 Minute Home Workout", description: "The BLITZKRIEG cardio workout is a fast pace 5 minute workout at home. Get a good sweat, get your heart rate going.ID, and work your muscles all in only five minute workout with our personal trainer.");
-    Gym_Total_HASFit_02.Exercises = [ a73.ID, a74.ID, a75.ID, a76.ID, a77.ID ]  //
-    Gym_Total_HASFit_02.Sets = x;
+    Gym_Total_ADAPTFit_02 = Workout( name: "Blitzkrieg 5 Minute Home Workout", description: "The BLITZKRIEG cardio workout is a fast pace 5 minute workout at home. Get a good sweat, get your heart rate going.ID, and work your muscles all in only five minute workout with our personal trainer.");
+    Gym_Total_ADAPTFit_02.Exercises = [ a73.ID, a74.ID, a75.ID, a76.ID, a77.ID ]  //
+    Gym_Total_ADAPTFit_02.Sets = x;
     
     x = WorkoutStructure(anyTimes: false, anyDistances: false);
     repL = [ 5, 8, 8, 8, 8 ]
     setL = [ 0, 1, 2, 3, 4 ]
     x.addSetsAndReps(sets: setL, reps: repL, n: 5);
-    Gym_Total_HASFit_03 = Workout( name: "Thor Workout – Chris Hemsworth Workout Routine – Muscle Building Exercises to Add Mass", descript: "Build muscle with our Chris Hemsworth workout routine. This Thor workout includes compound strength movements to increase strength and exercises to add mass!", instruct: "Perform each exercise at high intensity for the prescribed sets and repetitions.");
-    Gym_Total_HASFit_03.Exercises = [ a78.ID, a79.ID, a80.ID, a81.ID, a82.ID ] //
-    Gym_Total_HASFit_03.Sets = x;
+    Gym_Total_ADAPTFit_03 = Workout( name: "Thor Workout – Chris Hemsworth Workout Routine – Muscle Building Exercises to Add Mass", descript: "Build muscle with our Chris Hemsworth workout routine. This Thor workout includes compound strength movements to increase strength and exercises to add mass!", instruct: "Perform each exercise at high intensity for the prescribed sets and repetitions.");
+    Gym_Total_ADAPTFit_03.Exercises = [ a78.ID, a79.ID, a80.ID, a81.ID, a82.ID ] //
+    Gym_Total_ADAPTFit_03.Sets = x;
     
     x = WorkoutStructure(anyTimes: false, anyDistances: false);
     repL = [ 6, 8, 8, 8 ]
     setL = [ 0, 1, 2, 3 ]
     x.addSetsAndReps(sets: setL, reps: repL, n: 5);
-    Gym_Total_HASFit_04 = Workout( name: "Bodyweight Strength Training Without Weights – Body Weight Exercise Training Workouts", descript: "", instruct: "");
-    Gym_Total_HASFit_04.Exercises = [ a83.ID, a49.ID, a84.ID, a85.ID ] //
-    Gym_Total_HASFit_04.Sets = x;
+    Gym_Total_ADAPTFit_04 = Workout( name: "Bodyweight Strength Training Without Weights – Body Weight Exercise Training Workouts", descript: "", instruct: "");
+    Gym_Total_ADAPTFit_04.Exercises = [ a83.ID, a49.ID, a84.ID, a85.ID ] //
+    Gym_Total_ADAPTFit_04.Sets = x;
     
     x = WorkoutStructure(anyTimes: false, anyDistances: false);
     x.addSetsAndReps(sets: [ 0, 1, 0, 1, 0, 1, 0, 1 ], reps: [ 5, 12, 5, 12, 5, 12, 5, 12 ]);
     x.addSetsAndReps(sets: [ 2, 3, 2, 3, 2, 3, 2, 3 ], reps: [ 5, 8, 5, 8, 5, 8, 5, 8 ]);
     x.addSetsAndReps(sets: [ 4, 5, 4, 5, 4, 5, 4, 5 ], reps: [ 12, 15, 12, 15, 12, 15, 12, 15 ]);
-    Gym_Total_HASFit_05 = Workout( name: "Taylor Lautner Workout Routine", descript: "The taylor lautner workout will be a full, athletic physique. The taylor lautner exercises and taylor lautner training is a gym workout for strength and size.", instruct: "Complete this workout with the three supersets A, B, and C.  Perform each exercise in a superset without breaking before moving to the next.Break for 2 minutes between supersets.Example: A1, A2, A1, A2, A1, A2, A1, A2, and then break for 2 minutes before beginning superset B.");
-    Gym_Total_HASFit_05.Exercises = [ a92.ID, a70.ID, a89.ID, a91.ID ] //
-    Gym_Total_HASFit_05.Sets = x;
+    Gym_Total_ADAPTFit_05 = Workout( name: "Taylor Lautner Workout Routine", descript: "The taylor lautner workout will be a full, athletic physique. The taylor lautner exercises and taylor lautner training is a gym workout for strength and size.", instruct: "Complete this workout with the three supersets A, B, and C.  Perform each exercise in a superset without breaking before moving to the next.Break for 2 minutes between supersets.Example: A1, A2, A1, A2, A1, A2, A1, A2, and then break for 2 minutes before beginning superset B.");
+    Gym_Total_ADAPTFit_05.Exercises = [ a92.ID, a70.ID, a89.ID, a91.ID ] //
+    Gym_Total_ADAPTFit_05.Sets = x;
     
     x = WorkoutStructure(anyTimes: false, anyDistances: false);
     x.addSetsAndReps(sets: [ 0, 0, 0, 0 ], reps: [ 20, 15, 10, 5 ], n: 1);
-    Gym_Total_HASFit_06 = Workout( name: "Compound Exercises for Mass – Hypertrophy Workout for Mass", descript: "Compound exercises for mass will help you build muscle. This hypertrophy workout for mass will help you break through plateaus. The mass training work out can be done by people of all fitness levels.", instruct: "Perform the appropriate exercises for your fitness level for four rounds total. 1 x 20, x15, x10, x5 of each exercise .");
-    Gym_Total_HASFit_06.Exercises = [ a93.ID ] //
-    Gym_Total_HASFit_06.Sets = x;
+    Gym_Total_ADAPTFit_06 = Workout( name: "Compound Exercises for Mass – Hypertrophy Workout for Mass", descript: "Compound exercises for mass will help you build muscle. This hypertrophy workout for mass will help you break through plateaus. The mass training work out can be done by people of all fitness levels.", instruct: "Perform the appropriate exercises for your fitness level for four rounds total. 1 x 20, x15, x10, x5 of each exercise .");
+    Gym_Total_ADAPTFit_06.Exercises = [ a93.ID ] //
+    Gym_Total_ADAPTFit_06.Sets = x;
     
     x = WorkoutStructure(anyTimes: false, anyDistances: false);
     repL = [ 10, 10, 10, 12, 10 ]
     setL = [ 0, 1, 2, 3, 4 ]
     x.addSetsAndReps(sets: setL, reps: repL, n: 5);
-    Gym_Total_HASFit_07 = Workout( name: "Total Body Strength Training Workout – Weight Training Exercises", descript: "Get strong fast with HASfit’s total body strength training workout. The weight training exercises are great for men and women. Try this weight workout at home or in the gym.", instruct: "Perform each exercise at high intensity for the prescribed sets and repetitions.");
-    Gym_Total_HASFit_07.Exercises = [ a94.ID, a95.ID, a96.ID, a97.ID, a98.ID ] //
-    Gym_Total_HASFit_07.Sets = x;
+    Gym_Total_ADAPTFit_07 = Workout( name: "Total Body Strength Training Workout – Weight Training Exercises", descript: "Get strong fast with ADAPTFit’s total body strength training workout. The weight training exercises are great for men and women. Try this weight workout at home or in the gym.", instruct: "Perform each exercise at high intensity for the prescribed sets and repetitions.");
+    Gym_Total_ADAPTFit_07.Exercises = [ a94.ID, a95.ID, a96.ID, a97.ID, a98.ID ] //
+    Gym_Total_ADAPTFit_07.Sets = x;
     
     x = WorkoutStructure(anyTimes: true, anyDistances: false);
     repL = [ 12, 12, 8, 8, 15, 15 ]
@@ -704,9 +709,9 @@ func setMasterLists()
     typeL = [ SetType.rep, SetType.rep, SetType.rep, SetType.rep, SetType.Tsec, SetType.Tsec ]
     x.DoIHaveReps = true;
     x.addSets(sets: setL, data: repL, types: typeL, n: 5);
-    Gym_Total_HASFit_08 = Workout( name: "Dynamic Cross Training Workout Routine – Functional Training Exercises", descript: "This cross training workout will work your total body. This functional training exercises will help you lose fat and gain lean muscle at the same time.", instruct: "Perform each exercise at high intensity for the prescribed sets and repetitions.");
-    Gym_Total_HASFit_08.Exercises = [ a99.ID, b0.ID, b1.ID, b2.ID, b3.ID, b4.ID ] //
-    Gym_Total_HASFit_08.Sets = x;
+    Gym_Total_ADAPTFit_08 = Workout( name: "Dynamic Cross Training Workout Routine – Functional Training Exercises", descript: "This cross training workout will work your total body. This functional training exercises will help you lose fat and gain lean muscle at the same time.", instruct: "Perform each exercise at high intensity for the prescribed sets and repetitions.");
+    Gym_Total_ADAPTFit_08.Exercises = [ a99.ID, b0.ID, b1.ID, b2.ID, b3.ID, b4.ID ] //
+    Gym_Total_ADAPTFit_08.Sets = x;
     
     x = WorkoutStructure(anyTimes: true, anyDistances: false);
     repL = [ 5, 5, 5, 8, 8, 15 ]
@@ -714,9 +719,9 @@ func setMasterLists()
     typeL = [ SetType.rep, SetType.rep, SetType.rep, SetType.rep, SetType.rep, SetType.Tsec ]
     x.DoIHaveReps = true;
     x.addSets(sets: setL, data: repL, types: typeL, n: 5);
-    Gym_Total_HASFit_09 = Workout( name: "Barbell Workout Routine – Barbell Complex – Barbell Exercises for Strength Training", descript: "You only need a bar to get strong with this barbell workout routine at home or gym. Use these barbell exercises for strength improvement.", instruct: "");
-    Gym_Total_HASFit_09.Exercises = [ a99.ID, b0.ID, b1.ID, b2.ID, b3.ID, b4.ID ] //
-    Gym_Total_HASFit_09.Sets = x;
+    Gym_Total_ADAPTFit_09 = Workout( name: "Barbell Workout Routine – Barbell Complex – Barbell Exercises for Strength Training", descript: "You only need a bar to get strong with this barbell workout routine at home or gym. Use these barbell exercises for strength improvement.", instruct: "");
+    Gym_Total_ADAPTFit_09.Exercises = [ a99.ID, b0.ID, b1.ID, b2.ID, b3.ID, b4.ID ] //
+    Gym_Total_ADAPTFit_09.Sets = x;
     
     x = WorkoutStructure(anyTimes: false, anyDistances: true);
     repL = [ 8, 200, 8, 8 ]
@@ -724,43 +729,43 @@ func setMasterLists()
     typeL = [ SetType.rep, SetType.distM, SetType.rep, SetType.rep ]
     x.DoIHaveReps = true;
     x.addSets(sets: setL, data: repL, types: typeL, n: 5);
-    Gym_Total_HASFit_10 = Workout( name: "Man of Steel Workout – Superman Workout – Henry Cavill Workout – HIIT – Intense Workout", descript: "The superman workout is a hiit intense workout that will bring you superhuman speed, strength, and power! The man of steel workout and henry cavill workout routine  will help you gain muscle while getting lean at the same time.", instruct: "");
-    Gym_Total_HASFit_10.Exercises = [ b25.ID, c2.ID, b26.ID, b27.ID ] //
-    Gym_Total_HASFit_10.Sets = x;
+    Gym_Total_ADAPTFit_10 = Workout( name: "Man of Steel Workout – Superman Workout – Henry Cavill Workout – HIIT – Intense Workout", descript: "The superman workout is a hiit intense workout that will bring you superhuman speed, strength, and power! The man of steel workout and henry cavill workout routine  will help you gain muscle while getting lean at the same time.", instruct: "");
+    Gym_Total_ADAPTFit_10.Exercises = [ b25.ID, c2.ID, b26.ID, b27.ID ] //
+    Gym_Total_ADAPTFit_10.Sets = x;
     
     x = WorkoutStructure(anyTimes: false, anyDistances: false);
     repL = [ 8, 15, 12, 12 ]
     setL = [ 0, 1, 2, 3 ]
     x.addSetsAndReps(sets: setL, reps: repL, n: 6);
-    Gym_Total_HASFit_11 = Workout( name: "Total Body Strength Training Workout – Weight Training Exercises", descript: "Get strong fast with HASfit’s total body strength training workout. The weight training exercises are great for men and women. Try this weight workout at home or in the gym.", instruct: "Perform each exercise at high intensity for the prescribed sets and repetitions.");
-    Gym_Total_HASFit_11.Exercises = [ b30.ID, b8.ID, b28.ID, b29.ID ] //
-    Gym_Total_HASFit_11.Sets = x;
+    Gym_Total_ADAPTFit_11 = Workout( name: "Total Body Strength Training Workout – Weight Training Exercises", descript: "Get strong fast with ADAPTFit’s total body strength training workout. The weight training exercises are great for men and women. Try this weight workout at home or in the gym.", instruct: "Perform each exercise at high intensity for the prescribed sets and repetitions.");
+    Gym_Total_ADAPTFit_11.Exercises = [ b30.ID, b8.ID, b28.ID, b29.ID ] //
+    Gym_Total_ADAPTFit_11.Sets = x;
     
     x = WorkoutStructure(anyTimes: false, anyDistances: false);
     repL = [ 8, 12, 8, 8, 8 ]
     setL = [ 0, 1, 2, 3, 4 ]
     x.addSetsAndReps(sets: setL, reps: repL, n: 6);
-    Gym_Total_HASFit_12 = Workout( name: "Warrior Workout – Tom Hardy Workout – MMA Workout – Tom Hardy Training", descript: "The warrior workout uses an explosive combination of olympic lifts, mma workouts, and high intensity interval Training, hiit to create the perfect tom hardy workout and tom hardy training.", instruct: "");
-    Gym_Total_HASFit_12.Exercises = [ b34.ID, a99.ID, b12.ID, b35.ID, b36.ID ] //
-    Gym_Total_HASFit_12.Sets = x;
+    Gym_Total_ADAPTFit_12 = Workout( name: "Warrior Workout – Tom Hardy Workout – MMA Workout – Tom Hardy Training", descript: "The warrior workout uses an explosive combination of olympic lifts, mma workouts, and high intensity interval Training, hiit to create the perfect tom hardy workout and tom hardy training.", instruct: "");
+    Gym_Total_ADAPTFit_12.Exercises = [ b34.ID, a99.ID, b12.ID, b35.ID, b36.ID ] //
+    Gym_Total_ADAPTFit_12.Sets = x;
     
     x = WorkoutStructure(anyTimes: false, anyDistances: false);
     repL = [ 8, 8, 8, 8 ]
     setL = [ 0, 1, 2, 3 ]
     x.addSetsAndReps(sets: setL, reps: repL, n: 6);
-    Gym_Total_HASFit_13 = Workout( name: "Incredible Body Weight Exercises for Strength – Total Bodyweight Training Workout", descript: "", instruct: "");
-    Gym_Total_HASFit_13.Exercises = [ a49.ID, b31.ID, b32.ID, b33.ID ] //
-    Gym_Total_HASFit_13.Sets = x;
+    Gym_Total_ADAPTFit_13 = Workout( name: "Incredible Body Weight Exercises for Strength – Total Bodyweight Training Workout", descript: "", instruct: "");
+    Gym_Total_ADAPTFit_13.Exercises = [ a49.ID, b31.ID, b32.ID, b33.ID ] //
+    Gym_Total_ADAPTFit_13.Sets = x;
     
     //as many in 15 minutes
     x = WorkoutStructure(anyTimes: false, anyDistances: false);
     repL = [ 6, 6, 8, 6, 8 ]
     setL = [ 0, 1, 2, 3, 4 ]
     x.addSetsAndReps(sets: setL, reps: repL);
-    Gym_Total_HASFit_14 = Workout( name: "Exclusive Ryan Reynolds Workout Routine – High Intensity Interval Training Exercises", descript: "Our EXCLUSIVE Ryan Reynolds workout routine will get you ripped and lean at the same time! These high intensity interval training exercises will challenge you in only 15 minutes.", instruct: "Complete all movements in order for as many rounds as possible in 15 minutes.");
-    Gym_Total_HASFit_14.Exercises = [ b37.ID, b38.ID, b39.ID, b40.ID, b41.ID ] //
-    Gym_Total_HASFit_14.setTargetAndType(trgt: 15, stype: SetType.Tmin);
-    Gym_Total_HASFit_14.Sets = x;
+    Gym_Total_ADAPTFit_14 = Workout( name: "Exclusive Ryan Reynolds Workout Routine – High Intensity Interval Training Exercises", descript: "Our EXCLUSIVE Ryan Reynolds workout routine will get you ripped and lean at the same time! These high intensity interval training exercises will challenge you in only 15 minutes.", instruct: "Complete all movements in order for as many rounds as possible in 15 minutes.");
+    Gym_Total_ADAPTFit_14.Exercises = [ b37.ID, b38.ID, b39.ID, b40.ID, b41.ID ] //
+    Gym_Total_ADAPTFit_14.setTargetAndType(trgt: 15, stype: SetType.Tmin);
+    Gym_Total_ADAPTFit_14.Sets = x;
     
     //as many in 20 minutes
     x = WorkoutStructure(anyTimes: false, anyDistances: true);
@@ -769,18 +774,18 @@ func setMasterLists()
     typeL = [ SetType.rep, SetType.rep, SetType.rep, SetType.rep, SetType.distM ]
     x.DoIHaveReps = true;
     x.addSets(sets: setL, data: repL, types: typeL, n: 1);
-    Gym_Total_HASFit_15 = Workout( name: "The Incredible Avengers Workout – Thor, Iron Man, and Captain America Training", descript: "This total body, high intensity interval training workout will kick your butt like a super villain! This avengers workout training routine is inspired by Thor, Chris Hemsworth: Captain America, Chris Evans; and Iron Man, Robert Downey Jr.", instruct: "Complete as many rounds as possible in 20 minutes");
-    Gym_Total_HASFit_15.Exercises = [ b42.ID, a74.ID, b12.ID, a13.ID, c2.ID ] //
-    Gym_Total_HASFit_15.setTargetAndType(trgt: 20, stype: SetType.Tmin);
-    Gym_Total_HASFit_15.Sets = x;
+    Gym_Total_ADAPTFit_15 = Workout( name: "The Incredible Avengers Workout – Thor, Iron Man, and Captain America Training", descript: "This total body, high intensity interval training workout will kick your butt like a super villain! This avengers workout training routine is inspired by Thor, Chris Hemsworth: Captain America, Chris Evans; and Iron Man, Robert Downey Jr.", instruct: "Complete as many rounds as possible in 20 minutes");
+    Gym_Total_ADAPTFit_15.Exercises = [ b42.ID, a74.ID, b12.ID, a13.ID, c2.ID ] //
+    Gym_Total_ADAPTFit_15.setTargetAndType(trgt: 20, stype: SetType.Tmin);
+    Gym_Total_ADAPTFit_15.Sets = x;
     
     x = WorkoutStructure(anyTimes: false, anyDistances: true);
     repL = [ 4, 5, 8, 10, 25, 50 ]
     setL = [ 0, 1, 2, 3, 4, 5 ]
     x.addSetsAndReps(sets: setL, reps: repL, n: 4);
-    Gym_Total_HASFit_16 = Workout( name: "Wrath of Titans Workout – HIIT Workout – Interval Training Exercises", descript: "Feel the wrath of this hiit workout that builds power and stamina. These interval training exercises are sure to challenge even the most seasoned trainee.", instruct: "Complete 4 rounds for time. Perform each exercise at high intensity for the prescribed time to complete one round. ");
-    Gym_Total_HASFit_16.Exercises = [ a60.ID, a74.ID, a92.ID, b43.ID, a86.ID, b44.ID ] //
-    Gym_Total_HASFit_16.Sets = x;
+    Gym_Total_ADAPTFit_16 = Workout( name: "Wrath of Titans Workout – HIIT Workout – Interval Training Exercises", descript: "Feel the wrath of this hiit workout that builds power and stamina. These interval training exercises are sure to challenge even the most seasoned trainee.", instruct: "Complete 4 rounds for time. Perform each exercise at high intensity for the prescribed time to complete one round. ");
+    Gym_Total_ADAPTFit_16.Exercises = [ a60.ID, a74.ID, a92.ID, b43.ID, a86.ID, b44.ID ] //
+    Gym_Total_ADAPTFit_16.Sets = x;
     
     //as many in 20 minutes
     x = WorkoutStructure(anyTimes: false, anyDistances: true);
@@ -789,34 +794,34 @@ func setMasterLists()
     typeL = [ SetType.rep, SetType.rep, SetType.rep, SetType.rep, SetType.distM ]
     x.DoIHaveReps = true;
     x.addSets(sets: setL, data: repL, types: typeL, n: 1);
-    Gym_Total_HASFit_17 = Workout( name: "The Incredible Avengers Workout – Thor, Iron Man, and Captain America Training", descript: "This total body, high intensity interval training workout will kick your butt like a super villain! This avengers workout training routine is inspired by Thor, Chris Hemsworth: Captain America, Chris Evans; and Iron Man, Robert Downey Jr.", instruct: "Complete as many rounds as possible in 20 minutes");
-    Gym_Total_HASFit_17.Exercises = [ b48.ID, a49.ID, b26.ID, b46.ID, b47.ID ] //original workout included partner fireman pickups instead of pistol squats
-    Gym_Total_HASFit_17.setTargetAndType(trgt: 20, stype: SetType.Tmin);
-    Gym_Total_HASFit_17.Sets = x;
+    Gym_Total_ADAPTFit_17 = Workout( name: "The Incredible Avengers Workout – Thor, Iron Man, and Captain America Training", descript: "This total body, high intensity interval training workout will kick your butt like a super villain! This avengers workout training routine is inspired by Thor, Chris Hemsworth: Captain America, Chris Evans; and Iron Man, Robert Downey Jr.", instruct: "Complete as many rounds as possible in 20 minutes");
+    Gym_Total_ADAPTFit_17.Exercises = [ b48.ID, a49.ID, b26.ID, b46.ID, b47.ID ] //original workout included partner fireman pickups instead of pistol squats
+    Gym_Total_ADAPTFit_17.setTargetAndType(trgt: 20, stype: SetType.Tmin);
+    Gym_Total_ADAPTFit_17.Sets = x;
     
     x = WorkoutStructure(anyTimes: false, anyDistances: true);
     repL = [ 12, 12, 12, 4, 6 ]
     setL = [ 0, 1, 2, 3, 4 ]
     x.addSetsAndReps(sets: setL, reps: repL, n: 5);
-    Gym_Total_HASFit_18 = Workout( name: "Iron Man Workout – Functional Training Exercises – Robert Downey Jr. Workout – HIIT", descript: "Our Iron Man workout will help you build muscle and lose fat at the same time. This Robert Downey workout consists of functional training exercises using a hiit technique.", instruct: "");
-    Gym_Total_HASFit_18.Exercises = [ b55.ID, b56.ID, b57.ID, b58.ID, b59.ID ] //
-    Gym_Total_HASFit_18.Sets = x;
+    Gym_Total_ADAPTFit_18 = Workout( name: "Iron Man Workout – Functional Training Exercises – Robert Downey Jr. Workout – HIIT", descript: "Our Iron Man workout will help you build muscle and lose fat at the same time. This Robert Downey workout consists of functional training exercises using a hiit technique.", instruct: "");
+    Gym_Total_ADAPTFit_18.Exercises = [ b55.ID, b56.ID, b57.ID, b58.ID, b59.ID ] //
+    Gym_Total_ADAPTFit_18.Sets = x;
     
     x = WorkoutStructure(anyTimes: false, anyDistances: true);
     repL = [ 5, 8, 8, 15, 400 ]
     setL = [ 0, 1, 2, 3, 4 ]
     x.addSetsAndReps(sets: setL, reps: repL, n: 6);
-    Gym_Total_HASFit_19 = Workout( name: "Conan The Barbarian Workout – High Intensity Workout – HIIT", descript: "Get the athletic look with this Conan the Barbarian workout. This hiit – high intensity workout will challenge even the most fit athlete", instruct: "");
-    Gym_Total_HASFit_19.Exercises = [ b60.ID, b61.ID, b62.ID, b7.ID, c2.ID ] //
-    Gym_Total_HASFit_19.Sets = x;
+    Gym_Total_ADAPTFit_19 = Workout( name: "Conan The Barbarian Workout – High Intensity Workout – HIIT", descript: "Get the athletic look with this Conan the Barbarian workout. This hiit – high intensity workout will challenge even the most fit athlete", instruct: "");
+    Gym_Total_ADAPTFit_19.Exercises = [ b60.ID, b61.ID, b62.ID, b7.ID, c2.ID ] //
+    Gym_Total_ADAPTFit_19.Sets = x;
     
     x = WorkoutStructure(anyTimes: false, anyDistances: true);
     repL = [ 8, 8, 8, 12, 8 ]
     setL = [ 0, 1, 2, 3, 4 ]
     x.addSetsAndReps(sets: setL, reps: repL, n: 6);
-    Gym_Total_HASFit_20 = Workout( name: "Usain Bolt Training – Usain Bolt Workout – Speed Training – Speed Workout", descript: "This speed training usain bolt workout showcases the type of explosive speed workout exercises Usain Bolt’s training in the gym program consists of explosive olympic lifts, plyometric jump training, weight training, and sprinter specific strength.", instruct: "");
-    Gym_Total_HASFit_20.Exercises = [ b20.ID, b64.ID, b65.ID, b66.ID, b67.ID] //
-    Gym_Total_HASFit_20.Sets = x;
+    Gym_Total_ADAPTFit_20 = Workout( name: "Usain Bolt Training – Usain Bolt Workout – Speed Training – Speed Workout", descript: "This speed training usain bolt workout showcases the type of explosive speed workout exercises Usain Bolt’s training in the gym program consists of explosive olympic lifts, plyometric jump training, weight training, and sprinter specific strength.", instruct: "");
+    Gym_Total_ADAPTFit_20.Exercises = [ b20.ID, b64.ID, b65.ID, b66.ID, b67.ID] //
+    Gym_Total_ADAPTFit_20.Sets = x;
     
     Gym_Upper_RunTheRack_00 = Workout( name: "Run The Rack DB Curls Palms Up", descript: "Perform one giant superset with no breaks!. DB Curls with palms up x Run the rack", instruct: "Start with highest weight that 4 - 5 reps can be performed, then move to next lower weight and do as many as possible.Continue this until you have successfuly ran the rack.");
     
@@ -826,110 +831,110 @@ func setMasterLists()
     setL = [ 0, 1, 2 ]
     timeL = [ 1, 1, 1 ]
     x.addSetsAndTimes(sets: setL, times: timeL, n: 1, st: SetType.Tmin);
-    Abs_3_HASFit = Workout( nombre: "6 Pack Abs In 3 Minutes");
-    // Abs_3_HASFit.Exercises = List<Exercise>();
-    Abs_3_HASFit.Exercises += [a13.ID] //legs up double reach
-    Abs_3_HASFit.Exercises += [a3.ID]  //windshield wiper
-    Abs_3_HASFit.Exercises += [a2.ID]   //low plank, raised feet
-    Abs_3_HASFit.Sets = x;
+    Abs_3_ADAPTFit = Workout( nombre: "6 Pack Abs In 3 Minutes");
+    // Abs_3_ADAPTFit.Exercises = List<Exercise>();
+    Abs_3_ADAPTFit.Exercises += [a13.ID] //legs up double reach
+    Abs_3_ADAPTFit.Exercises += [a3.ID]  //windshield wiper
+    Abs_3_ADAPTFit.Exercises += [a2.ID]   //low plank, raised feet
+    Abs_3_ADAPTFit.Sets = x;
     
     x = WorkoutStructure(anyTimes: true, anyDistances: false);
     setL = [ 0, 1, 2, 1, 3 ]
     timeL = [ 0.5, 0.5, 0.5, 0.5, 0.5 ]
     x.addSetsAndTimes(sets: setL, times: timeL, n: 2, st: SetType.Tmin);
-    Abs_5_HASFit = Workout( nombre: "6 Pack Abs In 5 Minutes");
-    //   Abs_5_HASFit.Exercises = List<Exercise>();
-    Abs_5_HASFit.Exercises += [a0.ID]  //star crunch
-    Abs_5_HASFit.Exercises += [a1.ID]  //low plank
-    Abs_5_HASFit.Exercises += [a5.ID]  //hip-ups
-    //  Abs_5_HASFit.Exercises += a1.ID]  //low plank
-    Abs_5_HASFit.Exercises += [a6.ID]  //double crunch + leg spread
-    Abs_5_HASFit.Sets = x;
+    Abs_5_ADAPTFit = Workout( nombre: "6 Pack Abs In 5 Minutes");
+    //   Abs_5_ADAPTFit.Exercises = List<Exercise>();
+    Abs_5_ADAPTFit.Exercises += [a0.ID]  //star crunch
+    Abs_5_ADAPTFit.Exercises += [a1.ID]  //low plank
+    Abs_5_ADAPTFit.Exercises += [a5.ID]  //hip-ups
+    //  Abs_5_ADAPTFit.Exercises += a1.ID]  //low plank
+    Abs_5_ADAPTFit.Exercises += [a6.ID]  //double crunch + leg spread
+    Abs_5_ADAPTFit.Sets = x;
     
     x = WorkoutStructure(anyTimes: true, anyDistances: false);
     setL = [ 0, 1, 2, 3, 4, 4 ]
     timeL = [ 0.5, 0.5, 0.5, 0.5, 0.25, 0.25 ]
     x.addSetsAndTimes(sets: setL, times: timeL, n: 2, st: SetType.Tmin);
-    Abs_5Standing_HASFit = Workout( nombre: "5 Minute Standing Abs Workout");
-    //    Abs_5Standing_HASFit.Exercises = List<Exercise>();
-    Abs_5Standing_HASFit.Exercises += [a7.ID] //alt leg standing crunch, arms extended
-    Abs_5Standing_HASFit.Exercises += [a8.ID] //alt elbow 2 knee hands on head
-    Abs_5Standing_HASFit.Exercises += [a9.ID] //oblique crunches
-    Abs_5Standing_HASFit.Exercises += [a10.ID] //standing twists
-    Abs_5Standing_HASFit.Exercises += [a11.ID] //standing chop
-    Abs_5Standing_HASFit.Sets = x;
+    Abs_5Standing_ADAPTFit = Workout( nombre: "5 Minute Standing Abs Workout");
+    //    Abs_5Standing_ADAPTFit.Exercises = List<Exercise>();
+    Abs_5Standing_ADAPTFit.Exercises += [a7.ID] //alt leg standing crunch, arms extended
+    Abs_5Standing_ADAPTFit.Exercises += [a8.ID] //alt elbow 2 knee hands on head
+    Abs_5Standing_ADAPTFit.Exercises += [a9.ID] //oblique crunches
+    Abs_5Standing_ADAPTFit.Exercises += [a10.ID] //standing twists
+    Abs_5Standing_ADAPTFit.Exercises += [a11.ID] //standing chop
+    Abs_5Standing_ADAPTFit.Sets = x;
     
     x = WorkoutStructure(anyTimes: true, anyDistances: false);
     setL = [ 0, 1, 2, 3, 4, 5 ]
     timeL = [ 1, 1, 1, 1, 1, 1 ]
     x.addSetsAndTimes(sets: setL, times: timeL, n: 1, st: SetType.Tmin);
-    Abs_6_HASFit = Workout( nombre: "6 Pack Abs In 6 Minutes");
-    //   Abs_6_HASFit.Exercises = List<Exercise>();
-    Abs_6_HASFit.Exercises += [a12.ID] //high plank knee to elbow
-    Abs_6_HASFit.Exercises += [a13.ID] //lying leg raise + crunch
-    Abs_6_HASFit.Exercises += [a14.ID] //high plank + shoulder touches
-    Abs_6_HASFit.Exercises += [a15.ID] //lying leg twist
-    Abs_6_HASFit.Exercises += [a6.ID] //double crunch + leg spread
-    Abs_6_HASFit.Exercises += [a17.ID] //russian twists
-    Abs_6_HASFit.Sets = x;
+    Abs_6_ADAPTFit = Workout( nombre: "6 Pack Abs In 6 Minutes");
+    //   Abs_6_ADAPTFit.Exercises = List<Exercise>();
+    Abs_6_ADAPTFit.Exercises += [a12.ID] //high plank knee to elbow
+    Abs_6_ADAPTFit.Exercises += [a13.ID] //lying leg raise + crunch
+    Abs_6_ADAPTFit.Exercises += [a14.ID] //high plank + shoulder touches
+    Abs_6_ADAPTFit.Exercises += [a15.ID] //lying leg twist
+    Abs_6_ADAPTFit.Exercises += [a6.ID] //double crunch + leg spread
+    Abs_6_ADAPTFit.Exercises += [a17.ID] //russian twists
+    Abs_6_ADAPTFit.Sets = x;
     
     x = WorkoutStructure(anyTimes: true, anyDistances: false);
     setL = [ 0, 1, 2 ]
     timeL = [ 0.5, 0.5, 0.5 ]
     x.addSetsAndTimes(sets: setL, times: timeL, n: 4, st: SetType.Tmin);
-    Abs_6Oblique_HASFit = Workout( nombre: "Oblique Exercises And Love Handles In 6 Minutes");
-    //    Abs_6Oblique_HASFit.Exercises = List<Exercise>();
-    Abs_6Oblique_HASFit.Exercises += [a10.ID] //standing twist
-    Abs_6Oblique_HASFit.Exercises += [a18.ID] //standing side crunches
-    Abs_6Oblique_HASFit.Exercises += [a19.ID] //standing same arm leg reach up
-    Abs_6Oblique_HASFit.Sets = x;
+    Abs_6Oblique_ADAPTFit = Workout( nombre: "Oblique Exercises And Love Handles In 6 Minutes");
+    //    Abs_6Oblique_ADAPTFit.Exercises = List<Exercise>();
+    Abs_6Oblique_ADAPTFit.Exercises += [a10.ID] //standing twist
+    Abs_6Oblique_ADAPTFit.Exercises += [a18.ID] //standing side crunches
+    Abs_6Oblique_ADAPTFit.Exercises += [a19.ID] //standing same arm leg reach up
+    Abs_6Oblique_ADAPTFit.Sets = x;
     
     x = WorkoutStructure(anyTimes: true, anyDistances: false);
     setL = [ 0, 0, 1, 2, 3, 4, 5, 6 ]
     timeL = [ 0.25, 0.25, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5 ]
     x.addSetsAndTimes(sets: setL, times: timeL, n: 2, st: SetType.Tmin);
-    Abs_8A_HASFit = Workout( nombre: "8 Minutes To Ripped Abs");
-    //  Abs_8A_HASFit.Exercises = List<Exercise>(.ID);
-    Abs_8A_HASFit.Exercises += [a20.ID] //side plank + dips
-    Abs_8A_HASFit.Exercises += [a21.ID] //crunch w twist (1 shoulder to knee)
-    Abs_8A_HASFit.Exercises += [a22.ID] //upward hip thrusters
-    Abs_8A_HASFit.Exercises += [a23.ID] //leg raise + split
-    Abs_8A_HASFit.Exercises += [a24.ID] //legs up toe touches
-    Abs_8A_HASFit.Exercises += [a25.ID] //full body iso
-    Abs_8A_HASFit.Exercises += [a26.ID] //low plank hip thrusters
-    Abs_8A_HASFit.Exercises += [a27.ID] //weighted crunch
-    Abs_8A_HASFit.Sets = x;
+    Abs_8A_ADAPTFit = Workout( nombre: "8 Minutes To Ripped Abs");
+    //  Abs_8A_ADAPTFit.Exercises = List<Exercise>(.ID);
+    Abs_8A_ADAPTFit.Exercises += [a20.ID] //side plank + dips
+    Abs_8A_ADAPTFit.Exercises += [a21.ID] //crunch w twist (1 shoulder to knee)
+    Abs_8A_ADAPTFit.Exercises += [a22.ID] //upward hip thrusters
+    Abs_8A_ADAPTFit.Exercises += [a23.ID] //leg raise + split
+    Abs_8A_ADAPTFit.Exercises += [a24.ID] //legs up toe touches
+    Abs_8A_ADAPTFit.Exercises += [a25.ID] //full body iso
+    Abs_8A_ADAPTFit.Exercises += [a26.ID] //low plank hip thrusters
+    Abs_8A_ADAPTFit.Exercises += [a27.ID] //weighted crunch
+    Abs_8A_ADAPTFit.Sets = x;
     
     x = WorkoutStructure(anyTimes: true, anyDistances: false);
     setL = [ 0, 1, 2, 3, 4, 5, 6, 7 ]
     timeL = [ 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5 ]
     x.addSetsAndTimes(sets: setL, times: timeL, n: 2, st: SetType.Tmin);
-    Abs_8Lower_HASFit = Workout( nombre: "Lower Ab Workout");
-    //   Abs_8Lower_HASFit.Exercises = List<Exercise>(.ID);
-    Abs_8Lower_HASFit.Exercises += [a28.ID] //sprinter
-    Abs_8Lower_HASFit.Exercises += [a29.ID] //high plank knee 2 chest
-    Abs_8Lower_HASFit.Exercises += [a30.ID] //6 inches
-    Abs_8Lower_HASFit.Exercises += [a31.ID] //0-45
-    Abs_8Lower_HASFit.Exercises += [a32.ID] //45-90
-    Abs_8Lower_HASFit.Exercises += [a5.ID] //hip-ups
-    Abs_8Lower_HASFit.Exercises += [a36.ID] //scissor kicks
-    Abs_8Lower_HASFit.Exercises += [a35.ID] //the clam
-    Abs_8Lower_HASFit.Sets = x;
+    Abs_8Lower_ADAPTFit = Workout( nombre: "Lower Ab Workout");
+    //   Abs_8Lower_ADAPTFit.Exercises = List<Exercise>(.ID);
+    Abs_8Lower_ADAPTFit.Exercises += [a28.ID] //sprinter
+    Abs_8Lower_ADAPTFit.Exercises += [a29.ID] //high plank knee 2 chest
+    Abs_8Lower_ADAPTFit.Exercises += [a30.ID] //6 inches
+    Abs_8Lower_ADAPTFit.Exercises += [a31.ID] //0-45
+    Abs_8Lower_ADAPTFit.Exercises += [a32.ID] //45-90
+    Abs_8Lower_ADAPTFit.Exercises += [a5.ID] //hip-ups
+    Abs_8Lower_ADAPTFit.Exercises += [a36.ID] //scissor kicks
+    Abs_8Lower_ADAPTFit.Exercises += [a35.ID] //the clam
+    Abs_8Lower_ADAPTFit.Sets = x;
     
     x = WorkoutStructure(anyTimes: true, anyDistances: false);
     setL = [ 0, 1, 2, 3, 4, 5, 6, 6 ]
     timeL = [ 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5 ]
     x.addSetsAndTimes(sets: setL, times: timeL, n: 2, st: SetType.Tmin);
-    Abs_8B_HASFit = Workout( nombre: "Shredding 8 Min Abs");
-    //   Abs_8B_HASFit.Exercises = List<Exercise>(.ID);
-    Abs_8B_HASFit.Exercises += [a35.ID] //clam
-    Abs_8B_HASFit.Exercises += [a15.ID] //leg raise
-    Abs_8B_HASFit.Exercises += [a40.ID] //reach 4 the sky, legs down
-    Abs_8B_HASFit.Exercises += [a31.ID] //0-45
-    Abs_8B_HASFit.Exercises += [a32.ID] //45-90
-    Abs_8B_HASFit.Exercises += [a33.ID] //0-90
-    Abs_8B_HASFit.Exercises += [a38.ID] //low side plank
-    Abs_8B_HASFit.Sets = x;
+    Abs_8B_ADAPTFit = Workout( nombre: "Shredding 8 Min Abs");
+    //   Abs_8B_ADAPTFit.Exercises = List<Exercise>(.ID);
+    Abs_8B_ADAPTFit.Exercises += [a35.ID] //clam
+    Abs_8B_ADAPTFit.Exercises += [a15.ID] //leg raise
+    Abs_8B_ADAPTFit.Exercises += [a40.ID] //reach 4 the sky, legs down
+    Abs_8B_ADAPTFit.Exercises += [a31.ID] //0-45
+    Abs_8B_ADAPTFit.Exercises += [a32.ID] //45-90
+    Abs_8B_ADAPTFit.Exercises += [a33.ID] //0-90
+    Abs_8B_ADAPTFit.Exercises += [a38.ID] //low side plank
+    Abs_8B_ADAPTFit.Sets = x;
      
      //MARK: MMA Workouts
     MMA_Kozak_00 = Workout( name: "Aerobic Cardio Kick Boxing Workout Exercise to Burn Fat Fast!", description: "Burn fat with this aerobic cardio kickboxing workout. The cardio kick boxing routine is for people of all fitness levels")
@@ -937,155 +942,168 @@ func setMasterLists()
     MMA_Kozak_01 = Workout( name: "UFC Training at Home – 15 Min MMA Workout Exercises at Home – MMA Training at Home", description: "This ufc workout at home requires no equipment and can be done at home using grappling, jui-jitsu, and cardio kickboxing techniques in one mma workout routine.")
     
     //MARK: Finite Plans
-    let Muscle_90_HASFit_00 = WorkoutPlan( name: "90 Days To Build Muscle")
-    //Muscle_90_HASFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Upper_HASFit_00 })); //week 1 - hypertrophy
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Upper_HASFit_00])]
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Lower_HASFit_00])]
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Upper_HASFit_02])]
-    Muscle_90_HASFit_00.Days += [DailyPlan()] //Off Day
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Upper_HASFit_00])]
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Lower_HASFit_00])]
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Upper_HASFit_02])]
+
+    //Muscle_90_ADAPTFit_00.Days.Add(new DailyPlan(new List<Workout> { Gym_Upper_ADAPTFit_00 })); //week 1 - hypertrophy
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Gym_Upper_ADAPTFit_00])]
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Gym_Lower_ADAPTFit_00])]
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Gym_Upper_ADAPTFit_02])]
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan()] //Off Day
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Gym_Upper_ADAPTFit_00])]
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Gym_Lower_ADAPTFit_00])]
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Gym_Upper_ADAPTFit_02])]
     
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Total_HASFit_00])] //week 2 - strength
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Total_HASFit_02, Abs_5_HASFit])]
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Total_HASFit_01])]
-    Muscle_90_HASFit_00.Days += [DailyPlan()] //Off Day
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Total_HASFit_03])]
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Total_HASFit_04])]
-    Muscle_90_HASFit_00.Days += [DailyPlan()] //Off Day
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Gym_Total_ADAPTFit_00])] //week 2 - strength
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Gym_Total_ADAPTFit_02, Abs_5_ADAPTFit])]
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Gym_Total_ADAPTFit_01])]
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan()] //Off Day
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Gym_Total_ADAPTFit_03])]
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Gym_Total_ADAPTFit_04])]
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan()] //Off Day
     
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Upper_HASFit_04])] //week 3 - hypertrophy
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Lower_HASFit_02])]
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Cardio_IntervalRun_06, Abs_3_HASFit])]
-    Muscle_90_HASFit_00.Days += [DailyPlan()] //Off Day
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Upper_HASFit_05])]
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Cardio_IntervalRun_07, Abs_6_HASFit])]
-    Muscle_90_HASFit_00.Days += [DailyPlan()] //Off Day
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Gym_Upper_ADAPTFit_04])] //week 3 - hypertrophy
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Gym_Lower_ADAPTFit_02])]
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Cardio_IntervalRun_06, Abs_3_ADAPTFit])]
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan()] //Off Day
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Gym_Upper_ADAPTFit_05])]
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Cardio_IntervalRun_07, Abs_6_ADAPTFit])]
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan()] //Off Day
     
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Total_HASFit_05])] //week 4 - strength
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Total_HASFit_06])]
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Cardio_IntervalRun_07, Abs_8B_HASFit])]
-    Muscle_90_HASFit_00.Days += [DailyPlan()] //Off Day
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Total_HASFit_07])]
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Total_HASFit_08])]
-    Muscle_90_HASFit_00.Days += [DailyPlan()] //Off Day
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Gym_Total_ADAPTFit_05])] //week 4 - strength
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Gym_Total_ADAPTFit_06])]
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Cardio_IntervalRun_07, Abs_8B_ADAPTFit])]
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan()] //Off Day
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Gym_Total_ADAPTFit_07])]
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Gym_Total_ADAPTFit_08])]
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan()] //Off Day
     
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Upper_HASFit_06])] //week 5 - hypertrophy
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Lower_HASFit_03])]
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Upper_HASFit_07])]
-    Muscle_90_HASFit_00.Days += [DailyPlan()] //Off Day
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Upper_HASFit_06])]
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Lower_HASFit_04])]
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Upper_HASFit_07])]
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Gym_Upper_ADAPTFit_06])] //week 5 - hypertrophy
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Gym_Lower_ADAPTFit_03])]
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Gym_Upper_ADAPTFit_07])]
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan()] //Off Day
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Gym_Upper_ADAPTFit_06])]
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Gym_Lower_ADAPTFit_04])]
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Gym_Upper_ADAPTFit_07])]
     
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Total_HASFit_09])] //week 6 - high intensity interval training
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Total_HASFit_10])]
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Total_HASFit_11])]
-    Muscle_90_HASFit_00.Days += [DailyPlan()] //Off Day
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Total_HASFit_12])]
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Total_HASFit_13])]
-    Muscle_90_HASFit_00.Days += [DailyPlan()] //Off Day
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Gym_Total_ADAPTFit_09])] //week 6 - high intensity interval training
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Gym_Total_ADAPTFit_10])]
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Gym_Total_ADAPTFit_11])]
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan()] //Off Day
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Gym_Total_ADAPTFit_12])]
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Gym_Total_ADAPTFit_13])]
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan()] //Off Day
     
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Total_HASFit_14])]//week 7 - high intensity interval training
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Total_HASFit_15])]
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Total_HASFit_16])]
-    Muscle_90_HASFit_00.Days += [DailyPlan()] //Off Day
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Total_HASFit_17])]
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Cardio_StairRun_01])]
-    Muscle_90_HASFit_00.Days += [DailyPlan()] //Off Day
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Gym_Total_ADAPTFit_14])]//week 7 - high intensity interval training
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Gym_Total_ADAPTFit_15])]
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Gym_Total_ADAPTFit_16])]
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan()] //Off Day
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Gym_Total_ADAPTFit_17])]
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Cardio_StairRun_01])]
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan()] //Off Day
     
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Upper_HASFit_08])]//week 8 - hypertrohpy
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Lower_HASFit_03])]
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Upper_HASFit_06])]
-    Muscle_90_HASFit_00.Days += [DailyPlan()] //Off Day
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Upper_HASFit_08])]
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Lower_HASFit_04])]
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Upper_HASFit_06])]
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Gym_Upper_ADAPTFit_08])]//week 8 - hypertrohpy
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Gym_Lower_ADAPTFit_03])]
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Gym_Upper_ADAPTFit_06])]
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan()] //Off Day
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Gym_Upper_ADAPTFit_08])]
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Gym_Lower_ADAPTFit_04])]
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Gym_Upper_ADAPTFit_06])]
     
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Upper_HASFit_00])] //week 9 - strength/hypertrophy
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Lower_HASFit_00])]
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Upper_HASFit_02])]
-    Muscle_90_HASFit_00.Days += [DailyPlan()] //Off Day
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Upper_HASFit_00])]
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Lower_HASFit_00])]
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Upper_HASFit_02])]
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Gym_Upper_ADAPTFit_00])] //week 9 - strength/hypertrophy
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Gym_Lower_ADAPTFit_00])]
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Gym_Upper_ADAPTFit_02])]
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan()] //Off Day
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Gym_Upper_ADAPTFit_00])]
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Gym_Lower_ADAPTFit_00])]
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Gym_Upper_ADAPTFit_02])]
     
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Upper_HASFit_04])] //week 10 - hypertrophy
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Lower_HASFit_02])]
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Cardio_IntervalRun_06, Abs_8B_HASFit])]
-    Muscle_90_HASFit_00.Days += [DailyPlan()] //Off Day
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Upper_HASFit_05])]
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Cardio_IntervalRun_07, Abs_6_HASFit])]
-    Muscle_90_HASFit_00.Days += [DailyPlan()] //Off Day
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Gym_Upper_ADAPTFit_04])] //week 10 - hypertrophy
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Gym_Lower_ADAPTFit_02])]
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Cardio_IntervalRun_06, Abs_8B_ADAPTFit])]
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan()] //Off Day
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Gym_Upper_ADAPTFit_05])]
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Cardio_IntervalRun_07, Abs_6_ADAPTFit])]
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan()] //Off Day
     
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Total_HASFit_00])]//week 11 - strength
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [MMA_Kozak_00])]
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Total_HASFit_01])]
-    Muscle_90_HASFit_00.Days += [DailyPlan()] //Off Day
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Total_HASFit_03])]
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Total_HASFit_04])]
-    Muscle_90_HASFit_00.Days += [DailyPlan()] //Off Day
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Gym_Total_ADAPTFit_00])]//week 11 - strength
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [MMA_Kozak_00])]
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Gym_Total_ADAPTFit_01])]
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan()] //Off Day
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Gym_Total_ADAPTFit_03])]
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Gym_Total_ADAPTFit_04])]
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan()] //Off Day
     
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [MMA_Kozak_01])]//week 12 - high intensity interval training
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Total_HASFit_18])]
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Total_HASFit_19])]
-    Muscle_90_HASFit_00.Days += [DailyPlan()] //Off Day
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Total_HASFit_12])]
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Total_HASFit_20, Gym_Upper_RunTheRack_00])]
-    Muscle_90_HASFit_00.Days += [DailyPlan()] //Off Day
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [MMA_Kozak_01])]//week 12 - high intensity interval training
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Gym_Total_ADAPTFit_18])]
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Gym_Total_ADAPTFit_19])]
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan()] //Off Day
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Gym_Total_ADAPTFit_12])]
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Gym_Total_ADAPTFit_20, Gym_Upper_RunTheRack_00])]
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan()] //Off Day
     
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Upper_HASFit_06])] //week 13 - hypertrophy
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Lower_HASFit_03])]
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Upper_HASFit_07])]
-    Muscle_90_HASFit_00.Days += [DailyPlan()] //Off Day
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Upper_HASFit_06])]
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Lower_HASFit_04])]
-    Muscle_90_HASFit_00.Days += [DailyPlan(work: [Gym_Upper_HASFit_07])]
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Gym_Upper_ADAPTFit_06])] //week 13 - hypertrophy
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Gym_Lower_ADAPTFit_03])]
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Gym_Upper_ADAPTFit_07])]
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan()] //Off Day
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Gym_Upper_ADAPTFit_06])]
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Gym_Lower_ADAPTFit_04])]
+    Muscle_90_ADAPTFit_00.Days += [DailyPlan(work: [Gym_Upper_ADAPTFit_07])]
     
     //MARK: Abs
-    let Abs_30_HASFit_00 = WorkoutPlan( name: "Six Pack Abs In 30 Days")
-    Abs_30_HASFit_00.Days += [DailyPlan(work: [Abs_3_HASFit])]
-    Abs_30_HASFit_00.Days += [DailyPlan(work: [Abs_5_HASFit])]
-    Abs_30_HASFit_00.Days += [DailyPlan(work: [Abs_5Standing_HASFit])]
-    Abs_30_HASFit_00.Days += [DailyPlan()]
-    Abs_30_HASFit_00.Days += [DailyPlan(work: [Abs_6_HASFit])]
-    Abs_30_HASFit_00.Days += [DailyPlan(work: [Abs_5_HASFit])]
-    Abs_30_HASFit_00.Days += [DailyPlan()]
+   // let Abs_30_ADAPTFit_00 = WorkoutPlan( name: "Six Pack Abs In 30 Days")
+    Abs_30_ADAPTFit_00.Days += [DailyPlan(work: [Abs_3_ADAPTFit])]
+    Abs_30_ADAPTFit_00.Days += [DailyPlan(work: [Abs_5_ADAPTFit])]
+    Abs_30_ADAPTFit_00.Days += [DailyPlan(work: [Abs_5Standing_ADAPTFit])]
+    Abs_30_ADAPTFit_00.Days += [DailyPlan()]
+    Abs_30_ADAPTFit_00.Days += [DailyPlan(work: [Abs_6_ADAPTFit])]
+    Abs_30_ADAPTFit_00.Days += [DailyPlan(work: [Abs_5_ADAPTFit])]
+    Abs_30_ADAPTFit_00.Days += [DailyPlan()]
     
-    Abs_30_HASFit_00.Days += [DailyPlan(work: [Abs_8Lower_HASFit])]
-    Abs_30_HASFit_00.Days += [DailyPlan(work: [Abs_8B_HASFit])] //'Shredding 8 Minute Abs'
-    Abs_30_HASFit_00.Days += [DailyPlan(work: [Abs_5_HASFit])]
-    Abs_30_HASFit_00.Days += [DailyPlan()]
-    Abs_30_HASFit_00.Days += [DailyPlan(work: [Abs_8B_HASFit, Abs_3_HASFit])]
-    Abs_30_HASFit_00.Days += [DailyPlan(work: [Abs_6_HASFit])]
-    Abs_30_HASFit_00.Days += [DailyPlan()]
+    Abs_30_ADAPTFit_00.Days += [DailyPlan(work: [Abs_8Lower_ADAPTFit])]
+    Abs_30_ADAPTFit_00.Days += [DailyPlan(work: [Abs_8B_ADAPTFit])] //'Shredding 8 Minute Abs'
+    Abs_30_ADAPTFit_00.Days += [DailyPlan(work: [Abs_5_ADAPTFit])]
+    Abs_30_ADAPTFit_00.Days += [DailyPlan()]
+    Abs_30_ADAPTFit_00.Days += [DailyPlan(work: [Abs_8B_ADAPTFit, Abs_3_ADAPTFit])]
+    Abs_30_ADAPTFit_00.Days += [DailyPlan(work: [Abs_6_ADAPTFit])]
+    Abs_30_ADAPTFit_00.Days += [DailyPlan()]
     
-    Abs_30_HASFit_00.Days += [DailyPlan(work: [Abs_8A_HASFit])]
-    Abs_30_HASFit_00.Days += [DailyPlan(work: [Abs_5_HASFit, Abs_6Oblique_HASFit])]
-    Abs_30_HASFit_00.Days += [DailyPlan(work: [Abs_8A_HASFit])]
-    Abs_30_HASFit_00.Days += [DailyPlan()]
-    Abs_30_HASFit_00.Days += [DailyPlan(work: [Abs_8B_HASFit])]
-    Abs_30_HASFit_00.Days += [DailyPlan(work: [Abs_6Oblique_HASFit, Abs_6_HASFit])]
-    Abs_30_HASFit_00.Days += [DailyPlan()]
+    Abs_30_ADAPTFit_00.Days += [DailyPlan(work: [Abs_8A_ADAPTFit])]
+    Abs_30_ADAPTFit_00.Days += [DailyPlan(work: [Abs_5_ADAPTFit, Abs_6Oblique_ADAPTFit])]
+    Abs_30_ADAPTFit_00.Days += [DailyPlan(work: [Abs_8A_ADAPTFit])]
+    Abs_30_ADAPTFit_00.Days += [DailyPlan()]
+    Abs_30_ADAPTFit_00.Days += [DailyPlan(work: [Abs_8B_ADAPTFit])]
+    Abs_30_ADAPTFit_00.Days += [DailyPlan(work: [Abs_6Oblique_ADAPTFit, Abs_6_ADAPTFit])]
+    Abs_30_ADAPTFit_00.Days += [DailyPlan()]
     
-    Abs_30_HASFit_00.Days += [DailyPlan(work: [Abs_5Standing_HASFit, Abs_5_HASFit])]
-    Abs_30_HASFit_00.Days += [DailyPlan(work: [Abs_3_HASFit, Abs_8A_HASFit])]
-    Abs_30_HASFit_00.Days += [DailyPlan(work: [Abs_8Lower_HASFit])]
-    Abs_30_HASFit_00.Days += [DailyPlan()]
-    Abs_30_HASFit_00.Days += [DailyPlan(work: [Abs_6Oblique_HASFit, Abs_6_HASFit])]
-    Abs_30_HASFit_00.Days += [DailyPlan(work: [Abs_8B_HASFit, Abs_5_HASFit])]
-    Abs_30_HASFit_00.Days += [DailyPlan()]
+    Abs_30_ADAPTFit_00.Days += [DailyPlan(work: [Abs_5Standing_ADAPTFit, Abs_5_ADAPTFit])]
+    Abs_30_ADAPTFit_00.Days += [DailyPlan(work: [Abs_3_ADAPTFit, Abs_8A_ADAPTFit])]
+    Abs_30_ADAPTFit_00.Days += [DailyPlan(work: [Abs_8Lower_ADAPTFit])]
+    Abs_30_ADAPTFit_00.Days += [DailyPlan()]
+    Abs_30_ADAPTFit_00.Days += [DailyPlan(work: [Abs_6Oblique_ADAPTFit, Abs_6_ADAPTFit])]
+    Abs_30_ADAPTFit_00.Days += [DailyPlan(work: [Abs_8B_ADAPTFit, Abs_5_ADAPTFit])]
+    Abs_30_ADAPTFit_00.Days += [DailyPlan()]
     
-    Abs_30_HASFit_00.Days += [DailyPlan(work: [Abs_8Lower_HASFit, Abs_8A_HASFit])]
-    Abs_30_HASFit_00.Days += [DailyPlan(work: [Abs_8A_HASFit, Abs_8B_HASFit])]
+    Abs_30_ADAPTFit_00.Days += [DailyPlan(work: [Abs_8Lower_ADAPTFit, Abs_8A_ADAPTFit])]
+    Abs_30_ADAPTFit_00.Days += [DailyPlan(work: [Abs_8A_ADAPTFit, Abs_8B_ADAPTFit])]
  
     
     
     
-     
-    
-    //#region Wrap It 'Fo You Build It
+     //mma moves
+    eList += [m1]
+    eList += [m2]
+    eList += [m3]
+    eList += [mu]
+    eList += [mkn]
+    eList += [mfk]
+    eList += [mj]
+    eList += [mdu]
+    eList += [m10]
+    eList += [mdl]
+    eList += [mds]
+    eList += [m4]
+    eList += [msp]
+    eList += [mupa]
+
     eList += [c0]
     eList += [c1]
     eList += [c2]
