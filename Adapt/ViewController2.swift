@@ -18,20 +18,30 @@ class ViewController2: UIViewController {
     @IBOutlet weak var topLabel: UILabel!
     @IBOutlet weak var bottomLabel: UILabel!
     @IBOutlet weak var instructionsLabel: UILabel!
+    @IBOutlet var topLableDoubleTap: UITapGestureRecognizer!
     
    // var targetPlan: WorkoutPlan
     
     @IBAction func backDown(_ sender: Any) {
-        bCounter -= 1
+      
         
+        updateScreenFrombCounter()
+          bCounter -= 1
        // topLabel.text = MasterExerciseList[bCounter].Name
        // bottomLabel.text = MasterExerciseList[bCounter].Instructions
     }
     @IBAction func nextDown(_ sender: Any) {
+      
+        
+        updateScreenFrombCounter()
+ bCounter += 1
+    }
+    
+    private func updateScreenFrombCounter(){
         var workoutCount: Int
         var instructString: String = ""
         
-        bCounter += 1
+        
         
         workoutCount = targetPlan.Days[bCounter].Workouts.count
         
@@ -45,11 +55,14 @@ class ViewController2: UIViewController {
             topLabel.text = targetPlan.Days[bCounter].Workouts[0].Name
             bottomLabel.text = targetPlan.Days[bCounter].Workouts[0].Description
             
-            for exID in targetPlan.Days[bCounter].Workouts[0].Exercises
+            for i in 0...targetPlan.Days[bCounter].Workouts[0].Exercises.count - 2
             {
-                let ex: Exercise = getExerciseFromID(idNum: exID)
-                instructString += ex.Name! + " | "
+                let ex: Exercise = getExerciseFromID(idNum: targetPlan.Days[bCounter].Workouts[0].Exercises[i])
+                let ws: WorkoutStructure = targetPlan.Days[bCounter].Workouts[0].Sets!
+                instructString += ex.Name! + " \n"
             }
+            let ex: Exercise = getExerciseFromID(idNum: targetPlan.Days[bCounter].Workouts[0].Exercises[targetPlan.Days[bCounter].Workouts[0].Exercises.count - 1])
+            instructString += ex.Name!
             
             instructionsLabel.text = instructString
         } else
@@ -57,21 +70,20 @@ class ViewController2: UIViewController {
             var topString: String = ""
             var bottomString: String = ""
             
-                for i in 0...targetPlan.Days[bCounter].Workouts.count - 2
-                {
-                    topString += targetPlan.Days[bCounter].Workouts[i].Name + " | "
-                    bottomString += targetPlan.Days[bCounter].Workouts[i].Description + " | "
-                    
-                }
-                topString += targetPlan.Days[bCounter].Workouts[targetPlan.Days[bCounter].Workouts.count - 1].Name
-                bottomString += targetPlan.Days[bCounter].Workouts[targetPlan.Days[bCounter].Workouts.count - 1].Description
+            for i in 0...targetPlan.Days[bCounter].Workouts.count - 2
+            {
+                topString += targetPlan.Days[bCounter].Workouts[i].Name + " \n"
+                bottomString += targetPlan.Days[bCounter].Workouts[i].Description + " \n"
+                
+            }
+            topString += targetPlan.Days[bCounter].Workouts[targetPlan.Days[bCounter].Workouts.count - 1].Name
+            bottomString += targetPlan.Days[bCounter].Workouts[targetPlan.Days[bCounter].Workouts.count - 1].Description
             
             topLabel.text = topString
             bottomLabel.text = bottomString
             
             instructionsLabel.text = ""
         }
-
     }
     
     override func viewDidLoad() {

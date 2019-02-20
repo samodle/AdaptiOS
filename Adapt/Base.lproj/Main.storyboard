@@ -100,12 +100,16 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0OY-fu-xAe">
                                 <rect key="frame" x="0.0" y="116" width="375" height="118"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="118" id="qqF-wu-T8S"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="BmA-Oa-pYU" appends="YES" id="hp2-h8-5Ax"/>
+                                </connections>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Asset 1@4x" translatesAutoresizingMaskIntoConstraints="NO" id="E7l-XV-vjP">
                                 <rect key="frame" x="67" y="-7" width="240" height="128"/>
@@ -178,9 +182,11 @@
                         <outlet property="bottomLabel" destination="ho0-iE-w6R" id="hFK-4r-6wK"/>
                         <outlet property="instructionsLabel" destination="LAu-ny-oKF" id="6Rh-88-sf7"/>
                         <outlet property="topLabel" destination="0OY-fu-xAe" id="pQ8-L1-Q9G"/>
+                        <outlet property="topLableDoubleTap" destination="BmA-Oa-pYU" id="tAi-hE-eco"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yEp-Jn-FPV" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="BmA-Oa-pYU"/>
             </objects>
             <point key="canvasLocation" x="137" y="809"/>
         </scene>

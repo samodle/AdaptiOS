@@ -12,7 +12,7 @@ import Foundation
 //given the ID, return the exercise
 func getExerciseFromID(idNum: Int) -> Exercise
 {
-    for i in 0...MasterExerciseList.count
+    for i in 0...MasterExerciseList.count - 1
     {
         if MasterExerciseList[i].ID == idNum{
             return MasterExerciseList[i]
