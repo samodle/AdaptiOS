@@ -12,48 +12,67 @@ class ViewController2: UIViewController {
     
     var bCounter: Int = 0
     var targetPlan: WorkoutPlan = WorkoutPlan(name: "")
+    var toggleTitleLable: Bool = true
     
-    //  Muscle_90_ADAPTFit_00   Abs_30_ADAPTFit_00
-    
+    var workoutTitle: String = ""
+    var workoutDescription: String = ""
+
     @IBOutlet weak var topLabel: UILabel!
     @IBOutlet weak var bottomLabel: UILabel!
     @IBOutlet weak var instructionsLabel: UILabel!
-    @IBOutlet var topLableDoubleTap: UITapGestureRecognizer!
+  
+    @IBAction func topLabelToggle(_ sender: UITapGestureRecognizer) {
+     setTopLabel()
+        toggleTitleLable = !toggleTitleLable
+        
+    }
     
-   // var targetPlan: WorkoutPlan
+    func setTopLabel(){
+        if toggleTitleLable{
+            topLabel.text = workoutTitle
+     topLabel.font.withSize(24)
+        }
+        else{
+            topLabel.text = workoutDescription
+             topLabel.font.withSize(12)
+         
+        }
+    }
     
     @IBAction func backDown(_ sender: Any) {
-      
-        
+        if bCounter > 0{
+        bCounter -= 1
         updateScreenFrombCounter()
-          bCounter -= 1
-       // topLabel.text = MasterExerciseList[bCounter].Name
-       // bottomLabel.text = MasterExerciseList[bCounter].Instructions
+        }
     }
+    
     @IBAction func nextDown(_ sender: Any) {
-      
-        
+        bCounter += 1
         updateScreenFrombCounter()
- bCounter += 1
     }
     
     private func updateScreenFrombCounter(){
         var workoutCount: Int
         var instructString: String = ""
         
-        
-        
         workoutCount = targetPlan.Days[bCounter].Workouts.count
         
         if workoutCount < 1
         {
             topLabel.text = "off day"
-            bottomLabel.text = ""
-            instructionsLabel.text = "chill the fuck out"
+         //   bottomLabel.text = ""
+            if (isPG13)
+            {
+            instructionsLabel.text = "enjoy yourself!"
+            }
+            else{
+              instructionsLabel.text = "chill the fuck out"
+            }
         } else if workoutCount == 1
         {
-            topLabel.text = targetPlan.Days[bCounter].Workouts[0].Name
-            bottomLabel.text = targetPlan.Days[bCounter].Workouts[0].Description
+            workoutTitle = targetPlan.Days[bCounter].Workouts[0].Name
+            workoutDescription = targetPlan.Days[bCounter].Workouts[0].Description
+            setTopLabel()
             
             for i in 0...targetPlan.Days[bCounter].Workouts[0].Exercises.count - 2
             {
@@ -67,21 +86,16 @@ class ViewController2: UIViewController {
             instructionsLabel.text = instructString
         } else
         {
-            var topString: String = ""
-            var bottomString: String = ""
-            
+
             for i in 0...targetPlan.Days[bCounter].Workouts.count - 2
             {
-                topString += targetPlan.Days[bCounter].Workouts[i].Name + " \n"
-                bottomString += targetPlan.Days[bCounter].Workouts[i].Description + " \n"
-                
+                workoutTitle += targetPlan.Days[bCounter].Workouts[i].Name + " \n"
+                workoutDescription += targetPlan.Days[bCounter].Workouts[i].Description + " \n"
             }
-            topString += targetPlan.Days[bCounter].Workouts[targetPlan.Days[bCounter].Workouts.count - 1].Name
-            bottomString += targetPlan.Days[bCounter].Workouts[targetPlan.Days[bCounter].Workouts.count - 1].Description
+           workoutTitle += targetPlan.Days[bCounter].Workouts[targetPlan.Days[bCounter].Workouts.count - 1].Name
+            workoutDescription += targetPlan.Days[bCounter].Workouts[targetPlan.Days[bCounter].Workouts.count - 1].Description
             
-            topLabel.text = topString
-            bottomLabel.text = bottomString
-            
+            setTopLabel()
             instructionsLabel.text = ""
         }
     }
@@ -97,9 +111,7 @@ class ViewController2: UIViewController {
         }
       
         targetPlan = Muscle_90_ADAPTFit_00
-        
+        updateScreenFrombCounter()
         // FirstLabel.text =
     }
-    
-    
 }

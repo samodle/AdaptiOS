@@ -22,3 +22,11 @@ func getExerciseFromID(idNum: Int) -> Exercise
     
     return MasterExerciseList[0] //return the first one in the list if we can't find it - ideally this would be a handled error
 }
+
+
+//Helper functions for sets & reps matrix
+
+
+
+
+

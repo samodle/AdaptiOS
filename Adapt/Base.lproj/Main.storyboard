@@ -98,7 +98,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0OY-fu-xAe">
+                            <label opaque="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0OY-fu-xAe">
                                 <rect key="frame" x="0.0" y="116" width="375" height="118"/>
                                 <gestureRecognizers/>
                                 <constraints>
@@ -117,15 +117,6 @@
                                     <constraint firstAttribute="height" constant="128" id="uG5-oA-PIB"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ho0-iE-w6R">
-                                <rect key="frame" x="75" y="211" width="225" height="124"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="124" id="KFZ-FA-D6g"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2hM-aB-98u">
                                 <rect key="frame" x="71" y="584" width="65" height="48"/>
                                 <constraints>
@@ -145,8 +136,8 @@
                                     <action selector="nextDown:" destination="mlC-n8-1rP" eventType="touchDown" id="gA2-5i-dB2"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAu-ny-oKF">
-                                <rect key="frame" x="0.0" y="475" width="375" height="124"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAu-ny-oKF">
+                                <rect key="frame" x="0.0" y="313" width="375" height="124"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="124" id="iEl-pL-JUV"/>
                                 </constraints>
@@ -159,34 +150,33 @@
                         <constraints>
                             <constraint firstItem="8F1-5o-ay2" firstAttribute="bottom" secondItem="bVM-ei-6wn" secondAttribute="bottom" constant="28" id="0hD-ka-tgp"/>
                             <constraint firstItem="0OY-fu-xAe" firstAttribute="leading" secondItem="8F1-5o-ay2" secondAttribute="leading" id="2yk-j6-PEu"/>
-                            <constraint firstItem="0OY-fu-xAe" firstAttribute="leading" secondItem="ho0-iE-w6R" secondAttribute="leading" id="6Xv-SD-Nkr"/>
+                            <constraint firstItem="LAu-ny-oKF" firstAttribute="leading" secondItem="0OY-fu-xAe" secondAttribute="leading" id="6s4-mo-7U6"/>
                             <constraint firstItem="E7l-XV-vjP" firstAttribute="top" secondItem="9LC-bJ-nrh" secondAttribute="topMargin" constant="-27" id="9v7-A1-dLE"/>
-                            <constraint firstItem="E7l-XV-vjP" firstAttribute="centerX" secondItem="ho0-iE-w6R" secondAttribute="centerX" id="HJ4-js-Keo"/>
                             <constraint firstItem="8F1-5o-ay2" firstAttribute="bottom" secondItem="2hM-aB-98u" secondAttribute="bottom" constant="35" id="K2b-GU-bHZ"/>
-                            <constraint firstItem="LAu-ny-oKF" firstAttribute="top" secondItem="ho0-iE-w6R" secondAttribute="bottom" constant="16" id="KXF-ZE-DMk"/>
                             <constraint firstItem="bVM-ei-6wn" firstAttribute="leading" secondItem="2hM-aB-98u" secondAttribute="trailing" constant="85" id="N6J-dP-rGH"/>
                             <constraint firstItem="2hM-aB-98u" firstAttribute="leading" secondItem="8F1-5o-ay2" secondAttribute="leading" constant="71" id="OGy-1a-bjH"/>
-                            <constraint firstItem="LAu-ny-oKF" firstAttribute="trailing" secondItem="ho0-iE-w6R" secondAttribute="trailing" id="QbM-gM-0b4"/>
                             <constraint firstItem="0OY-fu-xAe" firstAttribute="top" secondItem="E7l-XV-vjP" secondAttribute="bottom" constant="59" id="UXH-IM-uD5"/>
                             <constraint firstItem="E7l-XV-vjP" firstAttribute="centerX" secondItem="9LC-bJ-nrh" secondAttribute="centerX" id="Z5E-2X-h6j"/>
                             <constraint firstItem="bVM-ei-6wn" firstAttribute="baseline" secondItem="2hM-aB-98u" secondAttribute="firstBaseline" id="ZRd-7r-c2F"/>
                             <constraint firstItem="8F1-5o-ay2" firstAttribute="trailing" secondItem="0OY-fu-xAe" secondAttribute="trailing" id="bpF-XQ-Ds8"/>
-                            <constraint firstItem="LAu-ny-oKF" firstAttribute="leading" secondItem="ho0-iE-w6R" secondAttribute="leading" id="fFE-H4-0EY"/>
-                            <constraint firstItem="ho0-iE-w6R" firstAttribute="top" secondItem="0OY-fu-xAe" secondAttribute="bottom" constant="37" id="gVd-rZ-Qja"/>
                             <constraint firstItem="0OY-fu-xAe" firstAttribute="trailing" secondItem="8F1-5o-ay2" secondAttribute="trailing" id="li0-tZ-tUt"/>
+                            <constraint firstItem="LAu-ny-oKF" firstAttribute="trailing" secondItem="0OY-fu-xAe" secondAttribute="trailing" id="mJE-4H-5PX"/>
+                            <constraint firstItem="8F1-5o-ay2" firstAttribute="bottom" secondItem="LAu-ny-oKF" secondAttribute="bottom" constant="68" id="mZb-Dz-HAP"/>
                             <constraint firstItem="E7l-XV-vjP" firstAttribute="leading" secondItem="8F1-5o-ay2" secondAttribute="leading" constant="67" id="mfi-q1-Kuf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8F1-5o-ay2"/>
                     </view>
                     <connections>
-                        <outlet property="bottomLabel" destination="ho0-iE-w6R" id="hFK-4r-6wK"/>
                         <outlet property="instructionsLabel" destination="LAu-ny-oKF" id="6Rh-88-sf7"/>
                         <outlet property="topLabel" destination="0OY-fu-xAe" id="pQ8-L1-Q9G"/>
-                        <outlet property="topLableDoubleTap" destination="BmA-Oa-pYU" id="tAi-hE-eco"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yEp-Jn-FPV" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="BmA-Oa-pYU"/>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="BmA-Oa-pYU">
+                    <connections>
+                        <action selector="topLabelToggle:" destination="mlC-n8-1rP" id="DP5-pg-nHl"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="137" y="809"/>
         </scene>

@@ -10,6 +10,7 @@
 		225C2CE221CDBD7200872CC7 /* DBinit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225C2CE121CDBD7200872CC7 /* DBinit.swift */; };
 		22C56A0721D127FF00C91E4E /* WorkoutPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C56A0621D127FF00C91E4E /* WorkoutPlan.swift */; };
 		22C56A0921D1289D00C91E4E /* DailyPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C56A0821D1289D00C91E4E /* DailyPlan.swift */; };
+		6E360C96222074C000EF0A5B /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E360C95222074C000EF0A5B /* Settings.swift */; };
 		6E42339021DD345A00F1F012 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E42338F21DD345A00F1F012 /* ViewController2.swift */; };
 		6E55888021A5F962000C2FA4 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E55887F21A5F962000C2FA4 /* Exercise.swift */; };
 		6E55888221A5FB11000C2FA4 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E55888121A5FB11000C2FA4 /* Enums.swift */; };
@@ -29,6 +30,7 @@
 		225C2CE121CDBD7200872CC7 /* DBinit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBinit.swift; sourceTree = "<group>"; };
 		22C56A0621D127FF00C91E4E /* WorkoutPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutPlan.swift; sourceTree = "<group>"; };
 		22C56A0821D1289D00C91E4E /* DailyPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyPlan.swift; sourceTree = "<group>"; };
+		6E360C95222074C000EF0A5B /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		6E42338F21DD345A00F1F012 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		6E55887F21A5F962000C2FA4 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 		6E55888121A5FB11000C2FA4 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
@@ -57,6 +59,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E360C942220743F00EF0A5B /* GlobalFunctionality */ = {
+			isa = PBXGroup;
+			children = (
+				6E55888121A5FB11000C2FA4 /* Enums.swift */,
+				6ED9D5AE21CD439B0045863F /* Errors.swift */,
+				6E360C95222074C000EF0A5B /* Settings.swift */,
+			);
+			path = GlobalFunctionality;
+			sourceTree = "<group>";
+		};
 		6E42339121DD375800F1F012 /* AdaptDB */ = {
 			isa = PBXGroup;
 			children = (
@@ -66,19 +78,17 @@
 			path = AdaptDB;
 			sourceTree = "<group>";
 		};
-		6E55887E21A5F4D1000C2FA4 /* AdaptLib */ = {
+		6E55887E21A5F4D1000C2FA4 /* WorkHardHardWork */ = {
 			isa = PBXGroup;
 			children = (
 				6E55887F21A5F962000C2FA4 /* Exercise.swift */,
-				6E55888121A5FB11000C2FA4 /* Enums.swift */,
 				6E55888321A85FC9000C2FA4 /* ExerciseParams.swift */,
 				6E55888521A8A260000C2FA4 /* Workout.swift */,
 				6ED9D5AC21C836F10045863F /* WorkoutStructure.swift */,
-				6ED9D5AE21CD439B0045863F /* Errors.swift */,
 				22C56A0621D127FF00C91E4E /* WorkoutPlan.swift */,
 				22C56A0821D1289D00C91E4E /* DailyPlan.swift */,
 			);
-			path = AdaptLib;
+			path = WorkHardHardWork;
 			sourceTree = "<group>";
 		};
 		6EF5A97821A5ECA5006F053C = {
@@ -100,8 +110,9 @@
 		6EF5A98321A5ECA5006F053C /* Adapt */ = {
 			isa = PBXGroup;
 			children = (
+				6E360C942220743F00EF0A5B /* GlobalFunctionality */,
 				6E42339121DD375800F1F012 /* AdaptDB */,
-				6E55887E21A5F4D1000C2FA4 /* AdaptLib */,
+				6E55887E21A5F4D1000C2FA4 /* WorkHardHardWork */,
 				6EF5A98421A5ECA5006F053C /* AppDelegate.swift */,
 				6EF5A98621A5ECA6006F053C /* ViewController.swift */,
 				6E42338F21DD345A00F1F012 /* ViewController2.swift */,
@@ -188,6 +199,7 @@
 				6E55888421A85FC9000C2FA4 /* ExerciseParams.swift in Sources */,
 				6EF5A98521A5ECA5006F053C /* AppDelegate.swift in Sources */,
 				6ED9D5AD21C836F10045863F /* WorkoutStructure.swift in Sources */,
+				6E360C96222074C000EF0A5B /* Settings.swift in Sources */,
 				225C2CE221CDBD7200872CC7 /* DBinit.swift in Sources */,
 				6E42339021DD345A00F1F012 /* ViewController2.swift in Sources */,
 				6ED9D5AF21CD439B0045863F /* Errors.swift in Sources */,
