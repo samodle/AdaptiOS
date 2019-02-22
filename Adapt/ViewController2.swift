@@ -30,13 +30,14 @@ class ViewController2: UIViewController {
     func setTopLabel(){
         if toggleTitleLable{
             topLabel.text = workoutTitle
-     topLabel.font.withSize(24)
+    // topLabel.font.withSize(24)
         }
         else{
             topLabel.text = workoutDescription
-             topLabel.font.withSize(12)
+          //   topLabel.font.withSize(12)
          
         }
+        topLabel.adjustsFontSizeToFitWidth = true
     }
     
     @IBAction func backDown(_ sender: Any) {
